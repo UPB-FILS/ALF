@@ -1,0 +1,13 @@
+Calculations with Floating Point;5
+add;Add;7.4 8.6 +
+subtract;Subtract;6546.3 534.654 -
+multiply;Multiply;56.534 34.43 mul
+divide;Divide;345 52.534 div
+modulus;Modulus;534 76.534 mod
+sqrt;Square Root;200.54 sq
+pow;Power;6 6.5 pwr
+pow_negative;Power Negative;6 -6.4 pwr
+pow_float;Power Float;6.7 -6.4 pwr
+pow_float_negative;Power Negative Float;-6.7 6.4 pwr
+abs;Absolute Positive; 8.6 abs
+abs_negative;Absolute Negative; -8.8 abs

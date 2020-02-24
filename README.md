@@ -1,2 +1,4 @@
-# alg
-Automates et Languages Formels [FR-2 Info &amp; Electro]
+# Automates et Languages Formels
+
+Le repo pour les TP and les Devoir de cours ALF
+
