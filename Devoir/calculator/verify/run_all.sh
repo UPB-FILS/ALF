@@ -71,16 +71,16 @@ else
 					# 	title=`basename $file`
 					# fi
 					# cat $inputfile | tail -1
-					timeout 5 node "$1/$MAIN" `echo $input` > homeworkoutput
-					err=$?
-					head -8 homeworkoutput > "$outputfile"
-					tail -n +9 homeworkoutput | sed "s/ *//" | sort >> "$outputfile"
-					rm homeworkoutput
 					strtitle="Verifying $title"
 					printf '%s' "$strtitle"
 					pad=$(printf '%0.1s' "."{1..60})
 					padlength=65
 					unset IFS
+					timeout 5 node "$1/$MAIN" `echo $input` > homeworkoutput
+					err=$?
+					head -8 homeworkoutput > "$outputfile"
+					tail -n +9 homeworkoutput | sed "s/ *//" | sort >> "$outputfile"
+					rm homeworkoutput
 					if [ $err == 124 ];
 					then
 						str="timeout (0p)"
