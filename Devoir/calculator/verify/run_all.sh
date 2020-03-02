@@ -71,8 +71,6 @@ else
 					# 	title=`basename $file`
 					# fi
 					# cat $inputfile | tail -1
-					unset IFS
-					node "$1/$MAIN" `echo $input` > homeworkoutput
 					head -8 homeworkoutput > "$outputfile"
 					tail -n +9 homeworkoutput | sed "s/ *//" | sort >> "$outputfile"
 					rm homeworkoutput
@@ -80,20 +78,32 @@ else
 					printf '%s' "$strtitle"
 					pad=$(printf '%0.1s' "."{1..60})
 					padlength=65
-					sed "s/ALF/$AUTHOR/" "$originalfile" | sed "s/ ---/ `sed s/./-/g <<< $AUTHOR`/" | sed "s/ ___/ `sed s/./_/g <<< $AUTHOR`/" > original
-					if diff --side-by-side --suppress-common-lines --ignore-space-change original "$outputfile" &> "$errorsfile"
+					unset IFS
+					timeout 5 node "$1/$MAIN" `echo $input` > homeworkoutput
+					err=$?
+					if [ $err == 124 ];
 					then
-						str="ok (""$P""p)"
-						passed=$(($passed+1))
-						POINTS=$(($POINTS+$P))
-					else
-						str="error (0p)"
+						str="timeout (0p)"
 						failed=$(($failed+1))
 						echo "--------------" >> "$errorslist "
-						echo $strtitle >> "$errorslist"
-						head -10 "$errorsfile" >> "$errorslist"
+						# echo $strtitle >> "$errorslist"
+							# head -10 "$errorsfile" >> "$errorslist"
+					else
+						sed "s/ALF/$AUTHOR/" "$originalfile" | sed "s/ ---/ `sed s/./-/g <<< $AUTHOR`/" | sed "s/ ___/ `sed s/./_/g <<< $AUTHOR`/" > original
+						if diff --side-by-side --suppress-common-lines --ignore-space-change original "$outputfile" &> "$errorsfile"
+						then
+							str="ok (""$P""p)"
+							passed=$(($passed+1))
+							POINTS=$(($POINTS+$P))
+						else
+							str="error (0p)"
+							failed=$(($failed+1))
+							echo "--------------" >> "$errorslist "
+							echo $strtitle >> "$errorslist"
+							head -10 "$errorsfile" >> "$errorslist"
+						fi
+						rm original
 					fi
-					rm original
 					total=$(($total+1))
 					printf '%*.*s' 0 $((padlength - ${#strtitle} - ${#str} )) "$pad"
 					printf '%s\n' "$str"
