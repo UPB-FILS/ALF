@@ -1,0 +1,28 @@
+[
+  {
+    "type": "error",
+    "line": "1",
+    "filename": "Something.java",
+    "description": " error"
+  },
+  {
+    "type": "error",
+    "line": "49",
+    "filename": "Something.java",
+    "description": " error"
+  },
+  {
+    "type": "error",
+    "line": "55",
+    "filename": "Something.java",
+    "description": " error"
+  },
+  {
+    "type": "note",
+    "description": " Something.java uses or overrides a deprecated API."
+  },
+  {
+    "type": "note",
+    "description": " Recompile with -Xlint"
+  }
+]
