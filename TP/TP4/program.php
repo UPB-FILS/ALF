@@ -11,8 +11,14 @@ function s ()
     print ($s);
 }
 
-while ($v)
-{
-    print ($v);
-    $v = $v + 1;
+$i = 0;
+while (++$i) {
+    switch ($i) {
+        case 5:
+            break 1;
+        case 10:
+            break 2;
+        default:
+            break;
+    }
 }
