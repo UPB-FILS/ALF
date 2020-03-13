@@ -1,0 +1,407 @@
+[
+  {
+    "type": "IF",
+    "value": "if",
+    "line": 0
+  },
+  {
+    "type": "LP",
+    "value": "(",
+    "line": 0
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$v",
+    "line": 0
+  },
+  {
+    "type": "=",
+    "value": "=",
+    "line": 0
+  },
+  {
+    "type": "=",
+    "value": "=",
+    "line": 0
+  },
+  {
+    "type": "INTEGER",
+    "value": "4",
+    "line": 0
+  },
+  {
+    "type": "RP",
+    "value": ")",
+    "line": 0
+  },
+  {
+    "type": "LB",
+    "value": "{",
+    "line": 1
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$v",
+    "line": 2
+  },
+  {
+    "type": "=",
+    "value": "=",
+    "line": 2
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$v1",
+    "line": 2
+  },
+  {
+    "type": "+",
+    "value": "+",
+    "line": 2
+  },
+  {
+    "type": "INTEGER",
+    "value": "1",
+    "line": 2
+  },
+  {
+    "type": ";",
+    "value": ";",
+    "line": 2
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$v",
+    "line": 3
+  },
+  {
+    "type": "=",
+    "value": "=",
+    "line": 3
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$v2",
+    "line": 3
+  },
+  {
+    "type": "-",
+    "value": "-",
+    "line": 3
+  },
+  {
+    "type": "INTEGER",
+    "value": "1",
+    "line": 3
+  },
+  {
+    "type": ";",
+    "value": ";",
+    "line": 3
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$v",
+    "line": 4
+  },
+  {
+    "type": "=",
+    "value": "=",
+    "line": 4
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$v1",
+    "line": 4
+  },
+  {
+    "type": "*",
+    "value": "*",
+    "line": 4
+  },
+  {
+    "type": "INTEGER",
+    "value": "3",
+    "line": 4
+  },
+  {
+    "type": ";",
+    "value": ";",
+    "line": 4
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$v",
+    "line": 5
+  },
+  {
+    "type": "=",
+    "value": "=",
+    "line": 5
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$v1",
+    "line": 5
+  },
+  {
+    "type": "/",
+    "value": "/",
+    "line": 5
+  },
+  {
+    "type": "INTEGER",
+    "value": "2",
+    "line": 5
+  },
+  {
+    "type": ";",
+    "value": ";",
+    "line": 5
+  },
+  {
+    "type": "RB",
+    "value": "}",
+    "line": 6
+  },
+  {
+    "type": "FUNCTION",
+    "value": "function",
+    "line": 8
+  },
+  {
+    "type": "FUNCTION_NAME",
+    "value": "s",
+    "line": 8
+  },
+  {
+    "type": "LP",
+    "value": "(",
+    "line": 8
+  },
+  {
+    "type": "RP",
+    "value": ")",
+    "line": 8
+  },
+  {
+    "type": "LB",
+    "value": "{",
+    "line": 9
+  },
+  {
+    "type": "FUNCTION_NAME",
+    "value": "print",
+    "line": 10
+  },
+  {
+    "type": "LP",
+    "value": "(",
+    "line": 10
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$s",
+    "line": 10
+  },
+  {
+    "type": "RP",
+    "value": ")",
+    "line": 10
+  },
+  {
+    "type": ";",
+    "value": ";",
+    "line": 10
+  },
+  {
+    "type": "RB",
+    "value": "}",
+    "line": 11
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$i",
+    "line": 13
+  },
+  {
+    "type": "=",
+    "value": "=",
+    "line": 13
+  },
+  {
+    "type": "INTEGER",
+    "value": "0",
+    "line": 13
+  },
+  {
+    "type": ";",
+    "value": ";",
+    "line": 13
+  },
+  {
+    "type": "WHILE",
+    "value": "while",
+    "line": 14
+  },
+  {
+    "type": "LP",
+    "value": "(",
+    "line": 14
+  },
+  {
+    "type": "+",
+    "value": "+",
+    "line": 14
+  },
+  {
+    "type": "+",
+    "value": "+",
+    "line": 14
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$i",
+    "line": 14
+  },
+  {
+    "type": "RP",
+    "value": ")",
+    "line": 14
+  },
+  {
+    "type": "LB",
+    "value": "{",
+    "line": 14
+  },
+  {
+    "type": "SWITCH",
+    "value": "switch",
+    "line": 15
+  },
+  {
+    "type": "LP",
+    "value": "(",
+    "line": 15
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$i",
+    "line": 15
+  },
+  {
+    "type": "RP",
+    "value": ")",
+    "line": 15
+  },
+  {
+    "type": "LB",
+    "value": "{",
+    "line": 15
+  },
+  {
+    "type": "CASE",
+    "value": "case",
+    "line": 16
+  },
+  {
+    "type": "INTEGER",
+    "value": "5",
+    "line": 16
+  },
+  {
+    "type": ":",
+    "value": ":",
+    "line": 16
+  },
+  {
+    "type": "BREAK",
+    "value": "break",
+    "line": 17
+  },
+  {
+    "type": "INTEGER",
+    "value": "1",
+    "line": 17
+  },
+  {
+    "type": ";",
+    "value": ";",
+    "line": 17
+  },
+  {
+    "type": "CASE",
+    "value": "case",
+    "line": 18
+  },
+  {
+    "type": "INTEGER",
+    "value": "10",
+    "line": 18
+  },
+  {
+    "type": ":",
+    "value": ":",
+    "line": 18
+  },
+  {
+    "type": "BREAK",
+    "value": "break",
+    "line": 19
+  },
+  {
+    "type": "INTEGER",
+    "value": "2",
+    "line": 19
+  },
+  {
+    "type": ";",
+    "value": ";",
+    "line": 19
+  },
+  {
+    "type": "DEFAULT",
+    "value": "default",
+    "line": 20
+  },
+  {
+    "type": ":",
+    "value": ":",
+    "line": 20
+  },
+  {
+    "type": "BREAK",
+    "value": "break",
+    "line": 21
+  },
+  {
+    "type": ";",
+    "value": ";",
+    "line": 21
+  },
+  {
+    "type": "RB",
+    "value": "}",
+    "line": 22
+  },
+  {
+    "type": "RB",
+    "value": "}",
+    "line": 23
+  },
+  {
+    "type": "VARIABLE",
+    "value": "$v",
+    "line": 25
+  },
+  {
+    "type": "=",
+    "value": "=",
+    "line": 25
+  },
+  {
+    "type": "STRING",
+    "value": "\"alf\"",
+    "line": 25
+  }
+]

@@ -22,3 +22,5 @@ while (++$i) {
             break;
     }
 }
+
+$v = "alf"

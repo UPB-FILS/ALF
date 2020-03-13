@@ -6,7 +6,7 @@ var Parser = require ('./alf.js').Parser;
 var lexer = new Parser ().lexer;
  
 // add a text to the lexer
-lexer.setInput ("example");
+lexer.setInput ("Hello, the ALF TP is from 12 PM to 2 PM.");
  
 var s = null;
  
@@ -30,6 +30,6 @@ do
     {
         // print the token (s)
         // print the token text (lexer.yytext)
-        console.log (s + ' ' + lexer.yytext);
+        console.log (s+' '+lexer.yytext);
     }
 } while (s !== lexer.EOF); 
