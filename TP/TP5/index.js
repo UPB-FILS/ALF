@@ -11,7 +11,7 @@ try
 }
 catch (e)
 {
-     // display the error message and data
+    // display the error message and data
 	console.log (e.message);
 	console.log (e.hash);
 }
