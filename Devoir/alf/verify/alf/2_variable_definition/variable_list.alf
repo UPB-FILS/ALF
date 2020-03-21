@@ -1,0 +1,2 @@
+#Variable definition list#
+@var n : int, r : float, l : bool, s : string ;

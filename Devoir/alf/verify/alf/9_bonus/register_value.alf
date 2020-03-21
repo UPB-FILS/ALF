@@ -1,0 +1,5 @@
+#Register value#
+
+&register NUMBER 100
+
+print (text: NUMBER );

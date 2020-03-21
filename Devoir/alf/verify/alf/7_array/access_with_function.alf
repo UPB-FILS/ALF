@@ -1,0 +1,7 @@
+#Access element of array with message#
+
+list:string[1 -- 9];
+
+@var v:list;
+
+v[position()] <- "The new name for the school";

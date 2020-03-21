@@ -1,0 +1,12 @@
+{
+  "id": "program",
+  "statements": [
+    {
+      "id": "value",
+      "type": "character",
+      "value": "\"",
+      "line": 3
+    }
+  ],
+  "line": 3
+}

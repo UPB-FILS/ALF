@@ -1,0 +1,34 @@
+{
+  "id": "program",
+  "statements": [
+    {
+      "id": "var",
+      "elements": [
+        {
+          "type": "string",
+          "title": "s",
+          "value": {
+            "id": "identifier",
+            "title": "variable",
+            "line": 5
+          },
+          "line": 5
+        }
+      ],
+      "line": 5
+    },
+    {
+      "id": "function_run",
+      "function": "print",
+      "parameters": {
+        "text": {
+          "id": "identifier",
+          "title": "s",
+          "line": 7
+        }
+      },
+      "line": 7
+    }
+  ],
+  "line": 7
+}

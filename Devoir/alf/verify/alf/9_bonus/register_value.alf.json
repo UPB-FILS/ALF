@@ -1,0 +1,19 @@
+{
+  "id": "program",
+  "statements": [
+    {
+      "id": "function_run",
+      "function": "print",
+      "parameters": {
+        "text": {
+          "id": "value",
+          "type": "int",
+          "value": 100,
+          "line": 5
+        }
+      },
+      "line": 5
+    }
+  ],
+  "line": 5
+}

@@ -1,0 +1,9 @@
+{
+  "error": "syntax",
+  "line": 24,
+  "text": "",
+  "token": "end of input",
+  "expected": [
+    "\"END\""
+  ]
+}

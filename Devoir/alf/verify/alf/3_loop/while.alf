@@ -1,0 +1,7 @@
+#While loop#
+
+@var n : int <- 0;
+
+loop n < 100 go
+	n <- n + 1;
+end;

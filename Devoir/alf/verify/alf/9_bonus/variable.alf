@@ -1,0 +1,7 @@
+#Variable#
+
+&register ALF variable
+
+@var s : string <- ALF ;
+
+print (text : s );

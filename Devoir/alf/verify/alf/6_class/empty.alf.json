@@ -1,0 +1,11 @@
+{
+  "id": "program",
+  "statements": [
+    {
+      "id": "struct_def",
+      "title": "product",
+      "properties": []
+    }
+  ],
+  "line": 3
+}

@@ -1,0 +1,23 @@
+{
+  "id": "program",
+  "statements": [
+    {
+      "id": "function",
+      "title": "print",
+      "parameters": [
+        {
+          "type": "string",
+          "name": "text"
+        }
+      ],
+      "return_type": "string",
+      "statements": [
+        {
+          "type": "empty"
+        }
+      ],
+      "line": 6
+    }
+  ],
+  "line": 6
+}

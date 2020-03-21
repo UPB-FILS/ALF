@@ -1,0 +1,5 @@
+#Dispatch message in expression#
+
+@var s:int;
+
+s <- sum (x:50, y:50);

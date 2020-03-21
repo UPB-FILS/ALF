@@ -1,0 +1,8 @@
+#Message definition with statements and value#
+
+
+function sum:int (n1:int, n2:int)
+start
+	@var s:int <- n1 + n2;
+	return s;
+end;

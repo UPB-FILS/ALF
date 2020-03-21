@@ -1,0 +1,22 @@
+{
+  "error": "syntax",
+  "line": 10,
+  "text": ")",
+  "token": "\")\"",
+  "expected": [
+    "\"(\"",
+    "\"-\"",
+    "\"NOT\"",
+    "\"NUMBER\"",
+    "\"STRING_VALUE\"",
+    "\"SYMBOL\"",
+    "\"LOGIC_VALUE\"",
+    "\"IDENTIFIER\"",
+    "\"NONE\"",
+    "\"value\"",
+    "\"arrayAccess\"",
+    "\"propertyAccess\"",
+    "\"functionRun\"",
+    "\"function\""
+  ]
+}

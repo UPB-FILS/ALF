@@ -1,0 +1,9 @@
+#For loop with expression#
+
+@var n:int <- 0;
+@var s:int <- 1;
+@var max:int <- 2*n;
+
+for i between list go
+	n <- n + 1;
+end;

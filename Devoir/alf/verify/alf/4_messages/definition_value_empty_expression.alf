@@ -1,0 +1,6 @@
+#Message definition with empty value#
+
+function print:string (text:string)
+start
+;
+end;

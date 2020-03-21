@@ -1,0 +1,14 @@
+#Power function#
+
+function power:int (a:int, n:int) 		
+start
+	@var p:int <- 1;
+	for i from 1 to n go
+		p <- p * a;
+	end;
+	return a;
+end;
+
+@var n <- 0;
+
+n <-  power (a:6, n:5);

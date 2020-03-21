@@ -1,0 +1,101 @@
+{
+  "id": "program",
+  "statements": [
+    {
+      "id": "var",
+      "elements": [
+        {
+          "type": "int",
+          "title": "n",
+          "line": 3
+        }
+      ],
+      "line": 3
+    },
+    {
+      "id": "loop_when",
+      "expr": {
+        "id": "expr",
+        "op": "!=",
+        "left": {
+          "id": "identifier",
+          "title": "n",
+          "line": 10
+        },
+        "right": {
+          "id": "value",
+          "type": "int",
+          "value": 0,
+          "line": 10
+        },
+        "line": 10
+      },
+      "statements": [
+        {
+          "id": "attr",
+          "to": {
+            "id": "identifier",
+            "title": "n",
+            "line": 6
+          },
+          "from": {
+            "id": "function_run",
+            "function": "random",
+            "parameters": {
+              "start": {
+                "id": "value",
+                "type": "int",
+                "value": 1,
+                "line": 6
+              },
+              "upto": {
+                "id": "value",
+                "type": "int",
+                "value": 100,
+                "line": 6
+              }
+            },
+            "line": 6
+          },
+          "line": 6
+        },
+        {
+          "id": "if_then",
+          "expr": {
+            "id": "expr",
+            "op": "!=",
+            "left": {
+              "id": "identifier",
+              "title": "n",
+              "line": 7
+            },
+            "right": {
+              "id": "value",
+              "type": "int",
+              "value": 0,
+              "line": 7
+            },
+            "line": 7
+          },
+          "then": [
+            {
+              "id": "function_run",
+              "function": "write",
+              "parameters": {
+                "text": {
+                  "id": "identifier",
+                  "title": "n",
+                  "line": 8
+                }
+              },
+              "line": 8
+            }
+          ],
+          "line": 9
+        }
+      ],
+      "line": 10
+    }
+  ],
+  "line": 10
+}

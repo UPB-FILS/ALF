@@ -1,0 +1,41 @@
+{
+  "id": "program",
+  "statements": [
+    {
+      "id": "function_run",
+      "function": "print",
+      "parameters": {
+        "text": {
+          "id": "expr",
+          "op": "+",
+          "left": {
+            "id": "expr",
+            "op": "/",
+            "left": {
+              "id": "value",
+              "type": "float",
+              "value": 3.14,
+              "line": 5
+            },
+            "right": {
+              "id": "value",
+              "type": "int",
+              "value": 2,
+              "line": 5
+            },
+            "line": 5
+          },
+          "right": {
+            "id": "value",
+            "type": "string",
+            "value": " is PI/2",
+            "line": 5
+          },
+          "line": 5
+        }
+      },
+      "line": 5
+    }
+  ],
+  "line": 5
+}

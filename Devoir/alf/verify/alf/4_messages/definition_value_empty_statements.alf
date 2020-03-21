@@ -1,0 +1,6 @@
+#Message definition with empty value and statements#
+
+function print:string (text:string)
+start 
+	text <- "";
+end;

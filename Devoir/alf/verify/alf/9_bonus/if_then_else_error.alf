@@ -1,0 +1,9 @@
+#If then else with error#
+
+&register P 2
+
+&if P = 1
+print (text:"Print text "+ P );
+&else
+print (text:"Print text "+  );
+&endif

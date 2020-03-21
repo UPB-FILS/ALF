@@ -1,0 +1,48 @@
+{
+  "id": "program",
+  "statements": [
+    {
+      "id": "function",
+      "title": "sum",
+      "parameters": [
+        {
+          "type": "int",
+          "name": "n1"
+        },
+        {
+          "type": "int",
+          "name": "n2"
+        }
+      ],
+      "return_type": "int",
+      "statements": [
+        {
+          "id": "attr",
+          "to": {
+            "id": "identifier",
+            "title": "s",
+            "line": 6
+          },
+          "from": {
+            "id": "expr",
+            "op": "+",
+            "left": {
+              "id": "identifier",
+              "title": "n1",
+              "line": 6
+            },
+            "right": {
+              "id": "identifier",
+              "title": "n2",
+              "line": 6
+            },
+            "line": 6
+          },
+          "line": 6
+        }
+      ],
+      "line": 7
+    }
+  ],
+  "line": 7
+}

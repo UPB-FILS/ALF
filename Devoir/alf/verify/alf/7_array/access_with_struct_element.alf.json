@@ -1,0 +1,77 @@
+{
+  "id": "program",
+  "statements": [
+    {
+      "id": "vector",
+      "title": "list",
+      "element_type": "string",
+      "from": "1",
+      "to": "9",
+      "line": 2
+    },
+    {
+      "id": "var",
+      "elements": [
+        {
+          "type": "auto",
+          "title": "v",
+          "value": {
+            "id": "identifier",
+            "title": "list",
+            "line": 4
+          },
+          "line": 4
+        }
+      ],
+      "line": 4
+    },
+    {
+      "id": "struct_def",
+      "title": "random",
+      "properties": [
+        {
+          "type": "int",
+          "title": "position",
+          "line": 7
+        }
+      ]
+    },
+    {
+      "id": "var",
+      "elements": [
+        {
+          "type": "random",
+          "title": "s",
+          "line": 10
+        }
+      ],
+      "line": 10
+    },
+    {
+      "id": "atttr",
+      "to": {
+        "id": "element_of_vector",
+        "vector": "v",
+        "index": {
+          "id": "prop",
+          "object": {
+            "id": "identifier",
+            "title": "s",
+            "line": 12
+          },
+          "title": "position",
+          "line": 12
+        },
+        "line": 12
+      },
+      "from": {
+        "id": "value",
+        "type": "string",
+        "value": "The new name for the school",
+        "line": 12
+      },
+      "line": 12
+    }
+  ],
+  "line": 12
+}

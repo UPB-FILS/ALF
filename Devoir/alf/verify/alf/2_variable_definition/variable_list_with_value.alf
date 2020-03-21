@@ -1,0 +1,2 @@
+#Variable definition list with value#
+@var n:int <- 3, r: float <- 3.7, l : bool <- false, s : string <- "string";

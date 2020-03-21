@@ -1,0 +1,75 @@
+{
+  "id": "program",
+  "statements": [
+    {
+      "id": "function_run",
+      "function": "print",
+      "parameters": {
+        "text": {
+          "id": "expr",
+          "op": "+",
+          "left": {
+            "id": "value",
+            "type": "string",
+            "value": "Print text ",
+            "line": 7
+          },
+          "right": {
+            "id": "identifier",
+            "title": "P",
+            "line": 7
+          },
+          "line": 7
+        }
+      },
+      "line": 7
+    },
+    {
+      "id": "function_run",
+      "function": "print",
+      "parameters": {
+        "text": {
+          "id": "expr",
+          "op": "+",
+          "left": {
+            "id": "value",
+            "type": "string",
+            "value": "Print text ",
+            "line": 17
+          },
+          "right": {
+            "id": "identifier",
+            "title": "P",
+            "line": 17
+          },
+          "line": 17
+        }
+      },
+      "line": 17
+    },
+    {
+      "id": "function_run",
+      "function": "print",
+      "parameters": {
+        "text": {
+          "id": "expr",
+          "op": "+",
+          "left": {
+            "id": "value",
+            "type": "string",
+            "value": "Print text ",
+            "line": 20
+          },
+          "right": {
+            "id": "identifier",
+            "title": "P",
+            "line": 20
+          },
+          "line": 20
+        }
+      },
+      "line": 20
+    }
+  ],
+  "line": 20
+}

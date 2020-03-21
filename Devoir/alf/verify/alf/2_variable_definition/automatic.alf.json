@@ -1,0 +1,23 @@
+{
+  "id": "program",
+  "statements": [
+    {
+      "id": "var",
+      "elements": [
+        {
+          "type": "auto",
+          "title": "count",
+          "value": {
+            "id": "value",
+            "type": "int",
+            "value": 5,
+            "line": 2
+          },
+          "line": 2
+        }
+      ],
+      "line": 2
+    }
+  ],
+  "line": 2
+}

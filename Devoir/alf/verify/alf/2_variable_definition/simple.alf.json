@@ -1,0 +1,17 @@
+{
+  "id": "program",
+  "statements": [
+    {
+      "id": "var",
+      "elements": [
+        {
+          "type": "int",
+          "title": "variable",
+          "line": 2
+        }
+      ],
+      "line": 2
+    }
+  ],
+  "line": 2
+}
