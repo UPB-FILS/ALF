@@ -9,7 +9,7 @@
           "title": "n",
           "value": {
             "id": "value",
-            "type": "integer",
+            "type": "int",
             "value": 3,
             "line": 2
           },

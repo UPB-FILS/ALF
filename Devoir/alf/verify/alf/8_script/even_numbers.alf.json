@@ -9,7 +9,7 @@
           "title": "n",
           "value": {
             "id": "value",
-            "type": "integer",
+            "type": "int",
             "value": 2,
             "line": 3
           },
@@ -23,13 +23,13 @@
       "variable": "n",
       "from": {
         "id": "value",
-        "type": "integer",
+        "type": "int",
         "value": 2,
         "line": 5
       },
       "to": {
         "id": "value",
-        "type": "integer",
+        "type": "int",
         "value": 1000,
         "line": 5
       },
@@ -52,7 +52,7 @@
     {
       "id": "loop_go",
       "exp": {
-        "id": "exp",
+        "id": "expr",
         "op": "<",
         "left": {
           "id": "identifier",
@@ -61,7 +61,7 @@
         },
         "right": {
           "id": "value",
-          "type": "integer",
+          "type": "int",
           "value": 1000,
           "line": 9
         },
@@ -88,7 +88,7 @@
             "line": 11
           },
           "from": {
-            "id": "exp",
+            "id": "expr",
             "op": "+",
             "left": {
               "id": "identifier",
@@ -97,7 +97,7 @@
             },
             "right": {
               "id": "value",
-              "type": "integer",
+              "type": "int",
               "value": 2,
               "line": 11
             },
@@ -117,7 +117,7 @@
       },
       "from": {
         "id": "value",
-        "type": "integer",
+        "type": "int",
         "value": 2,
         "line": 14
       },
@@ -126,7 +126,7 @@
     {
       "id": "loop_when",
       "exp": {
-        "id": "exp",
+        "id": "expr",
         "op": "<",
         "left": {
           "id": "identifier",
@@ -135,7 +135,7 @@
         },
         "right": {
           "id": "value",
-          "type": "integer",
+          "type": "int",
           "value": 1000,
           "line": 19
         },
@@ -162,7 +162,7 @@
             "line": 18
           },
           "from": {
-            "id": "exp",
+            "id": "expr",
             "op": "+",
             "left": {
               "id": "identifier",
@@ -171,7 +171,7 @@
             },
             "right": {
               "id": "value",
-              "type": "integer",
+              "type": "int",
               "value": 2,
               "line": 18
             },

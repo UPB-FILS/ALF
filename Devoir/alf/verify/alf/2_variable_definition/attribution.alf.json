@@ -21,7 +21,7 @@
       },
       "from": {
         "id": "value",
-        "type": "integer",
+        "type": "int",
         "value": 6,
         "line": 4
       },

@@ -23,7 +23,7 @@
               "type": "int",
               "title": "s",
               "value": {
-                "id": "exp",
+                "id": "expr",
                 "op": "+",
                 "left": {
                   "id": "identifier",

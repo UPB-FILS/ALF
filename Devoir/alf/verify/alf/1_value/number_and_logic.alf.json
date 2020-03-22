@@ -3,7 +3,7 @@
   "statements": [
     {
       "id": "value",
-      "type": "integer",
+      "type": "int",
       "value": 758234,
       "line": 3
     },

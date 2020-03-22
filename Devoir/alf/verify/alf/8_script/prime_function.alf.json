@@ -34,7 +34,7 @@
           "variable": "i",
           "from": {
             "id": "value",
-            "type": "integer",
+            "type": "int",
             "value": 2,
             "line": 7
           },
@@ -52,12 +52,12 @@
           },
           "statements": [
             {
-              "id": "if",
+              "id": "if_then",
               "exp": {
-                "id": "exp",
+                "id": "expr",
                 "op": "==",
                 "left": {
-                  "id": "exp",
+                  "id": "expr",
                   "op": "mod",
                   "left": {
                     "id": "identifier",
@@ -73,7 +73,7 @@
                 },
                 "right": {
                   "id": "value",
-                  "type": "integer",
+                  "type": "int",
                   "value": 0,
                   "line": 8
                 },
@@ -140,7 +140,7 @@
       "line": 18
     },
     {
-      "id": "if",
+      "id": "if_then",
       "exp": {
         "id": "function_call",
         "function": "prime",
@@ -159,7 +159,7 @@
           "function": "write",
           "parameters": {
             "text": {
-              "id": "exp",
+              "id": "expr",
               "op": "+",
               "left": {
                 "id": "identifier",
@@ -184,7 +184,7 @@
           "function": "write",
           "parameters": {
             "text": {
-              "id": "exp",
+              "id": "expr",
               "op": "+",
               "left": {
                 "id": "identifier",

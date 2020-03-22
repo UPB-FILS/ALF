@@ -2,7 +2,7 @@
   "id": "script",
   "statements": [
     {
-      "id": "array",
+      "id": "vector",
       "title": "list",
       "element_type": "string",
       "from": "1",

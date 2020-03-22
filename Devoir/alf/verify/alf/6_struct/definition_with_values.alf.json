@@ -2,7 +2,7 @@
   "id": "script",
   "statements": [
     {
-      "id": "struct",
+      "id": "struct_def",
       "title": "school",
       "properties": [
         {
@@ -32,7 +32,7 @@
           "title": "type",
           "value": {
             "id": "value",
-            "type": "integer",
+            "type": "int",
             "value": 0,
             "line": 6
           },

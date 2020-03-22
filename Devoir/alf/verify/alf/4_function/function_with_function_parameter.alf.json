@@ -6,16 +6,16 @@
       "function": "print",
       "parameters": {
         "text": {
-          "id": "exp",
+          "id": "expr",
           "op": "+",
           "left": {
-            "id": "exp",
+            "id": "expr",
             "op": "+",
             "left": {
-              "id": "exp",
+              "id": "expr",
               "op": "+",
               "left": {
-                "id": "exp",
+                "id": "expr",
                 "op": "+",
                 "left": {
                   "id": "value",
@@ -61,7 +61,7 @@
           "parameters": {
             "a": {
               "id": "value",
-              "type": "integer",
+              "type": "int",
               "value": 47821,
               "line": 3
             }

@@ -9,7 +9,7 @@
           "title": "count",
           "value": {
             "id": "value",
-            "type": "integer",
+            "type": "int",
             "value": 5,
             "line": 2
           },

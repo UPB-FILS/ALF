@@ -25,13 +25,13 @@
         "parameters": {
           "x": {
             "id": "value",
-            "type": "integer",
+            "type": "int",
             "value": 50,
             "line": 5
           },
           "y": {
             "id": "value",
-            "type": "integer",
+            "type": "int",
             "value": 50,
             "line": 5
           }

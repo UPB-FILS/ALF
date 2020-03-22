@@ -6,7 +6,7 @@
       "function": "print",
       "parameters": {
         "text": {
-          "id": "exp",
+          "id": "expr",
           "op": "+",
           "left": {
             "id": "value",
@@ -29,7 +29,7 @@
       "function": "print",
       "parameters": {
         "text": {
-          "id": "exp",
+          "id": "expr",
           "op": "+",
           "left": {
             "id": "value",
@@ -52,7 +52,7 @@
       "function": "print",
       "parameters": {
         "text": {
-          "id": "exp",
+          "id": "expr",
           "op": "+",
           "left": {
             "id": "value",

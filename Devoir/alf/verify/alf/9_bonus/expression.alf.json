@@ -6,10 +6,10 @@
       "function": "print",
       "parameters": {
         "text": {
-          "id": "exp",
+          "id": "expr",
           "op": "+",
           "left": {
-            "id": "exp",
+            "id": "expr",
             "op": "/",
             "left": {
               "id": "value",
@@ -19,7 +19,7 @@
             },
             "right": {
               "id": "value",
-              "type": "integer",
+              "type": "int",
               "value": 2,
               "line": 5
             },

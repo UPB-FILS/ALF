@@ -7,7 +7,7 @@
       "parameters": {
         "text": {
           "id": "value",
-          "type": "integer",
+          "type": "int",
           "value": 100,
           "line": 5
         }

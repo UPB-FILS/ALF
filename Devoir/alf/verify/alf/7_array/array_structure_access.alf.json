@@ -2,7 +2,7 @@
   "id": "script",
   "statements": [
     {
-      "id": "struct",
+      "id": "struct_def",
       "title": "school",
       "properties": [
         {
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "id": "array",
+      "id": "vector",
       "title": "list",
       "element_type": "school",
       "from": "1",
@@ -44,13 +44,13 @@
     {
       "id": "attr",
       "to": {
-        "id": "property",
+        "id": "prop",
         "object": {
-          "id": "element_of_array",
+          "id": "element_of_vector",
           "array": "list_of_schools",
           "index": {
             "id": "value",
-            "type": "integer",
+            "type": "int",
             "value": 1,
             "line": 13
           },
