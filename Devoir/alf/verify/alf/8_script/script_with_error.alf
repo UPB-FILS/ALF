@@ -1,6 +1,6 @@
 #Prime number function with error#
 
-function prime:bool (n : int)
+function prime (n : int):bool
 start
 	@var p : bool <- true;
 

@@ -1,3 +1,0 @@
-#Dispatch message with parameter#
-
-print (text:"text to write");

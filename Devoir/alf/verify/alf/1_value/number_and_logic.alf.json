@@ -1,15 +1,15 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
       "id": "value",
-      "type": "int",
+      "type": "integer",
       "value": 758234,
       "line": 3
     },
     {
       "id": "value",
-      "type": "bool",
+      "type": "logic",
       "value": false,
       "line": 4
     }

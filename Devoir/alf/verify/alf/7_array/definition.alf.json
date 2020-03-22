@@ -1,8 +1,8 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
-      "id": "vecotr",
+      "id": "array",
       "title": "list",
       "element_type": "string",
       "from": "1",

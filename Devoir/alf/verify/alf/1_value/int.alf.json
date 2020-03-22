@@ -1,9 +1,9 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
       "id": "value",
-      "type": "int",
+      "type": "integer",
       "value": 45,
       "line": 1
     }

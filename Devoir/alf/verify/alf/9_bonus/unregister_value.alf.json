@@ -1,12 +1,12 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
-      "id": "function_run",
+      "id": "function_call",
       "function": "print",
       "parameters": {
         "text": {
-          "id": "expr",
+          "id": "exp",
           "op": "+",
           "left": {
             "id": "value",
@@ -25,11 +25,11 @@
       "line": 7
     },
     {
-      "id": "function_run",
+      "id": "function_call",
       "function": "print",
       "parameters": {
         "text": {
-          "id": "expr",
+          "id": "exp",
           "op": "+",
           "left": {
             "id": "value",
@@ -48,11 +48,11 @@
       "line": 17
     },
     {
-      "id": "function_run",
+      "id": "function_call",
       "function": "print",
       "parameters": {
         "text": {
-          "id": "expr",
+          "id": "exp",
           "op": "+",
           "left": {
             "id": "value",

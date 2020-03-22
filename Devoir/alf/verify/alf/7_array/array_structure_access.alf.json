@@ -1,34 +1,34 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
-      "id": "struct_def",
+      "id": "struct",
       "title": "school",
       "properties": [
         {
           "type": "string",
           "title": "name",
-          "line": 3
+          "line": 4
         },
         {
           "type": "bool",
           "title": "private",
-          "line": 4
+          "line": 5
         },
         {
           "type": "int",
           "title": "type",
-          "line": 5
+          "line": 6
         }
       ]
     },
     {
-      "id": "vector",
+      "id": "array",
       "title": "list",
       "element_type": "school",
       "from": "1",
       "to": "9",
-      "line": 8
+      "line": 9
     },
     {
       "id": "var",
@@ -36,37 +36,37 @@
         {
           "type": "list",
           "title": "list_of_schools",
-          "line": 10
+          "line": 11
         }
       ],
-      "line": 10
+      "line": 11
     },
     {
       "id": "attr",
       "to": {
-        "id": "prop",
+        "id": "property",
         "object": {
-          "id": "element_of_vector",
-          "vector": "list_of_schools",
+          "id": "element_of_array",
+          "array": "list_of_schools",
           "index": {
             "id": "value",
-            "type": "int",
+            "type": "integer",
             "value": 1,
-            "line": 12
+            "line": 13
           },
-          "line": 12
+          "line": 13
         },
         "title": "name",
-        "line": 12
+        "line": 13
       },
       "from": {
         "id": "value",
         "type": "string",
         "value": "School",
-        "line": 12
+        "line": 13
       },
-      "line": 12
+      "line": 13
     }
   ],
-  "line": 12
+  "line": 13
 }

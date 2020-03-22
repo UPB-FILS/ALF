@@ -1,5 +1,5 @@
 #String#
 
-&register TEXT "text"
+#register TEXT "text"
 
 print (text : TEXT ); 

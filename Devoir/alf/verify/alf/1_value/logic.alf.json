@@ -1,9 +1,9 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
       "id": "value",
-      "type": "bool",
+      "type": "logic",
       "value": false,
       "line": 1
     }

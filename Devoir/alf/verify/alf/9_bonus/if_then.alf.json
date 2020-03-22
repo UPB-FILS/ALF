@@ -1,12 +1,12 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
-      "id": "function_run",
+      "id": "function_call",
       "function": "print",
       "parameters": {
         "text": {
-          "id": "expr",
+          "id": "exp",
           "op": "+",
           "left": {
             "id": "value",
@@ -16,7 +16,7 @@
           },
           "right": {
             "id": "value",
-            "type": "int",
+            "type": "integer",
             "value": 1,
             "line": 7
           },

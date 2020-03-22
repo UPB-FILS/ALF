@@ -1,13 +1,13 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
-      "id": "vector",
+      "id": "array",
       "title": "list",
       "element_type": "string",
       "from": "1",
       "to": "9",
-      "line": 2
+      "line": 3
     },
     {
       "id": "var",
@@ -15,32 +15,32 @@
         {
           "type": "list",
           "title": "v",
-          "line": 4
+          "line": 5
         }
       ],
-      "line": 4
+      "line": 5
     },
     {
       "id": "attr",
       "to": {
-        "id": "element_of_vector",
-        "vector": "v",
+        "id": "element_of_array",
+        "array": "v",
         "index": {
           "id": "value",
-          "type": "int",
+          "type": "integer",
           "value": 5,
-          "line": 6
+          "line": 7
         },
-        "line": 6
+        "line": 7
       },
       "from": {
         "id": "value",
         "type": "string",
         "value": "The new name for the school",
-        "line": 6
+        "line": 7
       },
-      "line": 6
+      "line": 7
     }
   ],
-  "line": 6
+  "line": 7
 }

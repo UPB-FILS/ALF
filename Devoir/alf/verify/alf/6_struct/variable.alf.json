@@ -1,0 +1,38 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "struct",
+      "title": "school",
+      "properties": [
+        {
+          "type": "string",
+          "title": "name",
+          "line": 4
+        },
+        {
+          "type": "bool",
+          "title": "private",
+          "line": 5
+        },
+        {
+          "type": "int",
+          "title": "type",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "id": "var",
+      "elements": [
+        {
+          "type": "school",
+          "title": "s",
+          "line": 9
+        }
+      ],
+      "line": 9
+    }
+  ],
+  "line": 9
+}

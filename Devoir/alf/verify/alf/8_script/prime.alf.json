@@ -1,5 +1,5 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
       "id": "var",
@@ -20,7 +20,7 @@
         "line": 5
       },
       "from": {
-        "id": "function_run",
+        "id": "function_call",
         "function": "read",
         "parameters": [],
         "line": 5
@@ -35,7 +35,7 @@
           "title": "p",
           "value": {
             "id": "value",
-            "type": "bool",
+            "type": "logic",
             "value": true,
             "line": 7
           },
@@ -45,16 +45,16 @@
       "line": 7
     },
     {
-      "id": "loop_for",
+      "id": "for",
       "variable": "i",
       "from": {
         "id": "value",
-        "type": "int",
+        "type": "integer",
         "value": 2,
         "line": 9
       },
       "to": {
-        "id": "function_run",
+        "id": "function_call",
         "function": "sqrt",
         "parameters": {
           "number": {
@@ -67,12 +67,12 @@
       },
       "statements": [
         {
-          "id": "if_then",
-          "expr": {
-            "id": "expr",
+          "id": "if",
+          "exp": {
+            "id": "exp",
             "op": "==",
             "left": {
-              "id": "expr",
+              "id": "exp",
               "op": "mod",
               "left": {
                 "id": "identifier",
@@ -88,7 +88,7 @@
             },
             "right": {
               "id": "value",
-              "type": "int",
+              "type": "integer",
               "value": 0,
               "line": 10
             },
@@ -104,7 +104,7 @@
               },
               "from": {
                 "id": "value",
-                "type": "bool",
+                "type": "logic",
                 "value": false,
                 "line": 11
               },
@@ -117,19 +117,19 @@
       "line": 13
     },
     {
-      "id": "if_then",
-      "expr": {
+      "id": "if",
+      "exp": {
         "id": "identifier",
         "title": "p",
         "line": 15
       },
       "then": [
         {
-          "id": "function_run",
+          "id": "function_call",
           "function": "write",
           "parameters": {
             "text": {
-              "id": "expr",
+              "id": "exp",
               "op": "+",
               "left": {
                 "id": "identifier",
@@ -150,11 +150,11 @@
       ],
       "else": [
         {
-          "id": "function_run",
+          "id": "function_call",
           "function": "write",
           "parameters": {
             "text": {
-              "id": "expr",
+              "id": "exp",
               "op": "+",
               "left": {
                 "id": "identifier",

@@ -1,5 +1,5 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
       "id": "var",
@@ -21,7 +21,7 @@
       },
       "from": {
         "id": "value",
-        "type": "int",
+        "type": "integer",
         "value": 6,
         "line": 4
       },

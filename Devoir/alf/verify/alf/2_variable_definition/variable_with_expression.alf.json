@@ -1,5 +1,5 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
       "id": "var",
@@ -8,26 +8,26 @@
           "type": "int",
           "title": "e",
           "value": {
-            "id": "expr",
+            "id": "exp",
             "op": "+",
             "left": {
               "id": "value",
-              "type": "int",
+              "type": "integer",
               "value": 20,
               "line": 2
             },
             "right": {
-              "id": "expr",
+              "id": "exp",
               "op": "*",
               "left": {
                 "id": "value",
-                "type": "int",
+                "type": "integer",
                 "value": 3,
                 "line": 2
               },
               "right": {
                 "id": "value",
-                "type": "int",
+                "type": "integer",
                 "value": 5,
                 "line": 2
               },

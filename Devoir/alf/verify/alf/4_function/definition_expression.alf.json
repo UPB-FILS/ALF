@@ -1,0 +1,27 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "function_def",
+      "title": "sum",
+      "parameters": ":",
+      "return_type": [
+        {
+          "type": "int",
+          "name": "n1"
+        },
+        {
+          "type": "int",
+          "name": "n2"
+        }
+      ],
+      "statements": [
+        {
+          "type": "empty"
+        }
+      ],
+      "line": 4
+    }
+  ],
+  "line": 4
+}

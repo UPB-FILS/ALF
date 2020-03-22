@@ -78,31 +78,41 @@ else
 						outputfile=output/`basename "$file"`.json
 						originalfile="$file.json"
 						errorsfile=output/`basename "$file"`.err
-						title=`head -n 1 "$file" | grep '{' | cut -d '{' -f 2 | cut -d '}' -f 1` 
+						title=`head -n 1 "$file" | grep '#' | cut -d '{' -f 2 | cut -d '#' -f 1` 
 						if [ `echo -n "$title" | wc -c` -eq 0 ];
 						then
 							title=`basename $file`
 						fi
-						node "$dir/$MAIN" "$inputfile" "$outputfile"
 						strtitle="Verifying $title"
 						printf '%s' "$strtitle"
 						pad=$(printf '%0.1s' "."{1..60})
 						padlength=70
-						# echo $originalfile
-						# echo $outputfile
-						if node verify.js "$originalfile" "$outputfile" &> "$errorsfile"
+						timeout 10 node "$dir/$MAIN" "$inputfile" "$outputfile"
+						err=$?
+						if [ $err == 124 ];
 						then
-							str="ok (""$P""p)"
-							passed=$(($passed+1))
-							POINTS=$(($POINTS+$P))
-						else
-							diff --ignore-all-space -y --suppress-common-lines "$originalfile" "$outputfile" &> "$errorsfile" 
-							str="error (0p)"
+							str="timeout (0p)"
 							failed=$(($failed+1))
-							echo "--------------" >> $errorslist 
-							echo $strtitle >> $errorslist
+							# echo "--------------" >> $errorslist 
+							# echo $strtitle >> $errorslist
 							# head -10 "$errorsfile" >> $errorslist
-							cat "$errorsfile" >> $errorslist
+						else
+							# echo $originalfile
+							# echo $outputfile
+							if node verify.js "$originalfile" "$outputfile" &> "$errorsfile"
+							then
+								str="ok (""$P""p)"
+								passed=$(($passed+1))
+								POINTS=$(($POINTS+$P))
+							else
+								diff --ignore-all-space -y --suppress-common-lines "$originalfile" "$outputfile" &> "$errorsfile" 
+								str="error (0p)"
+								failed=$(($failed+1))
+								echo "--------------" >> $errorslist 
+								echo $strtitle >> $errorslist
+								# head -10 "$errorsfile" >> $errorslist
+								cat "$errorsfile" >> $errorslist
+							fi
 						fi
 						total=$(($total+1))
 						printf '%*.*s' 0 $((padlength - ${#strtitle} - ${#str} )) "$pad"

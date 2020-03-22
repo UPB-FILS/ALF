@@ -2,7 +2,7 @@
 
 ## Description
 
-You can find here the public tests for homework 2.
+You can find here the public tests for homework 3.
 
 ## Questions
 

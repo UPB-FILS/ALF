@@ -1,15 +1,15 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
-      "id": "@var",
+      "id": "var",
       "elements": [
         {
           "type": "int",
           "title": "n",
           "value": {
             "id": "value",
-            "type": "int",
+            "type": "integer",
             "value": 0,
             "line": 3
           },
@@ -19,14 +19,14 @@
       "line": 3
     },
     {
-      "id": "@var",
+      "id": "var",
       "elements": [
         {
           "type": "int",
           "title": "s",
           "value": {
             "id": "value",
-            "type": "int",
+            "type": "integer",
             "value": 1,
             "line": 4
           },
@@ -36,17 +36,17 @@
       "line": 4
     },
     {
-      "id": "@var",
+      "id": "var",
       "elements": [
         {
           "type": "int",
           "title": "max",
           "value": {
-            "id": "expr",
+            "id": "exp",
             "op": "*",
             "left": {
               "id": "value",
-              "type": "int",
+              "type": "integer",
               "value": 2,
               "line": 5
             },
@@ -63,9 +63,9 @@
       "line": 5
     },
     {
-      "id": "loop_for",
+      "id": "for",
       "variable": "i",
-      "expr": {
+      "exp": {
         "id": "identifier",
         "title": "list",
         "line": 7
@@ -79,7 +79,7 @@
             "line": 8
           },
           "from": {
-            "id": "expr",
+            "id": "exp",
             "op": "+",
             "left": {
               "id": "identifier",
@@ -88,7 +88,7 @@
             },
             "right": {
               "id": "value",
-              "type": "int",
+              "type": "integer",
               "value": 1,
               "line": 8
             },

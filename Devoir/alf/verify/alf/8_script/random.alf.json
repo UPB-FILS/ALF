@@ -1,5 +1,5 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
       "id": "var",
@@ -14,8 +14,8 @@
     },
     {
       "id": "loop_when",
-      "expr": {
-        "id": "expr",
+      "exp": {
+        "id": "exp",
         "op": "!=",
         "left": {
           "id": "identifier",
@@ -24,7 +24,7 @@
         },
         "right": {
           "id": "value",
-          "type": "int",
+          "type": "integer",
           "value": 0,
           "line": 10
         },
@@ -39,18 +39,18 @@
             "line": 6
           },
           "from": {
-            "id": "function_run",
+            "id": "function_call",
             "function": "random",
             "parameters": {
-              "start": {
+              "startfrom": {
                 "id": "value",
-                "type": "int",
+                "type": "integer",
                 "value": 1,
                 "line": 6
               },
               "upto": {
                 "id": "value",
-                "type": "int",
+                "type": "integer",
                 "value": 100,
                 "line": 6
               }
@@ -60,9 +60,9 @@
           "line": 6
         },
         {
-          "id": "if_then",
-          "expr": {
-            "id": "expr",
+          "id": "if",
+          "exp": {
+            "id": "exp",
             "op": "!=",
             "left": {
               "id": "identifier",
@@ -71,7 +71,7 @@
             },
             "right": {
               "id": "value",
-              "type": "int",
+              "type": "integer",
               "value": 0,
               "line": 7
             },
@@ -79,7 +79,7 @@
           },
           "then": [
             {
-              "id": "function_run",
+              "id": "function_call",
               "function": "write",
               "parameters": {
                 "text": {

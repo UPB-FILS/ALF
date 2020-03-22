@@ -1,54 +1,54 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
-      "id": "function_run",
+      "id": "function_call",
       "function": "print",
       "parameters": {
         "text": {
-          "id": "expr",
+          "id": "exp",
           "op": "+",
           "left": {
             "id": "value",
             "type": "string",
             "value": "Print text ",
-            "line": 14
+            "line": 15
           },
           "right": {
             "id": "value",
-            "type": "int",
+            "type": "integer",
             "value": 2,
-            "line": 14
+            "line": 15
           },
-          "line": 14
+          "line": 15
         }
       },
-      "line": 14
+      "line": 15
     },
     {
-      "id": "function_run",
+      "id": "function_call",
       "function": "print",
       "parameters": {
         "text": {
-          "id": "expr",
+          "id": "exp",
           "op": "+",
           "left": {
             "id": "value",
             "type": "string",
             "value": "Print text ",
-            "line": 17
+            "line": 18
           },
           "right": {
             "id": "value",
-            "type": "int",
+            "type": "integer",
             "value": 3,
-            "line": 17
+            "line": 18
           },
-          "line": 17
+          "line": 18
         }
       },
-      "line": 17
+      "line": 18
     }
   ],
-  "line": 17
+  "line": 18
 }

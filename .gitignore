@@ -106,3 +106,8 @@ dist
 *.zip
 
 main.js
+grammar.l
+grammar.y
+grammar.js
+
+

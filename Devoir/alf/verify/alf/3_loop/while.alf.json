@@ -1,5 +1,5 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
       "id": "var",
@@ -9,7 +9,7 @@
           "title": "n",
           "value": {
             "id": "value",
-            "type": "int",
+            "type": "integer",
             "value": 0,
             "line": 3
           },
@@ -20,8 +20,8 @@
     },
     {
       "id": "loop_go",
-      "expr": {
-        "id": "expr",
+      "exp": {
+        "id": "exp",
         "op": "<",
         "left": {
           "id": "identifier",
@@ -30,7 +30,7 @@
         },
         "right": {
           "id": "value",
-          "type": "int",
+          "type": "integer",
           "value": 100,
           "line": 5
         },
@@ -45,7 +45,7 @@
             "line": 6
           },
           "from": {
-            "id": "expr",
+            "id": "exp",
             "op": "+",
             "left": {
               "id": "identifier",
@@ -54,7 +54,7 @@
             },
             "right": {
               "id": "value",
-              "type": "int",
+              "type": "integer",
               "value": 1,
               "line": 6
             },

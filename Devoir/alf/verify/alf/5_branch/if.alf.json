@@ -1,5 +1,5 @@
 {
-  "id": "program",
+  "id": "module",
   "statements": [
     {
       "id": "var",
@@ -13,9 +13,9 @@
       "line": 3
     },
     {
-      "id": "if_then",
-      "expr": {
-        "id": "expr",
+      "id": "if",
+      "exp": {
+        "id": "exp",
         "op": ">",
         "left": {
           "id": "identifier",
@@ -24,7 +24,7 @@
         },
         "right": {
           "id": "value",
-          "type": "int",
+          "type": "integer",
           "value": 2,
           "line": 5
         },
@@ -39,7 +39,7 @@
             "line": 6
           },
           "from": {
-            "id": "expr",
+            "id": "exp",
             "op": "+",
             "left": {
               "id": "identifier",
@@ -48,7 +48,7 @@
             },
             "right": {
               "id": "value",
-              "type": "int",
+              "type": "integer",
               "value": 1,
               "line": 6
             },
