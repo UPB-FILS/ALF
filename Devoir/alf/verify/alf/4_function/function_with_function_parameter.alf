@@ -1,0 +1,3 @@
+#Call function with message parameter#
+
+print(text:"text"+" "+"to"+" "+"write", number:math(a:47821));

@@ -1,8 +1,8 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
-      "id": "function_run",
+      "id": "function_call",
       "function": "print",
       "parameters": {
         "text": {
@@ -13,7 +13,7 @@
             "op": "/",
             "left": {
               "id": "value",
-              "type": "float",
+              "type": "real",
               "value": 3.14,
               "line": 5
             },

@@ -1,5 +1,5 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
       "id": "var",
@@ -19,7 +19,7 @@
       "line": 3
     },
     {
-      "id": "loop_for",
+      "id": "for",
       "variable": "n",
       "from": {
         "id": "value",
@@ -35,7 +35,7 @@
       },
       "statements": [
         {
-          "id": "function_run",
+          "id": "function_call",
           "function": "write",
           "parameters": {
             "text": {
@@ -51,7 +51,7 @@
     },
     {
       "id": "loop_go",
-      "expr": {
+      "exp": {
         "id": "expr",
         "op": "<",
         "left": {
@@ -69,7 +69,7 @@
       },
       "statements": [
         {
-          "id": "function_run",
+          "id": "function_call",
           "function": "write",
           "parameters": {
             "text": {
@@ -125,7 +125,7 @@
     },
     {
       "id": "loop_when",
-      "expr": {
+      "exp": {
         "id": "expr",
         "op": "<",
         "left": {
@@ -143,7 +143,7 @@
       },
       "statements": [
         {
-          "id": "function_run",
+          "id": "function_call",
           "function": "write",
           "parameters": {
             "text": {

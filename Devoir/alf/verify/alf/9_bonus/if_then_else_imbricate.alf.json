@@ -1,8 +1,8 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
-      "id": "function_run",
+      "id": "function_call",
       "function": "print",
       "parameters": {
         "text": {
@@ -12,21 +12,21 @@
             "id": "value",
             "type": "string",
             "value": "Print text ",
-            "line": 14
+            "line": 15
           },
           "right": {
             "id": "value",
             "type": "int",
             "value": 2,
-            "line": 14
+            "line": 15
           },
-          "line": 14
+          "line": 15
         }
       },
-      "line": 14
+      "line": 15
     },
     {
-      "id": "function_run",
+      "id": "function_call",
       "function": "print",
       "parameters": {
         "text": {
@@ -36,19 +36,19 @@
             "id": "value",
             "type": "string",
             "value": "Print text ",
-            "line": 17
+            "line": 18
           },
           "right": {
             "id": "value",
             "type": "int",
             "value": 3,
-            "line": 17
+            "line": 18
           },
-          "line": 17
+          "line": 18
         }
       },
-      "line": 17
+      "line": 18
     }
   ],
-  "line": 17
+  "line": 18
 }

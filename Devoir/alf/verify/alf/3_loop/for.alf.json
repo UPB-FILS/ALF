@@ -1,5 +1,5 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
       "id": "var",
@@ -19,7 +19,7 @@
       "line": 3
     },
     {
-      "id": "loop_for",
+      "id": "for",
       "variable": "i",
       "from": {
         "id": "value",

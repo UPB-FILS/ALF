@@ -1,0 +1,35 @@
+{
+  "id": "script",
+  "statements": [
+    {
+      "id": "function_def",
+      "title": "print",
+      "parameters": ":",
+      "return_type": [
+        {
+          "type": "string",
+          "name": "text"
+        }
+      ],
+      "statements": [
+        {
+          "id": "attr",
+          "to": {
+            "id": "identifier",
+            "title": "text",
+            "line": 5
+          },
+          "from": {
+            "id": "value",
+            "type": "string",
+            "value": "",
+            "line": 5
+          },
+          "line": 5
+        }
+      ],
+      "line": 6
+    }
+  ],
+  "line": 6
+}

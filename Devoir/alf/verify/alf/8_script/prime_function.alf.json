@@ -1,16 +1,16 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
-      "id": "function",
+      "id": "function_def",
       "title": "prime",
-      "parameters": [
+      "parameters": ":",
+      "return_type": [
         {
           "type": "int",
           "name": "n"
         }
       ],
-      "return_type": "bool",
       "statements": [
         {
           "id": "var",
@@ -20,7 +20,7 @@
               "title": "p",
               "value": {
                 "id": "value",
-                "type": "bool",
+                "type": "logic",
                 "value": true,
                 "line": 5
               },
@@ -30,7 +30,7 @@
           "line": 5
         },
         {
-          "id": "loop_for",
+          "id": "for",
           "variable": "i",
           "from": {
             "id": "value",
@@ -39,7 +39,7 @@
             "line": 7
           },
           "to": {
-            "id": "function_run",
+            "id": "function_call",
             "function": "sqrt",
             "parameters": {
               "number": {
@@ -53,7 +53,7 @@
           "statements": [
             {
               "id": "if_then",
-              "expr": {
+              "exp": {
                 "id": "expr",
                 "op": "==",
                 "left": {
@@ -89,7 +89,7 @@
                   },
                   "from": {
                     "id": "value",
-                    "type": "bool",
+                    "type": "logic",
                     "value": false,
                     "line": 9
                   },
@@ -132,7 +132,7 @@
         "line": 18
       },
       "from": {
-        "id": "function_run",
+        "id": "function_call",
         "function": "read",
         "parameters": [],
         "line": 18
@@ -141,8 +141,8 @@
     },
     {
       "id": "if_then",
-      "expr": {
-        "id": "function_run",
+      "exp": {
+        "id": "function_call",
         "function": "prime",
         "parameters": {
           "n": {
@@ -155,7 +155,7 @@
       },
       "then": [
         {
-          "id": "function_run",
+          "id": "function_call",
           "function": "write",
           "parameters": {
             "text": {
@@ -180,7 +180,7 @@
       ],
       "else": [
         {
-          "id": "function_run",
+          "id": "function_call",
           "function": "write",
           "parameters": {
             "text": {

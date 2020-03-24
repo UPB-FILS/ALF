@@ -1,8 +1,8 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
-      "id": "vecotr",
+      "id": "vector",
       "title": "list",
       "element_type": "string",
       "from": "1",

@@ -67,7 +67,7 @@ else
 						printf '%s' "$strtitle"
 						pad=$(printf '%0.1s' "."{1..60})
 						padlength=65
-						timeout 5 node "$1" "$inputfile" > "$outputfile"
+						timeout 10 node "$1" "$inputfile" > "$outputfile"
 						err=$?
 						if [ $err == 124 ];
 						then

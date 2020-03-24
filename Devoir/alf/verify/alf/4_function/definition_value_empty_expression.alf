@@ -1,0 +1,6 @@
+#Function definition with empty value#
+
+function print (text:string):string
+start
+;
+end;

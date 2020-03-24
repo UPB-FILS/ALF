@@ -3,7 +3,7 @@
 @var n : int;
 
 loop
-	n <-  random (start : 1, upto : 100);
+	n <-  random (startfrom : 1, upto : 100);
 	if n != 0 then
 		write (text : n);
 	end;

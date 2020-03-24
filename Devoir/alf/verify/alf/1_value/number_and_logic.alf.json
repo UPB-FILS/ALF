@@ -1,5 +1,5 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
       "id": "value",
@@ -9,7 +9,7 @@
     },
     {
       "id": "value",
-      "type": "bool",
+      "type": "logic",
       "value": false,
       "line": 4
     }

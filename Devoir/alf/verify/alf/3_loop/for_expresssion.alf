@@ -4,6 +4,6 @@
 @var s:int <- 1;
 @var max:int <- 2*n;
 
-for i between list go
+for i of list go
 	n <- n + 1;
 end;

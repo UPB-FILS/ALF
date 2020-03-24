@@ -1,6 +1,6 @@
 #Power function#
 
-function power:int (a:int, n:int) 		
+function power (a:int, n:int):int 		
 start
 	@var p:int <- 1;
 	for i from 1 to n go

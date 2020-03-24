@@ -1,0 +1,59 @@
+{
+  "id": "script",
+  "statements": [
+    {
+      "id": "function_def",
+      "title": "sum",
+      "parameters": ":",
+      "return_type": [
+        {
+          "type": "int",
+          "name": "n1"
+        },
+        {
+          "type": "int",
+          "name": "n2"
+        }
+      ],
+      "statements": [
+        {
+          "id": "var",
+          "elements": [
+            {
+              "type": "int",
+              "title": "s",
+              "value": {
+                "id": "expr",
+                "op": "+",
+                "left": {
+                  "id": "identifier",
+                  "title": "n1",
+                  "line": 6
+                },
+                "right": {
+                  "id": "identifier",
+                  "title": "n2",
+                  "line": 6
+                },
+                "line": 6
+              },
+              "line": 6
+            }
+          ],
+          "line": 6
+        },
+        {
+          "id": "return",
+          "value": {
+            "id": "identifier",
+            "title": "s",
+            "line": 7
+          },
+          "line": 7
+        }
+      ],
+      "line": 8
+    }
+  ],
+  "line": 8
+}

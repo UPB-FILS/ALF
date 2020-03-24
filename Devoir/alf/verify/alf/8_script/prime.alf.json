@@ -1,5 +1,5 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
       "id": "var",
@@ -20,7 +20,7 @@
         "line": 5
       },
       "from": {
-        "id": "function_run",
+        "id": "function_call",
         "function": "read",
         "parameters": [],
         "line": 5
@@ -35,7 +35,7 @@
           "title": "p",
           "value": {
             "id": "value",
-            "type": "bool",
+            "type": "logic",
             "value": true,
             "line": 7
           },
@@ -45,7 +45,7 @@
       "line": 7
     },
     {
-      "id": "loop_for",
+      "id": "for",
       "variable": "i",
       "from": {
         "id": "value",
@@ -54,7 +54,7 @@
         "line": 9
       },
       "to": {
-        "id": "function_run",
+        "id": "function_call",
         "function": "sqrt",
         "parameters": {
           "number": {
@@ -68,7 +68,7 @@
       "statements": [
         {
           "id": "if_then",
-          "expr": {
+          "exp": {
             "id": "expr",
             "op": "==",
             "left": {
@@ -104,7 +104,7 @@
               },
               "from": {
                 "id": "value",
-                "type": "bool",
+                "type": "logic",
                 "value": false,
                 "line": 11
               },
@@ -118,14 +118,14 @@
     },
     {
       "id": "if_then",
-      "expr": {
+      "exp": {
         "id": "identifier",
         "title": "p",
         "line": 15
       },
       "then": [
         {
-          "id": "function_run",
+          "id": "function_call",
           "function": "write",
           "parameters": {
             "text": {
@@ -150,7 +150,7 @@
       ],
       "else": [
         {
-          "id": "function_run",
+          "id": "function_call",
           "function": "write",
           "parameters": {
             "text": {

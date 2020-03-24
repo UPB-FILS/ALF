@@ -1,4 +1,4 @@
-#Repeat loop#
+#Loop...when loop#
 
 @var n:int <- 0;
 

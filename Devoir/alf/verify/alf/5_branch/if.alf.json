@@ -1,5 +1,5 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
       "id": "var",
@@ -14,7 +14,7 @@
     },
     {
       "id": "if_then",
-      "expr": {
+      "exp": {
         "id": "expr",
         "op": ">",
         "left": {

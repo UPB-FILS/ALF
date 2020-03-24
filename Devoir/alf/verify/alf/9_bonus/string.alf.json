@@ -1,8 +1,8 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
-      "id": "function_run",
+      "id": "function_call",
       "function": "print",
       "parameters": {
         "text": {

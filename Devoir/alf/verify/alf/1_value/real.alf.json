@@ -1,9 +1,9 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
       "id": "value",
-      "type": "float",
+      "type": "real",
       "value": 45.5,
       "line": 1
     }

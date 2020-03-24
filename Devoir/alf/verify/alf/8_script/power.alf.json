@@ -1,10 +1,11 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
-      "id": "function",
+      "id": "function_def",
       "title": "power",
-      "parameters": [
+      "parameters": ":",
+      "return_type": [
         {
           "type": "int",
           "name": "a"
@@ -14,7 +15,6 @@
           "name": "n"
         }
       ],
-      "return_type": "int",
       "statements": [
         {
           "id": "var",
@@ -34,7 +34,7 @@
           "line": 5
         },
         {
-          "id": "loop_for",
+          "id": "for",
           "variable": "i",
           "from": {
             "id": "value",
@@ -112,7 +112,7 @@
         "line": 14
       },
       "from": {
-        "id": "function_run",
+        "id": "function_call",
         "function": "power",
         "parameters": {
           "a": {

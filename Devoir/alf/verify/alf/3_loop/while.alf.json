@@ -1,5 +1,5 @@
 {
-  "id": "program",
+  "id": "script",
   "statements": [
     {
       "id": "var",
@@ -20,7 +20,7 @@
     },
     {
       "id": "loop_go",
-      "expr": {
+      "exp": {
         "id": "expr",
         "op": "<",
         "left": {
