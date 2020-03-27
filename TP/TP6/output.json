@@ -1,0 +1,92 @@
+{
+  "rule": "statements",
+  "items": [
+    {
+      "rule": "statement",
+      "items": [
+        {
+          "rule": "attribution",
+          "items": [
+            {
+              "token": "IDENTIFIER",
+              "value": "a"
+            },
+            {
+              "token": "=",
+              "value": "="
+            },
+            {
+              "token": "INTEGER",
+              "value": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "token": ";",
+      "value": ";"
+    },
+    {
+      "rule": "statements",
+      "items": [
+        {
+          "rule": "statement",
+          "items": [
+            {
+              "rule": "function_call",
+              "items": [
+                {
+                  "token": "IDENTIFIER",
+                  "value": "function"
+                },
+                {
+                  "token": "LP",
+                  "value": "("
+                },
+                {
+                  "rule": "parameters",
+                  "items": [
+                    {
+                      "token": "IDENTIFIER",
+                      "value": "a"
+                    },
+                    {
+                      "token": ",",
+                      "value": ","
+                    },
+                    {
+                      "rule": "expression",
+                      "items": [
+                        {
+                          "token": "INTEGER",
+                          "value": "2"
+                        },
+                        {
+                          "token": "+",
+                          "value": "+"
+                        },
+                        {
+                          "token": "INTEGER",
+                          "value": "3"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "token": "RP",
+                  "value": ")"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "token": ";",
+          "value": ";"
+        }
+      ]
+    }
+  ]
+}
