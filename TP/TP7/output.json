@@ -1,0 +1,189 @@
+{
+  "rule": "start",
+  "items": [
+    {
+      "rule": "statements",
+      "items": [
+        {
+          "rule": "statement",
+          "items": [
+            {
+              "rule": "function",
+              "items": [
+                {
+                  "token": "FUNCTION",
+                  "value": "function"
+                },
+                {
+                  "token": "IDENTIFIER",
+                  "value": "functie"
+                },
+                {
+                  "token": "(",
+                  "value": "("
+                },
+                {
+                  "rule": "parameters",
+                  "items": [
+                    {
+                      "token": "IDENTIFIER",
+                      "value": "a"
+                    },
+                    {
+                      "token": "OF",
+                      "value": "of"
+                    },
+                    {
+                      "token": "INT",
+                      "value": "int"
+                    }
+                  ]
+                },
+                {
+                  "token": ")",
+                  "value": ")"
+                },
+                {
+                  "token": "NEWLINE",
+                  "value": "\r\n"
+                },
+                {
+                  "rule": "statements",
+                  "items": [
+                    {
+                      "rule": "statement",
+                      "items": [
+                        {
+                          "rule": "assign",
+                          "items": [
+                            {
+                              "token": "IDENTIFIER",
+                              "value": "a"
+                            },
+                            {
+                              "token": "=",
+                              "value": "="
+                            },
+                            {
+                              "token": "NUMBER",
+                              "value": 4
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "token": "NEWLINE",
+                      "value": "\r\n"
+                    }
+                  ]
+                },
+                {
+                  "token": "END_FUNCTION",
+                  "value": "endfunction"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "token": "NEWLINE",
+          "value": "\r\n"
+        },
+        {
+          "rule": "statements",
+          "items": [
+            {
+              "rule": "statement",
+              "items": [
+                {
+                  "rule": "assign",
+                  "items": [
+                    {
+                      "token": "IDENTIFIER",
+                      "value": "b"
+                    },
+                    {
+                      "token": "=",
+                      "value": "="
+                    },
+                    {
+                      "rule": "expression",
+                      "items": [
+                        {
+                          "rule": "expression",
+                          "items": [
+                            {
+                              "token": "NUMBER",
+                              "value": 2
+                            },
+                            {
+                              "token": "+",
+                              "value": "+"
+                            },
+                            {
+                              "token": "NUMBER",
+                              "value": 3
+                            }
+                          ]
+                        },
+                        {
+                          "token": "+",
+                          "value": "+"
+                        },
+                        {
+                          "token": "NUMBER",
+                          "value": 4
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "token": "NEWLINE",
+              "value": "\r\n"
+            },
+            {
+              "rule": "statements",
+              "items": [
+                {
+                  "rule": "statement",
+                  "items": [
+                    {
+                      "rule": "function_run",
+                      "items": [
+                        {
+                          "token": "IDENTIFIER",
+                          "value": "functie"
+                        },
+                        {
+                          "token": "(",
+                          "value": "("
+                        },
+                        {
+                          "rule": "parameters_run",
+                          "items": [
+                            {
+                              "token": "IDENTIFIER",
+                              "value": "b"
+                            }
+                          ]
+                        },
+                        {
+                          "token": ")",
+                          "value": ")"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
