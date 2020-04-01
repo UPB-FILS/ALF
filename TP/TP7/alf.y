@@ -28,7 +28,7 @@ function token (token_name, value)
 %% 
  
 start: statements                           { 
-                                                $$ = rule ('start', [$1], yylineno);
+                                                $$ = rule ('start', [$1]);
                                                 return $$; 
                                                 /*TODO 2: AST: comment the previous lines and uncomment the following */
                                                 // return {
@@ -39,18 +39,18 @@ start: statements                           {
     ;
 
 statements: statement NEWLINE statements	{
-                                                $$ = rule ('statements', [$1, token ('NEWLINE', $2), $3], yylineno);
+                                                $$ = rule ('statements', [$1, token ('NEWLINE', $2), $3]);
                                                 /*TODO 2: AST: comment the previous lines and uncomment the following */
                                                 // $3.push($1); // add the statement to the array produced by statements ($1)
                                                 // $$ = $3;
                                             }
             | statement NEWLINE				{
-                                                $$ = rule ('statements', [$1, token ('NEWLINE', $2)], yylineno);
+                                                $$ = rule ('statements', [$1, token ('NEWLINE', $2)]);
                                                 // $$ = [];
                                                 // $$.push($1);
                                             }
             | statement						{
-                                                $$ = rule ('statements', [$1], yylineno);
+                                                $$ = rule ('statements', [$1]);
                                                 // $$ = [];
                                                 // $$.push($1);
                                             }
@@ -73,7 +73,7 @@ statement:  expression                      {
             | function                      {
                                                 $$ = rule ('statement', [$1]);
                                             }
-			| function_run                  {
+			| function_call                 {
                                                 $$ = rule ('statement', [$1]);
                                             }
             ;
@@ -117,8 +117,8 @@ expression_string '+' expression_string     {   /*TODO 2: Same as for expression
                                             }
 ;
  
-variable:	VAR variables                   {   /* TODO 3: AST object parameters: type('var'), variables(list of variables) */
-                                                $$ = rule ('variable', [token ('VAR', $1), $2]);
+variable:	DEF variables                   {   /* TODO 3: AST object parameters: type('var'), variables(list of variables) */
+                                                $$ = rule ('variable_definition', [token ('VAR', $1), $2]);
                                             }
         ;
  
@@ -193,8 +193,8 @@ assign: IDENTIFIER '=' expression           {   /*TODO 3: $$ will receive an obj
  
  
  
-function: FUNCTION IDENTIFIER 'LP' parameters 'RP' NEWLINE statements END_FUNCTION 
-        { $$ = rule ('function', [token('FUNCTION', $1), token('IDENTIFIER', $2), token('(', $3), $4, token(')', $5), token('NEWLINE', $6), $7, token('END_FUNCTION', $8)]); }
+function: FUNCTION IDENTIFIER 'LP' parameters 'RP' NEWLINE statements END 
+        { $$ = rule ('function', [token('FUNCTION', $1), token('IDENTIFIER', $2), token('(', $3), $4, token(')', $5), token('NEWLINE', $6), $7, token('END', $8)]); }
             /*TODO 3: $$ will receive an object with the following properties: type('function_declaration'), id(identifier value), parameters, expressions */
         ;
  
@@ -211,27 +211,27 @@ parameters: IDENTIFIER OF type ',' parameters
                 }
             ;
  
-function_run: IDENTIFIER 'LP' parameters_run 'RP' 
-                { $$ = rule ('function_run', [token ('IDENTIFIER', $1), token ('(', $2), $3, token (')', $4)]);}
-                /*TODO 3: $$ will receive an object with the following properties: type('function_run'), id(identifier value)*/
+function_call: IDENTIFIER 'LP' parameters_call 'RP' 
+                { $$ = rule ('function_call', [token ('IDENTIFIER', $1), token ('(', $2), $3, token (')', $4)]);}
+                /*TODO 3: $$ will receive an object with the following properties: type('function_call), id(identifier value)*/
     
             ;
  
-parameters_run: expression ',' parameters_run
-                                                {   /*TODO 3: Add the expression to the parameters_run array($1). $$ will receive $1 */
-                                                    $$ = rule ('parameters_run', [$1, token (',', $2), $3]);
+parameters_call: expression ',' parameters_call
+                                                {   /*TODO 3: Add the expression to the parameters_call array($1). $$ will receive $1 */
+                                                    $$ = rule ('parameters_call', [$1, token (',', $2), $3]);
                                                 }
 			    | expression
                                                 {   /* TODO 3: Add the expression to the $$ array, that will have to be initialised as empty first */
-                                                    $$ = rule ('parameters_run', [$1]);
+                                                    $$ = rule ('parameters_call', [$1]);
                                                 }
-                | expression_string ',' parameters_run
+                | expression_string ',' parameters_call
                                                 {   /* TODO 3: Similar with expression */
-                                                    $$ = rule ('parameters_run', [$1, token (',', $2), $3]);
+                                                    $$ = rule ('parameters_call', [$1, token (',', $2), $3]);
                                                 }
                 | expression_string
                                                 {
-                                                    $$ = rule ('parameters_run', [$1]);
+                                                    $$ = rule ('parameters_call', [$1]);
                                                 }
                 |	
                                                 {

@@ -1,5 +1,5 @@
 function functie(a of int)
 a=4
-endfunction
+end
 b=2+3+4
 functie(b)

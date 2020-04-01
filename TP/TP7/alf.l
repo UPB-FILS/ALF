@@ -8,13 +8,13 @@ Identifier            [A-Za-z][A-Za-z0-9]*
 %%
 
 
-"var"                 { return 'VAR'; }
+"def"                 { return 'def'; }
 "of"                  { return 'OF'; }
 "int"                 { return 'INT'; }
 "float"               { return 'FLOAT'; }
 "string"              { return 'STRING'; }
 "function"            { return 'FUNCTION'; }
-"endfunction"         { return 'END_FUNCTION'; }
+"end"                 { return 'END'; }
 "="				      { return '='; }
 "-"                   { return '-'; }
 "+"                   { return '+'; }
