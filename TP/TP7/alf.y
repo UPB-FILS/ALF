@@ -41,7 +41,7 @@ start: statements                           {
 statements: statement NEWLINE statements	{
                                                 $$ = rule ('statements', [$1, token ('NEWLINE', $2), $3]);
                                                 /*TODO 2: AST: comment the previous lines and uncomment the following */
-                                                // $3.push($1); // add the statement to the array produced by statements ($1)
+                                                // $3.push($1); // add the statement to the array produced by statements ($3)
                                                 // $$ = $3;
                                             }
             | statement NEWLINE				{
@@ -135,7 +135,7 @@ variables:	IDENTIFIER ',' variables        {   /*TODO 3: Add an object correspon
 		| IDENTIFIER                        {   /*TODO 3: Add the identtifier object (id is the only parameter) to the $$ array. $$ will have to be initialised as an empty array first. */
                                                 $$ = token ('IDENTIFIER', $1);
                                             }
-		| IDENTIFIER OF type ',' variables  {   /*TODO 3: Add the identifier object to the variables array ($1). The object will have the parameters id and type. $$ will receive $1 */
+		| IDENTIFIER OF type ',' variables  {   /*TODO 3: Add the identifier object to the variables array ($5). The object will have the parameters id and type. $$ will receive $5 */
                                                 $$ = rule ('variables', 
                                                             [
                                                                 token ('IDENTIFIER', $1), 
@@ -218,7 +218,7 @@ function_call: IDENTIFIER 'LP' parameters_call 'RP'
             ;
  
 parameters_call: expression ',' parameters_call
-                                                {   /*TODO 3: Add the expression to the parameters_call array($1). $$ will receive $1 */
+                                                {   /*TODO 3: Add the expression to the parameters_call array($3). $$ will receive $3 */
                                                     $$ = rule ('parameters_call', [$1, token (',', $2), $3]);
                                                 }
 			    | expression

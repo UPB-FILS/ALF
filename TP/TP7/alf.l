@@ -8,7 +8,7 @@ Identifier            [A-Za-z][A-Za-z0-9]*
 %%
 
 
-"def"                 { return 'def'; }
+"def"                 { return 'DEF'; }
 "of"                  { return 'OF'; }
 "int"                 { return 'INT'; }
 "float"               { return 'FLOAT'; }

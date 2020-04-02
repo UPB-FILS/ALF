@@ -3925,7 +3925,7 @@ EOF: 1,
     simpleCaseActionClusters: {
       /*! Conditions:: INITIAL */
       /*! Rule::       def */
-      0: 'def',
+      0: 15,
 
       /*! Conditions:: INITIAL */
       /*! Rule::       of */

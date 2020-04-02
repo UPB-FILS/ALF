@@ -178,6 +178,46 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "token": "NEWLINE",
+                  "value": "\r\n"
+                },
+                {
+                  "rule": "statements",
+                  "items": [
+                    {
+                      "rule": "statement",
+                      "items": [
+                        {
+                          "rule": "variable_definition",
+                          "items": [
+                            {
+                              "token": "VAR",
+                              "value": "def"
+                            },
+                            {
+                              "rule": "variables",
+                              "items": [
+                                {
+                                  "token": "IDENTIFIER",
+                                  "value": "a"
+                                },
+                                {
+                                  "token": "OF",
+                                  "value": "of"
+                                },
+                                {
+                                  "token": "INT",
+                                  "value": "int"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
