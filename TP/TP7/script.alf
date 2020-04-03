@@ -3,4 +3,4 @@ a=4
 end
 b=2+3+4
 functie(b)
-var a of int
+def a of int
