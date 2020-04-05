@@ -1,2 +1,4 @@
+def a of int
+def b of int
 a=4
-2 + a + b
+2 + a + b * c
