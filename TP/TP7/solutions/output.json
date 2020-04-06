@@ -1,0 +1,77 @@
+b was defined, but its value was never set.
+c was not defined.
+{
+    "type": "program",
+    "elements": [
+        {
+            "type": "variables_definition",
+            "variables": [
+                {
+                    "id": "a",
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "type": "variables_definition",
+            "variables": [
+                {
+                    "id": "b",
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "type": "assign",
+            "to": "a",
+            "from": {
+                "type": "number",
+                "value": "4"
+            }
+        },
+        {
+            "type": "expression",
+            "op": "+",
+            "left": {
+                "type": "expression",
+                "op": "+",
+                "left": {
+                    "type": "number",
+                    "value": "2"
+                },
+                "right": {
+                    "type": "number",
+                    "value": "2"
+                }
+            },
+            "right": {
+                "type": "expression",
+                "op": "*",
+                "left": {
+                    "type": "expression",
+                    "op": "+",
+                    "left": {
+                        "type": "number",
+                        "value": "2"
+                    },
+                    "right": {
+                        "type": "number",
+                        "value": "2"
+                    }
+                },
+                "right": {
+                    "type": "expression",
+                    "op": "+",
+                    "left": {
+                        "type": "number",
+                        "value": "2"
+                    },
+                    "right": {
+                        "type": "number",
+                        "value": "2"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -79,8 +79,8 @@
                   ]
                 },
                 {
-                  "token": "END_FUNCTION",
-                  "value": "endfunction"
+                  "token": "END",
+                  "value": "end"
                 }
               ]
             }
@@ -152,7 +152,7 @@
                   "rule": "statement",
                   "items": [
                     {
-                      "rule": "function_run",
+                      "rule": "function_call",
                       "items": [
                         {
                           "token": "IDENTIFIER",
@@ -163,7 +163,7 @@
                           "value": "("
                         },
                         {
-                          "rule": "parameters_run",
+                          "rule": "parameters_call",
                           "items": [
                             {
                               "token": "IDENTIFIER",
@@ -174,6 +174,46 @@
                         {
                           "token": ")",
                           "value": ")"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "token": "NEWLINE",
+                  "value": "\r\n"
+                },
+                {
+                  "rule": "statements",
+                  "items": [
+                    {
+                      "rule": "statement",
+                      "items": [
+                        {
+                          "rule": "variable_definition",
+                          "items": [
+                            {
+                              "token": "VAR",
+                              "value": "def"
+                            },
+                            {
+                              "rule": "variables",
+                              "items": [
+                                {
+                                  "token": "IDENTIFIER",
+                                  "value": "a"
+                                },
+                                {
+                                  "token": "OF",
+                                  "value": "of"
+                                },
+                                {
+                                  "token": "INT",
+                                  "value": "int"
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
