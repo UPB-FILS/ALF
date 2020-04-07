@@ -4,13 +4,13 @@
     {
       "id": "function_def",
       "title": "prime",
-      "parameters": ":",
-      "return_type": [
+      "parameters": [
         {
           "type": "int",
           "name": "n"
         }
       ],
+      "return_type": "bool",
       "statements": [
         {
           "id": "var",
