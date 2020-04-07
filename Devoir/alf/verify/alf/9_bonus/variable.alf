@@ -1,6 +1,6 @@
 #Variable#
 
-#register ALF variable
+&register ALF variable
 
 @var s : string <- ALF ;
 
