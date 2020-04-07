@@ -134,18 +134,18 @@
               "left": {
                 "id": "identifier",
                 "title": "n",
-                "line": 16
+                "line": 15
               },
               "right": {
                 "id": "value",
                 "type": "string",
                 "value": " is prime",
-                "line": 16
+                "line": 15
               },
-              "line": 16
+              "line": 15
             }
           },
-          "line": 16
+          "line": 15
         }
       ],
       "else": [
@@ -159,22 +159,22 @@
               "left": {
                 "id": "identifier",
                 "title": "n",
-                "line": 18
+                "line": 15
               },
               "right": {
                 "id": "value",
                 "type": "string",
                 "value": " is not prime",
-                "line": 18
+                "line": 15
               },
-              "line": 18
+              "line": 15
             }
           },
-          "line": 18
+          "line": 15
         }
       ],
-      "line": 19
+      "line": 15
     }
   ],
-  "line": 19
+  "line": 15
 }
