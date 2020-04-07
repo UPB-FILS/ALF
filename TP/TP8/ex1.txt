@@ -1,0 +1,2 @@
+def a [int]
+list array = [1,2,3]

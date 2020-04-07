@@ -1,0 +1,67 @@
+{
+   "ast": {
+      "type": "program",
+      "elements": [
+         {
+            "type": "variable_definition",
+            "variables": [
+               {
+                  "id": "a",
+                  "type": "int",
+                  "line": 1
+               }
+            ],
+            "line": 1
+         },
+         {
+            "type": "variable_definition",
+            "variables": [
+               {
+                  "id": "b",
+                  "line": 2
+               },
+               {
+                  "id": "c",
+                  "line": 2
+               }
+            ],
+            "line": 2
+         },
+         {
+            "type": "variable_definition",
+            "variables": [
+               {
+                  "id": "d",
+                  "type": "string",
+                  "line": 3
+               }
+            ],
+            "line": 3
+         },
+         {
+            "type": "array_declaration",
+            "array": "array",
+            "elements": [
+               {
+                  "type": "int",
+                  "value": "1",
+                  "line": 4
+               },
+               {
+                  "type": "int",
+                  "value": "2",
+                  "line": 4
+               },
+               {
+                  "type": "int",
+                  "value": "3",
+                  "line": 4
+               }
+            ],
+            "line": 4
+         }
+      ],
+      "line": 4
+   },
+   "symbol_table": {}
+}
