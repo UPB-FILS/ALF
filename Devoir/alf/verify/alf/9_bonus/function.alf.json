@@ -12,18 +12,18 @@
             "id": "value",
             "type": "string",
             "value": "Print text ",
-            "line": 7
+            "line": 6
           },
           "right": {
             "id": "value",
             "type": "int",
             "value": 1,
-            "line": 7
+            "line": 6
           },
-          "line": 7
+          "line": 6
         }
       },
-      "line": 7
+      "line": 6
     },
     {
       "id": "function_call",
@@ -36,19 +36,19 @@
             "id": "value",
             "type": "string",
             "value": "Print text ",
-            "line": 10
+            "line": 8
           },
           "right": {
             "id": "value",
             "type": "int",
             "value": 2,
-            "line": 10
+            "line": 8
           },
-          "line": 10
+          "line": 8
         }
       },
-      "line": 10
+      "line": 8
     }
   ],
-  "line": 10
+  "line": 8
 }
