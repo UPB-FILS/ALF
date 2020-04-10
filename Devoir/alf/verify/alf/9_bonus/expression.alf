@@ -1,5 +1,5 @@
 #Expression#
 
-#register PI_2 3.14/2
+&register PI_2 3.14/2
 
 print (text : PI_2 + " is PI/2" );

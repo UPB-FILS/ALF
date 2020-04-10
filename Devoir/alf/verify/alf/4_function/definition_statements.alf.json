@@ -4,8 +4,7 @@
     {
       "id": "function_def",
       "title": "sum",
-      "parameters": ":",
-      "return_type": [
+      "parameters": [
         {
           "type": "int",
           "name": "n1"
@@ -15,6 +14,7 @@
           "name": "n2"
         }
       ],
+      "return_type": "int",
       "statements": [
         {
           "id": "attr",

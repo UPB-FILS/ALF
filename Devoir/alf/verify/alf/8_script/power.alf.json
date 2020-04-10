@@ -4,8 +4,7 @@
     {
       "id": "function_def",
       "title": "power",
-      "parameters": ":",
-      "return_type": [
+      "parameters": [
         {
           "type": "int",
           "name": "a"
@@ -15,6 +14,7 @@
           "name": "n"
         }
       ],
+      "return_type": "int",
       "statements": [
         {
           "id": "var",

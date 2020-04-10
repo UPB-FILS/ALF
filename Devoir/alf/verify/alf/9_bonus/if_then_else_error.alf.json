@@ -1,6 +1,6 @@
 {
   "error": "syntax",
-  "line": 10,
+  "line": 8,
   "text": ")",
   "token": "\")\"",
   "expected": [

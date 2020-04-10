@@ -4,13 +4,13 @@
     {
       "id": "function_def",
       "title": "prime",
-      "parameters": ":",
-      "return_type": [
+      "parameters": [
         {
           "type": "int",
           "name": "n"
         }
       ],
+      "return_type": "bool",
       "statements": [
         {
           "id": "var",
@@ -62,22 +62,22 @@
                   "left": {
                     "id": "identifier",
                     "title": "n",
-                    "line": 8
+                    "line": 7
                   },
                   "right": {
                     "id": "identifier",
                     "title": "i",
-                    "line": 8
+                    "line": 7
                   },
-                  "line": 8
+                  "line": 7
                 },
                 "right": {
                   "id": "value",
                   "type": "int",
                   "value": 0,
-                  "line": 8
+                  "line": 7
                 },
-                "line": 8
+                "line": 7
               },
               "then": [
                 {
@@ -85,33 +85,33 @@
                   "to": {
                     "id": "identifier",
                     "title": "p",
-                    "line": 9
+                    "line": 7
                   },
                   "from": {
                     "id": "value",
                     "type": "logic",
                     "value": false,
-                    "line": 9
+                    "line": 7
                   },
-                  "line": 9
+                  "line": 7
                 }
               ],
-              "line": 10
+              "line": 7
             }
           ],
-          "line": 11
+          "line": 8
         },
         {
           "id": "return",
           "value": {
             "id": "identifier",
             "title": "p",
-            "line": 13
+            "line": 10
           },
-          "line": 13
+          "line": 10
         }
       ],
-      "line": 14
+      "line": 11
     },
     {
       "id": "var",
@@ -119,25 +119,25 @@
         {
           "type": "int",
           "title": "v",
-          "line": 16
+          "line": 13
         }
       ],
-      "line": 16
+      "line": 13
     },
     {
       "id": "attr",
       "to": {
         "id": "identifier",
         "title": "v",
-        "line": 18
+        "line": 13
       },
       "from": {
         "id": "function_call",
         "function": "read",
         "parameters": [],
-        "line": 18
+        "line": 13
       },
-      "line": 18
+      "line": 13
     },
     {
       "id": "if_then",
@@ -148,10 +148,10 @@
           "n": {
             "id": "identifier",
             "title": "v",
-            "line": 20
+            "line": 15
           }
         },
-        "line": 20
+        "line": 15
       },
       "then": [
         {
@@ -164,18 +164,18 @@
               "left": {
                 "id": "identifier",
                 "title": "v",
-                "line": 21
+                "line": 16
               },
               "right": {
                 "id": "value",
                 "type": "string",
                 "value": " is prime",
-                "line": 21
+                "line": 16
               },
-              "line": 21
+              "line": 16
             }
           },
-          "line": 21
+          "line": 16
         }
       ],
       "else": [
@@ -189,22 +189,22 @@
               "left": {
                 "id": "identifier",
                 "title": "v",
-                "line": 23
+                "line": 18
               },
               "right": {
                 "id": "value",
                 "type": "string",
                 "value": " is not prime",
-                "line": 23
+                "line": 18
               },
-              "line": 23
+              "line": 18
             }
           },
-          "line": 23
+          "line": 18
         }
       ],
-      "line": 24
+      "line": 19
     }
   ],
-  "line": 24
+  "line": 19
 }

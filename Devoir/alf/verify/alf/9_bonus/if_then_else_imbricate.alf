@@ -1,16 +1,16 @@
 #If then else imbricate#
 
-#register P 2
-#register S 3
+&register P 2
+&register S 3
 
-#if P = 1
+&if P = 1
 	print (text : "Print text " + P );
-	#if S = 2
+	&if S = 2
 		print (text : "Print text " + S );
-	#endif
-#else
+	&endif
+&else
 	print (text : "Print text " + P );
-	#if S != 2
+	&if S != 2
 		print (text : "Print text " + S );
-	#endif
-#endif
+	&endif
+&endif

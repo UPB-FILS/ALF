@@ -1,17 +1,17 @@
 #Unregister value#
 
-#register P 1
+&register P 1
 
-#if P = 1
+&if P = 1
 print (text : "Print text " + P);
-#else
+&else
 print (text : "Print text " + P);
-#endif
+&endif
 
-#unregister P
+&unregister P
 
-#if P = 1
+&if P = 1
 print (text : "Print text " + P);
-#else
+&else
 print (text : "Print text " + P);
-#endif
+&endif

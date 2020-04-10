@@ -4,13 +4,13 @@
     {
       "id": "function_def",
       "title": "print",
-      "parameters": ":",
-      "return_type": [
+      "parameters": [
         {
           "type": "string",
           "name": "text"
         }
       ],
+      "return_type": "string",
       "statements": [
         {
           "type": "empty"
