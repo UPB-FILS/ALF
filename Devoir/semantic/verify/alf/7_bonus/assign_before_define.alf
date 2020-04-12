@@ -1,0 +1,5 @@
+#Assign before define#
+
+@var x <- y;
+
+@var y <- int;

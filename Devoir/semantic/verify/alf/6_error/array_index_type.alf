@@ -1,0 +1,7 @@
+#Array index value error#
+
+a:string [1 -- 9];
+
+@var l : a;
+
+l["text"] <- "text";

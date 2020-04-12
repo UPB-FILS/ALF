@@ -1,0 +1,9 @@
+#Variable declaration of type#
+
+struct school
+	property name:string;
+	property private:bool;
+	property type:int;
+end;
+
+@var s:school;

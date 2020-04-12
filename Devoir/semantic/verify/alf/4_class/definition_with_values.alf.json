@@ -1,0 +1,103 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {},
+         "types": {
+            "school": {
+               "type": "struct",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "name",
+                     "line": 4,
+                     "value": {
+                        "id": "value",
+                        "type": "string",
+                        "value": "Public Elementary School",
+                        "line": 4,
+                        "symbol": 0
+                     }
+                  },
+                  {
+                     "type": "bool",
+                     "title": "private",
+                     "line": 5,
+                     "value": {
+                        "id": "value",
+                        "type": "bool",
+                        "value": false,
+                        "line": 5,
+                        "symbol": 0
+                     }
+                  },
+                  {
+                     "type": "int",
+                     "title": "type",
+                     "line": 6,
+                     "value": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 0,
+                        "line": 6,
+                        "symbol": 0
+                     }
+                  }
+               ]
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "struct_def",
+            "title": "school",
+            "properties": [
+               {
+                  "type": "string",
+                  "title": "name",
+                  "value": {
+                     "id": "value",
+                     "type": "string",
+                     "value": "Public Elementary School",
+                     "line": 4,
+                     "symbol": 0
+                  },
+                  "line": 4
+               },
+               {
+                  "type": "bool",
+                  "title": "private",
+                  "value": {
+                     "id": "value",
+                     "type": "bool",
+                     "value": false,
+                     "line": 5,
+                     "symbol": 0
+                  },
+                  "line": 5
+               },
+               {
+                  "type": "int",
+                  "title": "type",
+                  "value": {
+                     "id": "value",
+                     "type": "int",
+                     "value": 0,
+                     "line": 6,
+                     "symbol": 0
+                  },
+                  "line": 6
+               }
+            ],
+            "symbol": 0
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": []
+}

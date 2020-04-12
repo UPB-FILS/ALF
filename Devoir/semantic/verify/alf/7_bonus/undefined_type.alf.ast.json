@@ -1,0 +1,39 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "var",
+         "elements": [
+            {
+               "type": "n2",
+               "title": "n1",
+               "line": 3
+            }
+         ],
+         "line": 3
+      },
+      {
+         "id": "var",
+         "elements": [
+            {
+               "type": "n3",
+               "title": "n2",
+               "line": 5
+            }
+         ],
+         "line": 5
+      },
+      {
+         "id": "var",
+         "elements": [
+            {
+               "type": "n1",
+               "title": "n3",
+               "line": 7
+            }
+         ],
+         "line": 7
+      }
+   ],
+   "line": 7
+}

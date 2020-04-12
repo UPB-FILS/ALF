@@ -1,0 +1,51 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {
+            "say": {
+               "type": "string",
+               "parameters": [],
+               "symbol": 1,
+               "line": 3
+            }
+         },
+         "types": {},
+         "type": "script"
+      },
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "function": "say",
+         "return_type": "string"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "function_def",
+            "title": "say",
+            "parameters": [],
+            "return_type": "string",
+            "statements": [
+               {
+                  "id": "value",
+                  "type": "string",
+                  "value": "say",
+                  "line": 3,
+                  "symbol": 1
+               }
+            ],
+            "line": 3,
+            "symbol": 1
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": []
+}

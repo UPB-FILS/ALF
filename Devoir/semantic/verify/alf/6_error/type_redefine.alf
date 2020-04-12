@@ -1,0 +1,9 @@
+#Type redefinition#
+
+struct s 
+	property title:string;
+end;
+
+struct s 
+	property title:string;
+end;

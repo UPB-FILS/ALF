@@ -1,0 +1,110 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "list",
+               "line": 5
+            },
+            "p": {
+               "type": "index_list",
+               "line": 5
+            }
+         },
+         "functions": {},
+         "types": {
+            "list": {
+               "type": "vector",
+               "line": 2,
+               "element_type": "string",
+               "from": "1",
+               "to": "9"
+            },
+            "index_list": {
+               "type": "vector",
+               "line": 3,
+               "element_type": "int",
+               "from": "1",
+               "to": "9"
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "vector",
+            "title": "list",
+            "element_type": "string",
+            "from": "1",
+            "to": "9",
+            "line": 2,
+            "symbol": 0
+         },
+         {
+            "id": "vector",
+            "title": "index_list",
+            "element_type": "int",
+            "from": "1",
+            "to": "9",
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "id": "var",
+            "elements": [
+               {
+                  "type": "list",
+                  "title": "v",
+                  "line": 5
+               },
+               {
+                  "type": "index_list",
+                  "title": "p",
+                  "line": 5
+               }
+            ],
+            "line": 5,
+            "symbol": 0
+         },
+         {
+            "id": "attr",
+            "to": {
+               "id": "element_of_vector",
+               "array": "v",
+               "index": {
+                  "id": "element_of_vector",
+                  "array": "p",
+                  "index": {
+                     "id": "value",
+                     "type": "int",
+                     "value": 5,
+                     "line": 7,
+                     "symbol": 0
+                  },
+                  "line": 7,
+                  "symbol": 0,
+                  "type": "int"
+               },
+               "line": 7,
+               "symbol": 0,
+               "type": "string"
+            },
+            "from": {
+               "id": "value",
+               "type": "string",
+               "value": "The new name for the school",
+               "line": 7,
+               "symbol": 0
+            },
+            "line": 7,
+            "symbol": 0
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": []
+}

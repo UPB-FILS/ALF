@@ -1,0 +1,61 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {},
+         "types": {
+            "school": {
+               "type": "struct",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "name",
+                     "line": 4
+                  },
+                  {
+                     "type": "bool",
+                     "title": "private",
+                     "line": 5
+                  },
+                  {
+                     "type": "int",
+                     "title": "type",
+                     "line": 6
+                  }
+               ]
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "struct_def",
+            "title": "school",
+            "properties": [
+               {
+                  "type": "string",
+                  "title": "name",
+                  "line": 4
+               },
+               {
+                  "type": "bool",
+                  "title": "private",
+                  "line": 5
+               },
+               {
+                  "type": "int",
+                  "title": "type",
+                  "line": 6
+               }
+            ],
+            "symbol": 0
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": []
+}

@@ -1,0 +1,97 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "list",
+               "line": 5
+            }
+         },
+         "functions": {},
+         "types": {
+            "list": {
+               "type": "vector",
+               "line": 3,
+               "element_type": "string",
+               "from": "1",
+               "to": "9"
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "vector",
+            "title": "list",
+            "element_type": "string",
+            "from": "1",
+            "to": "9",
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "id": "var",
+            "elements": [
+               {
+                  "type": "list",
+                  "title": "v",
+                  "line": 5
+               }
+            ],
+            "line": 5,
+            "symbol": 0
+         },
+         {
+            "id": "attr",
+            "to": {
+               "id": "element_of_vector",
+               "array": "v",
+               "index": {
+                  "id": "function_call",
+                  "function": "position",
+                  "parameters": [],
+                  "line": 7,
+                  "symbol": 0,
+                  "type": ""
+               },
+               "line": 7,
+               "symbol": 0,
+               "type": "string"
+            },
+            "from": {
+               "id": "value",
+               "type": "string",
+               "value": "The new name for the school",
+               "line": 7,
+               "symbol": 0
+            },
+            "line": 7,
+            "symbol": 0
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "line": 7,
+         "elements": {
+            "id": "position"
+         },
+         "text": "Undefined function position"
+      },
+      {
+         "type": "ARRAY_INDEX_TYPE",
+         "line": 7,
+         "elements": {
+            "array": "v",
+            "index": ""
+         },
+         "text": "array (v) index must be integer or character"
+      }
+   ]
+}

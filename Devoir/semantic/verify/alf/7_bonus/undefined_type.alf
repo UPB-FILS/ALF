@@ -1,0 +1,7 @@
+#Undefined type#
+
+@var n1:n2;
+
+@var n2:n3;
+
+@var n3:n1;

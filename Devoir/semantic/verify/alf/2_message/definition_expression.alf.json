@@ -1,0 +1,73 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {
+            "sum": {
+               "type": "int",
+               "parameters": [
+                  {
+                     "type": "int",
+                     "name": "n1",
+                     "line": 4,
+                     "symbol": 1
+                  },
+                  {
+                     "type": "int",
+                     "name": "n2",
+                     "line": 4,
+                     "symbol": 1
+                  }
+               ],
+               "symbol": 1,
+               "line": 4
+            }
+         },
+         "types": {},
+         "type": "script"
+      },
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "function": "sum",
+         "return_type": "int"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "function_def",
+            "title": "sum",
+            "parameters": [
+               {
+                  "type": "int",
+                  "name": "n1",
+                  "line": 4,
+                  "symbol": 1
+               },
+               {
+                  "type": "int",
+                  "name": "n2",
+                  "line": 4,
+                  "symbol": 1
+               }
+            ],
+            "return_type": "int",
+            "statements": [
+               {
+                  "type": "empty"
+               }
+            ],
+            "line": 4,
+            "symbol": 1
+         }
+      ],
+      "line": 4,
+      "symbol": 0
+   },
+   "error_list": []
+}

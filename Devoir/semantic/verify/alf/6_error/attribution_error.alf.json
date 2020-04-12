@@ -1,0 +1,81 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "a": {
+               "type": "int",
+               "line": 3
+            },
+            "s": {
+               "type": "string",
+               "line": 4
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "var",
+            "elements": [
+               {
+                  "type": "int",
+                  "title": "a",
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "id": "var",
+            "elements": [
+               {
+                  "type": "string",
+                  "title": "s",
+                  "line": 4
+               }
+            ],
+            "line": 4,
+            "symbol": 0
+         },
+         {
+            "id": "attr",
+            "to": {
+               "id": "identifier",
+               "title": "a",
+               "line": 6,
+               "symbol": 0,
+               "type": "int"
+            },
+            "from": {
+               "id": "identifier",
+               "title": "s",
+               "line": 6,
+               "symbol": 0,
+               "type": "string"
+            },
+            "line": 6,
+            "symbol": 0
+         }
+      ],
+      "line": 6,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 6,
+         "elements": {
+            "op": "=",
+            "to": "int",
+            "from": "string"
+         },
+         "text": "Type expression error int is string"
+      }
+   ]
+}

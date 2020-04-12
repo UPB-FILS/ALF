@@ -1,0 +1,5 @@
+# redefinition#
+
+@var f:int <-  190;
+
+@var f:int <- 190;

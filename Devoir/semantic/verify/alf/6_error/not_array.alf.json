@@ -1,0 +1,80 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "character",
+               "line": 3
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "var",
+            "elements": [
+               {
+                  "type": "character",
+                  "title": "v",
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "id": "attr",
+            "to": {
+               "id": "element_of_vector",
+               "array": "v",
+               "index": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 1,
+                  "line": 5,
+                  "symbol": 0
+               },
+               "line": 5,
+               "symbol": 0,
+               "type": ""
+            },
+            "from": {
+               "id": "value",
+               "type": "string",
+               "value": "some text",
+               "line": 5,
+               "symbol": 0
+            },
+            "line": 5,
+            "symbol": 0
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "NOT_ARRAY",
+         "line": 5,
+         "elements": {
+            "type": "v"
+         },
+         "text": "v is not an array"
+      },
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 5,
+         "elements": {
+            "op": "=",
+            "to": "",
+            "from": "string"
+         },
+         "text": "Type expression error is string"
+      }
+   ]
+}

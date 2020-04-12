@@ -1,0 +1,35 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {},
+         "types": {
+            "list": {
+               "type": "vector",
+               "line": 3,
+               "element_type": "string",
+               "from": "1",
+               "to": "9"
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "vector",
+            "title": "list",
+            "element_type": "string",
+            "from": "1",
+            "to": "9",
+            "line": 3,
+            "symbol": 0
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": []
+}

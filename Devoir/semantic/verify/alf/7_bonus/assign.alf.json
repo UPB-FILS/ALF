@@ -1,0 +1,58 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "auto",
+               "value": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 90,
+                  "line": 3,
+                  "symbol": 0
+               },
+               "line": 3
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "var",
+            "elements": [
+               {
+                  "type": "auto",
+                  "title": "v",
+                  "value": {
+                     "id": "value",
+                     "type": "int",
+                     "value": 90,
+                     "line": 3,
+                     "symbol": 0
+                  },
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "UNDEFINED_TYPE",
+         "line": 3,
+         "elements": {
+            "type": "auto"
+         },
+         "text": "Type auto is not defined"
+      }
+   ]
+}

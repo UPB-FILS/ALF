@@ -1,0 +1,7 @@
+#Struct definition with values#
+
+struct school
+	property name:string <- "Public Elementary School";
+	property private:bool <- false;
+	property type:int <- 0;
+end;

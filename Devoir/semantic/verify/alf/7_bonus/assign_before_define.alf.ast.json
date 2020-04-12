@@ -1,0 +1,33 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "var",
+         "elements": [
+            {
+               "type": "auto",
+               "title": "x",
+               "value": {
+                  "id": "identifier",
+                  "title": "y",
+                  "line": 3
+               },
+               "line": 3
+            }
+         ],
+         "line": 3
+      },
+      {
+         "id": "var",
+         "elements": [
+            {
+               "type": "int",
+               "title": "y",
+               "line": 5
+            }
+         ],
+         "line": 5
+      }
+   ],
+   "line": 5
+}

@@ -1,0 +1,50 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "expr",
+            "op": "+",
+            "left": {
+               "id": "value",
+               "type": "bool",
+               "value": false,
+               "line": 3,
+               "symbol": 0
+            },
+            "right": {
+               "id": "value",
+               "type": "int",
+               "value": 90,
+               "line": 3,
+               "symbol": 0
+            },
+            "line": 3,
+            "symbol": 0,
+            "type": ""
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 3,
+         "elements": {
+            "left": "bool",
+            "right": "int",
+            "op": "+"
+         },
+         "text": "Type expression error bool + int"
+      }
+   ]
+}

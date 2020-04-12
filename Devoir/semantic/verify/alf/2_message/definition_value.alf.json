@@ -1,0 +1,142 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {
+            "sum": {
+               "type": "int",
+               "parameters": [
+                  {
+                     "type": "int",
+                     "name": "n1",
+                     "line": 4,
+                     "symbol": 1
+                  },
+                  {
+                     "type": "int",
+                     "name": "n2",
+                     "line": 4,
+                     "symbol": 1
+                  }
+               ],
+               "symbol": 1,
+               "line": 8
+            }
+         },
+         "types": {},
+         "type": "script"
+      },
+      {
+         "variables": {
+            "s": {
+               "type": "int",
+               "value": {
+                  "id": "expr",
+                  "op": "+",
+                  "left": {
+                     "id": "identifier",
+                     "title": "n1",
+                     "line": 6,
+                     "symbol": 1,
+                     "type": "int"
+                  },
+                  "right": {
+                     "id": "identifier",
+                     "title": "n2",
+                     "line": 6,
+                     "symbol": 1,
+                     "type": "int"
+                  },
+                  "line": 6,
+                  "symbol": 1,
+                  "type": "int"
+               },
+               "line": 6
+            }
+         },
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "function": "sum",
+         "return_type": "int"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "function_def",
+            "title": "sum",
+            "parameters": [
+               {
+                  "type": "int",
+                  "name": "n1",
+                  "line": 4,
+                  "symbol": 1
+               },
+               {
+                  "type": "int",
+                  "name": "n2",
+                  "line": 4,
+                  "symbol": 1
+               }
+            ],
+            "return_type": "int",
+            "statements": [
+               {
+                  "id": "var",
+                  "elements": [
+                     {
+                        "type": "int",
+                        "title": "s",
+                        "value": {
+                           "id": "expr",
+                           "op": "+",
+                           "left": {
+                              "id": "identifier",
+                              "title": "n1",
+                              "line": 6,
+                              "symbol": 1,
+                              "type": "int"
+                           },
+                           "right": {
+                              "id": "identifier",
+                              "title": "n2",
+                              "line": 6,
+                              "symbol": 1,
+                              "type": "int"
+                           },
+                           "line": 6,
+                           "symbol": 1,
+                           "type": "int"
+                        },
+                        "line": 6
+                     }
+                  ],
+                  "line": 6,
+                  "symbol": 1
+               },
+               {
+                  "id": "return",
+                  "value": {
+                     "id": "identifier",
+                     "title": "s",
+                     "line": 7,
+                     "symbol": 1,
+                     "type": "int"
+                  },
+                  "line": 7,
+                  "symbol": 1,
+                  "type": "int"
+               }
+            ],
+            "line": 8,
+            "symbol": 1
+         }
+      ],
+      "line": 8,
+      "symbol": 0
+   },
+   "error_list": []
+}

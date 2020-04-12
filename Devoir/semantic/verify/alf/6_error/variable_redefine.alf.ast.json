@@ -1,0 +1,43 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "var",
+         "elements": [
+            {
+               "type": "int",
+               "title": "a",
+               "line": 3
+            }
+         ],
+         "line": 3
+      },
+      {
+         "id": "set",
+         "to": {
+            "id": "identifier",
+            "title": "a",
+            "line": 5
+         },
+         "from": {
+            "id": "value",
+            "type": "int",
+            "value": 190,
+            "line": 5
+         },
+         "line": 5
+      },
+      {
+         "id": "var",
+         "elements": [
+            {
+               "type": "int",
+               "title": "a",
+               "line": 7
+            }
+         ],
+         "line": 7
+      }
+   ],
+   "line": 7
+}

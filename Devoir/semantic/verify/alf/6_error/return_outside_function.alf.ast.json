@@ -1,0 +1,16 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "return",
+         "value": {
+            "id": "value",
+            "type": "int",
+            "value": 90,
+            "line": 3
+         },
+         "line": 3
+      }
+   ],
+   "line": 3
+}

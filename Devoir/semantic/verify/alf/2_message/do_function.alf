@@ -1,0 +1,5 @@
+#Call function with parameter#
+
+function print:string (text:string) -> ;
+
+print (text:"text to write");

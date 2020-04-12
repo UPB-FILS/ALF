@@ -1,0 +1,6 @@
+#Attribution error#
+
+@var a : int;
+@var s : string;
+
+a <- s;

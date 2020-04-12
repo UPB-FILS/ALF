@@ -1,0 +1,49 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "variable": {
+               "type": "int",
+               "value": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 0,
+                  "line": 2,
+                  "symbol": 0
+               },
+               "line": 2
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "id": "script",
+      "statements": [
+         {
+            "id": "var",
+            "elements": [
+               {
+                  "type": "int",
+                  "title": "variable",
+                  "value": {
+                     "id": "value",
+                     "type": "int",
+                     "value": 0,
+                     "line": 2,
+                     "symbol": 0
+                  },
+                  "line": 2
+               }
+            ],
+            "line": 2,
+            "symbol": 0
+         }
+      ],
+      "line": 2,
+      "symbol": 0
+   },
+   "error_list": []
+}

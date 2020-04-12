@@ -1,0 +1,5 @@
+#Expression with variable#
+
+@var n :int;
+n <- 3;
+n + 4 + " text";

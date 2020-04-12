@@ -1,0 +1,11 @@
+{
+   "id": "script",
+   "statements": [
+     {
+       "id": "struct_def",
+       "title": "product",
+       "properties": []
+     }
+   ],
+   "line": 4
+ }

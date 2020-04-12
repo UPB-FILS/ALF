@@ -1,0 +1,7 @@
+#Variable redefinition#
+
+@var a:int;
+
+a <- 190;
+
+@var a:int;
