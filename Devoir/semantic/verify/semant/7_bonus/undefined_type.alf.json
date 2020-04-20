@@ -1,7 +1,7 @@
 {
    "symbol_table": {
       "script": {
-         "id": "script",
+         "type": "script",
          "variables": {
             "n1": {
                "type": "n2",
