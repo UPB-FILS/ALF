@@ -1,0 +1,5 @@
+#Call function without parameters#
+
+function getpid:int -> 120;
+
+getpid();

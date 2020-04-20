@@ -1,0 +1,37 @@
+{
+   "symbol_table": {
+      "script": {
+         "id": "script",
+         "variables": {
+            "n": {
+               "type": "int",
+               "line": 2,
+               "parameter": false
+            },
+            "r": {
+               "type": "real",
+               "line": 2,
+               "parameter": false
+            },
+            "l": {
+               "type": "bool",
+               "line": 2,
+               "parameter": false
+            },
+            "s": {
+               "type": "string",
+               "line": 2,
+               "parameter": false
+            }
+         },
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": []
+      }
+   },
+   "errors": []
+}

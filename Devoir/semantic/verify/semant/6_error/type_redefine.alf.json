@@ -1,0 +1,36 @@
+{
+   "symbol_table": {
+      "script": {
+         "id": "script",
+         "variables": {},
+         "functions": {},
+         "types": {
+            "s": {
+               "type": "struct",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "title",
+                     "line": 4
+                  }
+               ],
+               "line": 5
+            }
+         }
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": []
+      }
+   },
+   "errors": [
+      {
+         "type": "TYPE_ALREADY_DEFINED",
+         "elements": {
+            "type": "s",
+            "line": 9
+         }
+      }
+   ]
+}

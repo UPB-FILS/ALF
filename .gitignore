@@ -141,5 +141,10 @@ grammar.l
 grammar.y
 grammar.js
 
+id.js
+symbols.js
+errors.js
+types.js
+
 
 

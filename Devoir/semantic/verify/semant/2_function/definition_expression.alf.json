@@ -1,0 +1,91 @@
+{
+   "symbol_table": {
+      "script": {
+         "id": "script",
+         "variables": {},
+         "functions": {
+            "sum": {
+               "type": "int",
+               "parameters": [
+                  {
+                     "type": "int",
+                     "title": "n1",
+                     "line": 4
+                  },
+                  {
+                     "type": "int",
+                     "title": "n2",
+                     "line": 4
+                  }
+               ],
+               "line": 4
+            }
+         },
+         "types": {}
+      },
+      "function_sum": {
+         "title": "sum",
+         "type": "function",
+         "parent": "script",
+         "variables": {
+            "n1": {
+               "type": "int",
+               "parameter": true,
+               "index": 0
+            },
+            "n2": {
+               "type": "int",
+               "parameter": true,
+               "index": 1
+            }
+         },
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": []
+      },
+      "sum": {
+         "parameters": [
+            {
+               "type": "int",
+               "title": "n1",
+               "line": 4
+            },
+            {
+               "type": "int",
+               "title": "n2",
+               "line": 4
+            }
+         ],
+         "type": "int",
+         "statements": [
+            {
+               "id": "return",
+               "value": {
+                  "id": "empty",
+                  "line": 4,
+                  "symbol_table": "function_sum",
+                  "type": "none"
+               },
+               "line": 4,
+               "symbol_table": "function_sum",
+               "type": "none"
+            }
+         ]
+      }
+   },
+   "errors": [
+      {
+         "type": "TYPE_EXPRESSION",
+         "elements": {
+            "op": "return",
+            "to": "int",
+            "from": "none",
+            "line": 4
+         }
+      }
+   ]
+}

@@ -1,0 +1,59 @@
+{
+   "symbol_table": {
+      "script": {
+         "id": "script",
+         "variables": {},
+         "functions": {},
+         "types": {
+            "school": {
+               "type": "struct",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "name",
+                     "value": {
+                        "id": "value",
+                        "type": "string",
+                        "value": "Public Elementary School",
+                        "line": 4,
+                        "symbol_table": "script"
+                     },
+                     "line": 4
+                  },
+                  {
+                     "type": "bool",
+                     "title": "private",
+                     "value": {
+                        "id": "value",
+                        "type": "bool",
+                        "value": false,
+                        "line": 5,
+                        "symbol_table": "script"
+                     },
+                     "line": 5
+                  },
+                  {
+                     "type": "int",
+                     "title": "type",
+                     "value": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 0,
+                        "line": 6,
+                        "symbol_table": "script"
+                     },
+                     "line": 6
+                  }
+               ],
+               "line": 7
+            }
+         }
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": []
+      }
+   },
+   "errors": []
+}

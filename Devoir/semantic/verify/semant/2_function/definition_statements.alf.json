@@ -1,0 +1,90 @@
+{
+   "symbol_table": {
+      "script": {
+         "id": "script",
+         "variables": {},
+         "functions": {
+            "sum": {
+               "type": "int",
+               "parameters": [
+                  {
+                     "type": "int",
+                     "title": "n1",
+                     "line": 4
+                  },
+                  {
+                     "type": "int",
+                     "title": "n2",
+                     "line": 4
+                  }
+               ],
+               "line": 7
+            }
+         },
+         "types": {}
+      },
+      "function_sum": {
+         "title": "sum",
+         "type": "function",
+         "parent": "script",
+         "variables": {
+            "n1": {
+               "type": "int",
+               "parameter": true,
+               "index": 0
+            },
+            "n2": {
+               "type": "int",
+               "parameter": true,
+               "index": 1
+            }
+         },
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": []
+      },
+      "sum": {
+         "parameters": [
+            {
+               "type": "int",
+               "title": "n1",
+               "line": 4
+            },
+            {
+               "type": "int",
+               "title": "n2",
+               "line": 4
+            }
+         ],
+         "type": "int",
+         "statements": [
+            {
+               "id": "expr",
+               "op": "+",
+               "left": {
+                  "id": "identifier",
+                  "title": "n1",
+                  "line": 6,
+                  "symbol_table": "function_sum",
+                  "type": "int"
+               },
+               "right": {
+                  "id": "identifier",
+                  "title": "n2",
+                  "line": 6,
+                  "symbol_table": "function_sum",
+                  "type": "int"
+               },
+               "line": 6,
+               "symbol_table": "function_sum",
+               "type": "int"
+            }
+         ]
+      }
+   },
+   "errors": []
+}

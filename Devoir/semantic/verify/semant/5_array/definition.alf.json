@@ -1,0 +1,24 @@
+{
+   "symbol_table": {
+      "script": {
+         "id": "script",
+         "variables": {},
+         "functions": {},
+         "types": {
+            "list": {
+               "type": "array",
+               "element_type": "string",
+               "length": 8,
+               "first": 1,
+               "line": 3
+            }
+         }
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": []
+      }
+   },
+   "errors": []
+}

@@ -1,0 +1,57 @@
+{
+   "symbol_table": {
+      "script": {
+         "id": "script",
+         "variables": {},
+         "functions": {
+            "f": {
+               "type": "int",
+               "parameters": [],
+               "line": 3
+            }
+         },
+         "types": {}
+      },
+      "function_f": {
+         "title": "f",
+         "type": "function",
+         "parent": "script",
+         "variables": {},
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": []
+      },
+      "f": {
+         "parameters": [],
+         "type": "int",
+         "statements": [
+            {
+               "id": "return",
+               "value": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 190,
+                  "line": 3,
+                  "symbol_table": "function_f"
+               },
+               "line": 3,
+               "symbol_table": "function_f",
+               "type": "int"
+            }
+         ]
+      }
+   },
+   "errors": [
+      {
+         "type": "FUNCTION_ALREADY_DEFINED",
+         "elements": {
+            "function": "f",
+            "line": 5
+         }
+      }
+   ]
+}

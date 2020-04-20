@@ -1,0 +1,8 @@
+#Expression with variable and function#
+
+@var n : int;
+
+function number (value:int):int -> 3;
+
+n <- 3;
+n+ number() + " text";

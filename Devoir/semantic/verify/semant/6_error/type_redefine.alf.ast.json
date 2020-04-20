@@ -1,0 +1,30 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "struct_def",
+         "title": "s",
+         "properties": [
+            {
+               "type": "string",
+               "title": "title",
+               "line": 4
+            }
+         ],
+         "line": 5
+      },
+      {
+         "id": "struct_def",
+         "title": "s",
+         "properties": [
+            {
+               "type": "string",
+               "title": "title",
+               "line": 8
+            }
+         ],
+         "line": 9
+      }
+   ],
+   "line": 9
+}

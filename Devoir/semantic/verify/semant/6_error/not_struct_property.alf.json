@@ -1,0 +1,71 @@
+{
+   "symbol_table": {
+      "script": {
+         "id": "script",
+         "variables": {
+            "v": {
+               "type": "s",
+               "line": 7,
+               "parameter": false
+            }
+         },
+         "functions": {},
+         "types": {
+            "s": {
+               "type": "struct",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "title",
+                     "line": 4
+                  }
+               ],
+               "line": 5
+            }
+         }
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "attr",
+               "to": {
+                  "id": "property",
+                  "object": {
+                     "id": "identifier",
+                     "title": "v",
+                     "line": 9,
+                     "symbol_table": "script",
+                     "type": "s"
+                  },
+                  "title": "t",
+                  "line": 9,
+                  "symbol_table": "script",
+                  "type": "error"
+               },
+               "from": {
+                  "id": "value",
+                  "type": "string",
+                  "value": "some text",
+                  "line": 9,
+                  "symbol_table": "script"
+               },
+               "line": 9,
+               "symbol_table": "script",
+               "type": "none"
+            }
+         ]
+      }
+   },
+   "errors": [
+      {
+         "type": "UNDEFINED_STRUCT_PROPERTY",
+         "elements": {
+            "title": "t",
+            "type": "s",
+            "line": 9
+         }
+      }
+   ]
+}

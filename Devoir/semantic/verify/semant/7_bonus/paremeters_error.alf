@@ -1,0 +1,12 @@
+#Function parameters#
+
+function power (a:real, n:int):real
+start
+	@var p <- 1;
+	for i from 1 to n go
+		p <- p * a;
+	end;
+	return p;
+end;
+
+power (a:"6.0", n:6);

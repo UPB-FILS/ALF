@@ -1,0 +1,34 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "function_def",
+         "title": "sum",
+         "parameters": [
+            {
+               "type": "int",
+               "title": "n1",
+               "line": 4
+            },
+            {
+               "type": "int",
+               "title": "n2",
+               "line": 4
+            }
+         ],
+         "type": "int",
+         "statements": [
+            {
+               "id": "return",
+               "value": {
+                  "id": "empty",
+                  "line": 4
+               },
+               "line": 4
+            }
+         ],
+         "line": 4
+      }
+   ],
+   "line": 4
+}

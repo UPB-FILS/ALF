@@ -1,0 +1,51 @@
+{
+   "symbol_table": {
+      "script": {
+         "id": "script",
+         "variables": {
+            "list_of_schools": {
+               "type": "list",
+               "line": 10,
+               "parameter": false
+            }
+         },
+         "functions": {},
+         "types": {
+            "school": {
+               "type": "struct",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "name",
+                     "line": 3
+                  },
+                  {
+                     "type": "bool",
+                     "title": "private",
+                     "line": 4
+                  },
+                  {
+                     "type": "int",
+                     "title": "type",
+                     "line": 5
+                  }
+               ],
+               "line": 6
+            },
+            "list": {
+               "type": "array",
+               "element_type": "school",
+               "length": 8,
+               "first": 1,
+               "line": 8
+            }
+         }
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": []
+      }
+   },
+   "errors": []
+}

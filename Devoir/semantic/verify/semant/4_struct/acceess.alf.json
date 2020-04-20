@@ -1,0 +1,72 @@
+{
+   "symbol_table": {
+      "script": {
+         "id": "script",
+         "variables": {
+            "s": {
+               "type": "school",
+               "line": 8,
+               "parameter": false
+            }
+         },
+         "functions": {},
+         "types": {
+            "school": {
+               "type": "struct",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "name",
+                     "line": 3
+                  },
+                  {
+                     "type": "bool",
+                     "title": "private",
+                     "line": 4
+                  },
+                  {
+                     "type": "int",
+                     "title": "type",
+                     "line": 5
+                  }
+               ],
+               "line": 6
+            }
+         }
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "attr",
+               "to": {
+                  "id": "property",
+                  "object": {
+                     "id": "identifier",
+                     "title": "s",
+                     "line": 10,
+                     "symbol_table": "script",
+                     "type": "school"
+                  },
+                  "title": "name",
+                  "line": 10,
+                  "symbol_table": "script",
+                  "type": "string"
+               },
+               "from": {
+                  "id": "value",
+                  "type": "string",
+                  "value": "The new name for the school",
+                  "line": 10,
+                  "symbol_table": "script"
+               },
+               "line": 10,
+               "symbol_table": "script",
+               "type": "none"
+            }
+         ]
+      }
+   },
+   "errors": []
+}

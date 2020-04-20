@@ -1,0 +1,44 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "function_def",
+         "title": "f",
+         "parameters": [],
+         "type": "int",
+         "statements": [
+            {
+               "id": "return",
+               "value": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 190,
+                  "line": 3
+               },
+               "line": 3
+            }
+         ],
+         "line": 3
+      },
+      {
+         "id": "function_def",
+         "title": "f",
+         "parameters": [],
+         "type": "int",
+         "statements": [
+            {
+               "id": "return",
+               "value": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 190,
+                  "line": 5
+               },
+               "line": 5
+            }
+         ],
+         "line": 5
+      }
+   ],
+   "line": 5
+}

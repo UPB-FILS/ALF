@@ -1,0 +1,42 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "function_def",
+         "title": "print",
+         "parameters": [
+            {
+               "type": "string",
+               "title": "text",
+               "line": 3
+            }
+         ],
+         "type": "string",
+         "statements": [
+            {
+               "id": "return",
+               "value": {
+                  "id": "empty",
+                  "line": 3
+               },
+               "line": 3
+            }
+         ],
+         "line": 3
+      },
+      {
+         "id": "function_call",
+         "title": "print",
+         "parameters": {
+            "text": {
+               "id": "value",
+               "type": "string",
+               "value": "text to write",
+               "line": 5
+            }
+         },
+         "line": 5
+      }
+   ],
+   "line": 5
+}

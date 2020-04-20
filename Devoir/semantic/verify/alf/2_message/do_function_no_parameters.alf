@@ -1,5 +1,0 @@
-#Call function without parameters#
-
-functionn getpid:int -> 120;
-
-getpid();

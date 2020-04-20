@@ -1,0 +1,213 @@
+{
+   "symbol_table": {
+      "script": {
+         "id": "script",
+         "variables": {
+            "v": {
+               "type": "real",
+               "line": 3,
+               "parameter": false
+            }
+         },
+         "functions": {
+            "power": {
+               "type": "real",
+               "parameters": [
+                  {
+                     "type": "real",
+                     "title": "a",
+                     "line": 5
+                  },
+                  {
+                     "type": "int",
+                     "title": "n",
+                     "line": 5
+                  }
+               ],
+               "line": 12
+            }
+         },
+         "types": {}
+      },
+      "function_power": {
+         "title": "power",
+         "type": "function",
+         "parent": "script",
+         "variables": {
+            "a": {
+               "type": "real",
+               "parameter": true,
+               "index": 0
+            },
+            "n": {
+               "type": "int",
+               "parameter": true,
+               "index": 1
+            },
+            "p": {
+               "type": "int",
+               "line": 7,
+               "parameter": false
+            }
+         },
+         "functions": {},
+         "types": {}
+      },
+      "for_10": {
+         "type": "statements",
+         "parent": "function_power",
+         "variables": {
+            "i": {
+               "type": "int",
+               "parameter": false,
+               "line": 10
+            }
+         },
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "attr",
+               "to": {
+                  "id": "identifier",
+                  "title": "v",
+                  "symbol_table": "script",
+                  "line": 3,
+                  "type": "real"
+               },
+               "from": {
+                  "id": "function_call",
+                  "title": "power",
+                  "parameters": {
+                     "a": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 6,
+                        "line": 3,
+                        "symbol_table": "script"
+                     },
+                     "n": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 6,
+                        "line": 3,
+                        "symbol_table": "script"
+                     }
+                  },
+                  "line": 3,
+                  "symbol_table": "script",
+                  "type": "real"
+               },
+               "line": 3,
+               "type": "none"
+            }
+         ]
+      },
+      "power": {
+         "parameters": [
+            {
+               "type": "real",
+               "title": "a",
+               "line": 5
+            },
+            {
+               "type": "int",
+               "title": "n",
+               "line": 5
+            }
+         ],
+         "type": "real",
+         "statements": [
+            {
+               "id": "attr",
+               "to": {
+                  "id": "identifier",
+                  "title": "p",
+                  "symbol_table": "function_power",
+                  "line": 7,
+                  "type": "int"
+               },
+               "from": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 1,
+                  "line": 7,
+                  "symbol_table": "function_power"
+               },
+               "line": 7,
+               "type": "none"
+            },
+            {
+               "id": "for",
+               "variable": "i",
+               "from": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 1,
+                  "line": 8,
+                  "symbol_table": "function_power"
+               },
+               "to": {
+                  "id": "identifier",
+                  "title": "n",
+                  "line": 8,
+                  "symbol_table": "function_power",
+                  "type": "int"
+               },
+               "statements": [
+                  {
+                     "id": "attr",
+                     "to": {
+                        "id": "identifier",
+                        "title": "p",
+                        "line": 9,
+                        "symbol_table": "for_10"
+                     },
+                     "from": {
+                        "id": "expr",
+                        "op": "*",
+                        "left": {
+                           "id": "identifier",
+                           "title": "p",
+                           "line": 9,
+                           "symbol_table": "for_10"
+                        },
+                        "right": {
+                           "id": "identifier",
+                           "title": "a",
+                           "line": 9,
+                           "symbol_table": "for_10"
+                        },
+                        "line": 9,
+                        "symbol_table": "for_10"
+                     },
+                     "line": 9,
+                     "symbol_table": "for_10"
+                  }
+               ],
+               "line": 10,
+               "symbol_table": "for_10",
+               "type": "none"
+            },
+            {
+               "id": "return",
+               "value": {
+                  "id": "identifier",
+                  "title": "p",
+                  "line": 11,
+                  "symbol_table": "function_power",
+                  "type": "int"
+               },
+               "line": 11,
+               "symbol_table": "function_power",
+               "type": "int"
+            }
+         ]
+      }
+   },
+   "errors": []
+}
