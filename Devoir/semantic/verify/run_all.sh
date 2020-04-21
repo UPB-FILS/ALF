@@ -35,7 +35,7 @@ then
 	echo "Please verify your grammar for errors"
 else
 	cd -
-	for folder in semnat/*
+	for folder in semnatic/*
 	do
 		if [ -d $folder ];
 		then

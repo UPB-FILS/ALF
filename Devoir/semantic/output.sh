@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for folder in verify/semant/*
+for folder in verify/semantic/*
 do
 	rm -f $folder/*.json
 	for file in $folder/*.alf
