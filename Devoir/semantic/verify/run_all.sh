@@ -21,21 +21,16 @@ passed=0
 failed=0
 total=0
 
-rm grammar.js
-
 echo '{ "node":true, "loopfunc": true, "esnext":true }' > .jshintrc
 if [ ! -f `basename "$1"` ];
 then
 	echo "Your main.js file is missing"
-elif ! jshint *.js;
-then
-	echo "Please review your code, you have jshint errors"
-elif ! jison grammar.jison 
-then
-	echo "Please verify your grammar for errors"
+# elif ! jshint *.js;
+# then
+# 	echo "Please review your code, you have jshint errors"
 else
 	cd -
-	for folder in semnatic/*
+	for folder in semantic/*
 	do
 		if [ -d $folder ];
 		then
@@ -59,12 +54,12 @@ else
 					outputfile=output/`basename "$file"`.json
 					originalfile="$file.json"
 					errorsfile=output/`basename "$file"`.err
-					title=`head -n 1 "$file" | grep '{' | cut -d '{' -f 2 | cut -d '}' -f 1` 
+					title=`head -n 1 "$file" | grep '#' | cut -d '#' -f 2 | cut -d '#' -f 1` 
 					if [ `echo -n "$title" | wc -c` -eq 0 ];
 					then
 						title=`basename $file`
 					fi
-					node "$1" "$inputfile" "$outputfile"
+					node $1 "$inputfile".ast.json "$outputfile"
 					strtitle="Verifying $title"
 					printf '%s' "$strtitle"
 					pad=$(printf '%0.1s' "."{1..60})
