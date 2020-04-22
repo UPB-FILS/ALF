@@ -1,0 +1,25 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "function_def",
+         "title": "say",
+         "parameters": [],
+         "type": "string",
+         "statements": [
+            {
+               "id": "return",
+               "value": {
+                  "id": "value",
+                  "type": "string",
+                  "value": "say",
+                  "line": 3
+               },
+               "line": 3
+            }
+         ],
+         "line": 3
+      }
+   ],
+   "line": 3
+}

@@ -1,0 +1,33 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {},
+         "functions": {},
+         "types": {
+            "a": {
+               "type": "array",
+               "element_type": "string",
+               "length": -45,
+               "first": 90,
+               "line": 3
+            }
+         }
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": []
+      }
+   },
+   "errors": [
+      {
+         "type": "ARRAY_INDEX_VALUE",
+         "elements": {
+            "array": "a",
+            "length": -45,
+            "line": 3
+         }
+      }
+   ]
+}

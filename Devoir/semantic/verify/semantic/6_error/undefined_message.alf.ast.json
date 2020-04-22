@@ -1,0 +1,19 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "function_call",
+         "title": "print",
+         "parameters": {
+            "text": {
+               "id": "value",
+               "type": "string",
+               "value": "text to write",
+               "line": 2
+            }
+         },
+         "line": 2
+      }
+   ],
+   "line": 2
+}

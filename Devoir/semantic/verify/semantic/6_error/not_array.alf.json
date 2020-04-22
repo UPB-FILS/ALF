@@ -1,0 +1,64 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {
+            "v": {
+               "type": "character",
+               "line": 3,
+               "parameter": false
+            }
+         },
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "attr",
+               "to": {
+                  "id": "element_of_vector",
+                  "array": {
+                     "id": "identifier",
+                     "title": "v",
+                     "line": 5,
+                     "symbol_table": "script",
+                     "type": "character"
+                  },
+                  "index": {
+                     "id": "value",
+                     "type": "int",
+                     "value": 1,
+                     "line": 5,
+                     "symbol_table": "script"
+                  },
+                  "line": 5,
+                  "symbol_table": "script",
+                  "type": "error"
+               },
+               "from": {
+                  "id": "value",
+                  "type": "string",
+                  "value": "some text",
+                  "line": 5,
+                  "symbol_table": "script"
+               },
+               "line": 5,
+               "symbol_table": "script",
+               "type": "none"
+            }
+         ]
+      }
+   },
+   "errors": [
+      {
+         "type": "NOT_ARRAY",
+         "elements": {
+            "type": "character",
+            "line": 5
+         }
+      }
+   ]
+}

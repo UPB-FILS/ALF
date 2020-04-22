@@ -1,0 +1,120 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {},
+         "functions": {
+            "sum": {
+               "type": "int",
+               "parameters": [
+                  {
+                     "type": "int",
+                     "title": "n1",
+                     "line": 4
+                  },
+                  {
+                     "type": "int",
+                     "title": "n2",
+                     "line": 4
+                  }
+               ],
+               "line": 8
+            }
+         },
+         "types": {}
+      },
+      "function_sum": {
+         "title": "sum",
+         "type": "function",
+         "parent": "script",
+         "variables": {
+            "n1": {
+               "type": "int",
+               "parameter": true,
+               "index": 0
+            },
+            "n2": {
+               "type": "int",
+               "parameter": true,
+               "index": 1
+            },
+            "s": {
+               "type": "int",
+               "line": 6,
+               "parameter": false
+            }
+         },
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": []
+      },
+      "sum": {
+         "parameters": [
+            {
+               "type": "int",
+               "title": "n1",
+               "line": 4
+            },
+            {
+               "type": "int",
+               "title": "n2",
+               "line": 4
+            }
+         ],
+         "type": "int",
+         "statements": [
+            {
+               "id": "attr",
+               "to": {
+                  "id": "identifier",
+                  "title": "s",
+                  "symbol_table": "function_sum",
+                  "line": 6,
+                  "type": "int"
+               },
+               "from": {
+                  "id": "expr",
+                  "op": "+",
+                  "left": {
+                     "id": "identifier",
+                     "title": "n1",
+                     "line": 6,
+                     "symbol_table": "function_sum",
+                     "type": "int"
+                  },
+                  "right": {
+                     "id": "identifier",
+                     "title": "n2",
+                     "line": 6,
+                     "symbol_table": "function_sum",
+                     "type": "int"
+                  },
+                  "line": 6,
+                  "symbol_table": "function_sum",
+                  "type": "int"
+               },
+               "line": 6,
+               "type": "none"
+            },
+            {
+               "id": "return",
+               "value": {
+                  "id": "identifier",
+                  "title": "s",
+                  "line": 7,
+                  "symbol_table": "function_sum",
+                  "type": "int"
+               },
+               "line": 7,
+               "symbol_table": "function_sum",
+               "type": "int"
+            }
+         ]
+      }
+   },
+   "errors": []
+}

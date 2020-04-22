@@ -1,0 +1,90 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {},
+         "functions": {
+            "number": {
+               "type": "int",
+               "parameters": [
+                  {
+                     "type": "int",
+                     "title": "value",
+                     "line": 3
+                  }
+               ],
+               "line": 3
+            }
+         },
+         "types": {}
+      },
+      "function_number": {
+         "title": "number",
+         "type": "function",
+         "parent": "script",
+         "variables": {
+            "value": {
+               "type": "int",
+               "parameter": true,
+               "index": 0
+            }
+         },
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "expr",
+               "op": "+",
+               "left": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 2,
+                  "line": 5,
+                  "symbol_table": "script"
+               },
+               "right": {
+                  "id": "function_call",
+                  "title": "number",
+                  "parameters": [],
+                  "line": 5,
+                  "symbol_table": "script",
+                  "type": "int"
+               },
+               "line": 5,
+               "symbol_table": "script",
+               "type": "int"
+            }
+         ]
+      },
+      "number": {
+         "parameters": [
+            {
+               "type": "int",
+               "title": "value",
+               "line": 3
+            }
+         ],
+         "type": "int",
+         "statements": [
+            {
+               "id": "return",
+               "value": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 3,
+                  "line": 3,
+                  "symbol_table": "function_number"
+               },
+               "line": 3,
+               "symbol_table": "function_number",
+               "type": "int"
+            }
+         ]
+      }
+   },
+   "errors": []
+}

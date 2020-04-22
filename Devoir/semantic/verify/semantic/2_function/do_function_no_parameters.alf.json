@@ -1,0 +1,58 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {},
+         "functions": {
+            "getpid": {
+               "type": "int",
+               "parameters": [],
+               "line": 3
+            }
+         },
+         "types": {}
+      },
+      "function_getpid": {
+         "title": "getpid",
+         "type": "function",
+         "parent": "script",
+         "variables": {},
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "function_call",
+               "title": "getpid",
+               "parameters": [],
+               "line": 5,
+               "symbol_table": "script",
+               "type": "int"
+            }
+         ]
+      },
+      "getpid": {
+         "parameters": [],
+         "type": "int",
+         "statements": [
+            {
+               "id": "return",
+               "value": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 120,
+                  "line": 3,
+                  "symbol_table": "function_getpid"
+               },
+               "line": 3,
+               "symbol_table": "function_getpid",
+               "type": "int"
+            }
+         ]
+      }
+   },
+   "errors": []
+}

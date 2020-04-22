@@ -1,0 +1,58 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {
+            "a": {
+               "type": "int",
+               "line": 3,
+               "parameter": false
+            },
+            "s": {
+               "type": "string",
+               "line": 4,
+               "parameter": false
+            }
+         },
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "attr",
+               "to": {
+                  "id": "identifier",
+                  "title": "a",
+                  "line": 6,
+                  "symbol_table": "script",
+                  "type": "int"
+               },
+               "from": {
+                  "id": "identifier",
+                  "title": "s",
+                  "line": 6,
+                  "symbol_table": "script",
+                  "type": "string"
+               },
+               "line": 6,
+               "symbol_table": "script",
+               "type": "none"
+            }
+         ]
+      }
+   },
+   "errors": [
+      {
+         "type": "TYPE_EXPRESSION",
+         "elements": {
+            "op": "<-",
+            "to": "int",
+            "from": "string",
+            "line": 6
+         }
+      }
+   ]
+}

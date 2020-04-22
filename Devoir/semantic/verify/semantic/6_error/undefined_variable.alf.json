@@ -1,0 +1,46 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {},
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "expr",
+               "op": "+",
+               "left": {
+                  "id": "identifier",
+                  "title": "i",
+                  "line": 3,
+                  "symbol_table": "script",
+                  "type": "error"
+               },
+               "right": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 7,
+                  "line": 3,
+                  "symbol_table": "script"
+               },
+               "line": 3,
+               "symbol_table": "script",
+               "type": "error"
+            }
+         ]
+      }
+   },
+   "errors": [
+      {
+         "type": "UNDEFINED_VARIABLE",
+         "elements": {
+            "title": "i",
+            "line": 3
+         }
+      }
+   ]
+}

@@ -1,8 +1,0 @@
-#Expression with variable and function#
-
-@var n : int;
-
-function number:int (value:int) -> 3;
-
-n <- 3;
-n+ number() + " text";

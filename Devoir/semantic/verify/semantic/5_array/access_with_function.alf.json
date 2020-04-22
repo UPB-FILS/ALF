@@ -1,0 +1,78 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {
+            "v": {
+               "type": "list",
+               "line": 5,
+               "parameter": false
+            }
+         },
+         "functions": {},
+         "types": {
+            "list": {
+               "type": "array",
+               "element_type": "string",
+               "length": 8,
+               "first": 1,
+               "line": 3
+            }
+         }
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "attr",
+               "to": {
+                  "id": "element_of_vector",
+                  "array": {
+                     "id": "identifier",
+                     "title": "v",
+                     "line": 7,
+                     "symbol_table": "script",
+                     "type": "list"
+                  },
+                  "index": {
+                     "id": "function_call",
+                     "title": "position",
+                     "parameters": [],
+                     "line": 7,
+                     "symbol_table": "script"
+                  },
+                  "line": 7,
+                  "symbol_table": "script",
+                  "type": "string"
+               },
+               "from": {
+                  "id": "value",
+                  "type": "string",
+                  "value": "The new name for the school",
+                  "line": 7,
+                  "symbol_table": "script"
+               },
+               "line": 7,
+               "symbol_table": "script",
+               "type": "none"
+            }
+         ]
+      }
+   },
+   "errors": [
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "elements": {
+            "title": "position",
+            "line": 7
+         }
+      },
+      {
+         "type": "ARRAY_INDEX_TYPE",
+         "elements": {
+            "line": 7
+         }
+      }
+   ]
+}

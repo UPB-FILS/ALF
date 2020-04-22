@@ -1,0 +1,124 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "var",
+         "elements": [
+            {
+               "type": "auto",
+               "title": "v",
+               "value": {
+                  "id": "function_call",
+                  "title": "power",
+                  "parameters": {
+                     "a": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 6,
+                        "line": 3
+                     },
+                     "n": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 6,
+                        "line": 3
+                     }
+                  },
+                  "line": 3
+               },
+               "line": 3
+            }
+         ],
+         "line": 3
+      },
+      {
+         "id": "function_def",
+         "title": "power",
+         "parameters": [
+            {
+               "type": "real",
+               "title": "a",
+               "line": 5
+            },
+            {
+               "type": "int",
+               "title": "n",
+               "line": 5
+            }
+         ],
+         "type": "real",
+         "statements": [
+            {
+               "id": "var",
+               "elements": [
+                  {
+                     "type": "auto",
+                     "title": "p",
+                     "value": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 1,
+                        "line": 7
+                     },
+                     "line": 7
+                  }
+               ],
+               "line": 7
+            },
+            {
+               "id": "for",
+               "variable": "i",
+               "from": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 1,
+                  "line": 8
+               },
+               "to": {
+                  "id": "identifier",
+                  "title": "n",
+                  "line": 8
+               },
+               "statements": [
+                  {
+                     "id": "attr",
+                     "to": {
+                        "id": "identifier",
+                        "title": "p",
+                        "line": 9
+                     },
+                     "from": {
+                        "id": "expr",
+                        "op": "*",
+                        "left": {
+                           "id": "identifier",
+                           "title": "p",
+                           "line": 9
+                        },
+                        "right": {
+                           "id": "identifier",
+                           "title": "a",
+                           "line": 9
+                        },
+                        "line": 9
+                     },
+                     "line": 9
+                  }
+               ],
+               "line": 10
+            },
+            {
+               "id": "return",
+               "value": {
+                  "id": "identifier",
+                  "title": "p",
+                  "line": 11
+               },
+               "line": 11
+            }
+         ],
+         "line": 12
+      }
+   ],
+   "line": 12
+}

@@ -42,10 +42,10 @@ if (verify === 'symbol')
 		if (_.isEqualWith (originalTree.symbol_table, verifyTree.symbol_table, function (original, verify, key)
 		{
 			// console.log (key)
-			if (key === 'value')
-			{
-				return true;
-			}
+			// if (key === 'value')
+			// {
+			// 	return true;
+			// }
 			// else return _.isEqual (original, verify);
 		}))
 		{
@@ -87,7 +87,7 @@ if (verify === 'ast')
 }
 
 // error
-if (verify === 'error')
+if (verify === 'error_list')
 {
 	if (verifyTree.error_list)
 	{

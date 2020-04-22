@@ -1,0 +1,40 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {},
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "function_call",
+               "title": "print",
+               "parameters": {
+                  "text": {
+                     "id": "value",
+                     "type": "string",
+                     "value": "text to write",
+                     "line": 2,
+                     "symbol_table": "script"
+                  }
+               },
+               "line": 2,
+               "symbol_table": "script"
+            }
+         ]
+      }
+   },
+   "errors": [
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "elements": {
+            "title": "print",
+            "line": 2
+         }
+      }
+   ]
+}

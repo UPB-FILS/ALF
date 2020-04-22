@@ -1,5 +1,0 @@
-#Expression with function#
-
-function number:int (value:int) -> 3;
-
-2+number();

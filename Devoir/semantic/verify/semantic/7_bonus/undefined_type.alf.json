@@ -1,0 +1,54 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {
+            "n1": {
+               "type": "n2",
+               "line": 3,
+               "parameter": false
+            },
+            "n2": {
+               "type": "n3",
+               "line": 5,
+               "parameter": false
+            },
+            "n3": {
+               "type": "n1",
+               "line": 7,
+               "parameter": false
+            }
+         },
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": []
+      }
+   },
+   "errors": [
+      {
+         "type": "UNDEFINED_TYPE",
+         "elements": {
+            "type": "n2",
+            "line": 3
+         }
+      },
+      {
+         "type": "UNDEFINED_TYPE",
+         "elements": {
+            "type": "n3",
+            "line": 5
+         }
+      },
+      {
+         "type": "UNDEFINED_TYPE",
+         "elements": {
+            "type": "n1",
+            "line": 7
+         }
+      }
+   ]
+}

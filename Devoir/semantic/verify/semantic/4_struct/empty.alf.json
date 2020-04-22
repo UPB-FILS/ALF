@@ -1,0 +1,22 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {},
+         "functions": {},
+         "types": {
+            "product": {
+               "type": "struct",
+               "properties": [],
+               "line": 4
+            }
+         }
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": []
+      }
+   },
+   "errors": []
+}
