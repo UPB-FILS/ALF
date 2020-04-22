@@ -1,0 +1,18 @@
+Code:
+if (a > 0)
+{
+  result = 'positive';
+}
+else
+{
+  result = 'negative';
+}
+
+Three Address Code:
+t1 = a > 0
+if false t1 goto else
+result = 'positive'
+goto endif
+label else
+result = 'negative'
+endif

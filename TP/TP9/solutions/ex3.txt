@@ -1,0 +1,19 @@
+Code:
+function double (nr)
+{
+    return nr*2;
+}
+ 
+double (7/2);
+
+Three Address Code:
+goto start
+label double
+t1 = nr * 2
+ret t1
+
+label start
+t2 = 7 / 2
+param t2
+call double, 1
+stop

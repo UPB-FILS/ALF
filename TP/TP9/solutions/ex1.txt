@@ -1,0 +1,29 @@
+Expression: 
+(4+2)/5-3
+
+Three Address Code:
+t1 = 4 + 2
+t2 = t1 / 5
+t3 = t2 - 3
+
+---------------------------
+
+Expression:
+a = (4+2)/5-3
+
+Three Address Code:
+t1 = 4 + 2
+t2 = t1 / 5
+t3 = t2 - 3
+a = t3
+
+----------------------------
+
+Expression:
+e = (a-2)+(a-5)
+
+Three Address Code:
+t1 = a - 2
+t2 = a - 5
+t3 = t1 + t2
+e = t3
