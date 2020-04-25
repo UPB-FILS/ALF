@@ -1,0 +1,38 @@
+(5-3)*7+2+4
+
+push 5
+push 3
+sub
+push 7
+mul
+push 2
+add
+push 4
+add
+
+---------------------
+
+a = (5-3)*7+2+4
+
+push 5
+push 3
+sub
+push 7
+mul
+push 2
+add
+push 4
+add
+pop a
+
+-----------------------
+
+e = (a+5)/(a-2)
+push a
+push 5
+add
+push a
+push 2
+sub
+div
+pop e

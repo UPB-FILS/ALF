@@ -23,15 +23,15 @@ statements
 | statement									{
 												$$ = [$1];
 											}
-			;
+;
 						
 statement
 : expression  								{}
 | assign 									{}
-| function_call 							{}
+| function									{}
 ;
  
-/** TODO 5: Modify the grammar so that expression accepts function_call */ 
+ 
 expression
 : LP expression RP							{ $$ = $2; }
 | expression '+' expression					{ 
@@ -83,7 +83,8 @@ expression
 													type: 'string',
 													value: $1.substring (1, $1.length-2)
 												};
-											}
+                                            }
+| function_call
 ;
 
  
@@ -95,13 +96,6 @@ assign
 													from: $3
 												};
 											}
-| IDENTIFIER '=' function_call				{
-												$$ = {
-														type: 'assign',
-														to: $1,
-														from: $3
-													};
-											}
 ;
  
 function_call
@@ -112,7 +106,7 @@ function_call
 													parameters: $3
 												};
 											};
- 
+
 parameters_run
 : expression ',' parameters_run				{
 												$3.splice (0, 0, $1);
@@ -125,3 +119,14 @@ parameters_run
 												$$ = [];
 											}
 ;
+
+function
+: FUNCTION IDENTIFIER LP parameters_run RP NEWLINE LB NEWLINE statements RB     {
+																					$$ = {
+																						type: "function",
+																						name: $2,
+																						parameters: $4,
+																						statements: $9
+																					}
+																				}
+;																

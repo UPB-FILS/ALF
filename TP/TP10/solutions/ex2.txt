@@ -1,0 +1,20 @@
+if (a > 0)
+{
+  result = 'positive';
+}
+else
+{
+  result = 'negative';
+}
+
+push a
+push 0
+gt
+if goto pos
+push 'negative'
+pop result
+goto endif
+label pos
+push 'positive'
+pop result
+endif 
