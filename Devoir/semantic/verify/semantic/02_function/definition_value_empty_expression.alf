@@ -1,0 +1,4 @@
+#Function definition with empty value and expression#
+
+function print (text:string):string -> text <- "";
+

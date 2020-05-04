@@ -1,0 +1,13 @@
+#Array with struct elements#
+
+list:string[1 -- 9];
+
+@var v <- list;
+
+struct random
+	property position:int;
+end;
+
+@var s:random;
+
+v[s.position] <- "The new name for the school";

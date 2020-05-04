@@ -1,0 +1,9 @@
+#Symbol#
+
+use io function writechar (char: character):none;
+
+@var c:character <- "s";
+
+c <- c + 6;
+
+writechar (char:c);

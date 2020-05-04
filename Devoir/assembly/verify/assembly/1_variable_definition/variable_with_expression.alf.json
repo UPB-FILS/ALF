@@ -1,0 +1,70 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "e": {
+                    "type": "int",
+                    "line": 2,
+                    "parameter": false
+                }
+            },
+            "functions": {},
+            "types": {}
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "identifier",
+                        "title": "e",
+                        "symbol_table": "script",
+                        "line": 2,
+                        "type": "int"
+                    },
+                    "from": {
+                        "id": "expr",
+                        "op": "+",
+                        "left": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 20,
+                            "line": 2,
+                            "symbol_table": "script"
+                        },
+                        "right": {
+                            "id": "expr",
+                            "op": "*",
+                            "left": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 3,
+                                "line": 2,
+                                "symbol_table": "script"
+                            },
+                            "right": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 5,
+                                "line": 2,
+                                "symbol_table": "script"
+                            },
+                            "line": 2,
+                            "symbol_table": "script",
+                            "type": "int"
+                        },
+                        "line": 2,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "line": 2,
+                    "type": "none"
+                }
+            ]
+        }
+    },
+    "errors": []
+}

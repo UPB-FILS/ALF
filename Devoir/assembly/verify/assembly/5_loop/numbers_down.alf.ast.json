@@ -1,0 +1,71 @@
+{
+    "id": "script",
+    "statements": [
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "int",
+                    "title": "i",
+                    "line": 3
+                }
+            ],
+            "line": 3,
+            "symbol_table": "script"
+        },
+        {
+            "id": "function_def",
+            "use": "io",
+            "title": "writeint",
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "nr",
+                    "line": 5
+                }
+            ],
+            "type": "none",
+            "line": 5,
+            "symbol_table": "function_writeint"
+        },
+        {
+            "id": "for",
+            "variable": "i",
+            "from": {
+                "id": "value",
+                "type": "int",
+                "value": 6,
+                "line": 7,
+                "symbol_table": "script"
+            },
+            "downto": {
+                "id": "value",
+                "type": "int",
+                "value": 1,
+                "line": 7,
+                "symbol_table": "script"
+            },
+            "statements": [
+                {
+                    "id": "function_call",
+                    "title": "writeint",
+                    "parameters": {
+                        "nr": {
+                            "id": "identifier",
+                            "title": "i",
+                            "line": 8,
+                            "symbol_table": "for_9"
+                        }
+                    },
+                    "line": 8,
+                    "symbol_table": "for_9"
+                }
+            ],
+            "line": 9,
+            "symbol_table": "for_9",
+            "type": "none"
+        }
+    ],
+    "line": 9,
+    "symbol_table": "script"
+}

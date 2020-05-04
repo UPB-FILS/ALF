@@ -1,0 +1,7 @@
+#Local variable undefine#
+
+loop false go 
+    @var n<-1;
+end;
+
+n<-2;

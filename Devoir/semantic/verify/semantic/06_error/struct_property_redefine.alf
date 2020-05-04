@@ -1,0 +1,6 @@
+#Struct property redefinition#
+
+struct s 
+	property title:string;
+	property title :string;
+end;

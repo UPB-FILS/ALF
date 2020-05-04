@@ -1,0 +1,351 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {
+            "v": {
+               "type": "int",
+               "line": 3,
+               "parameter": false
+            },
+            "n": {
+               "type": "int",
+               "line": 9,
+               "parameter": false
+            },
+            "p": {
+               "type": "bool",
+               "line": 11,
+               "parameter": false
+            }
+         },
+         "functions": {
+            "sqrt": {
+               "type": "real",
+               "parameters": [
+                  {
+                     "type": "real",
+                     "title": "number",
+                     "line": 5
+                  }
+               ],
+               "use": "io",
+               "line": 5
+            },
+            "read": {
+               "type": "int",
+               "parameters": [],
+               "use": "io",
+               "line": 6
+            },
+            "write": {
+               "type": "none",
+               "parameters": [
+                  {
+                     "type": "string",
+                     "title": "text",
+                     "line": 7
+                  }
+               ],
+               "use": "io",
+               "line": 7
+            }
+         },
+         "types": {}
+      },
+      "function_sqrt": {
+         "title": "sqrt",
+         "type": "function",
+         "parent": "script",
+         "variables": {
+            "number": {
+               "type": "real",
+               "parameter": true,
+               "index": 0
+            }
+         },
+         "functions": {},
+         "types": {}
+      },
+      "function_read": {
+         "title": "read",
+         "type": "function",
+         "parent": "script",
+         "variables": {},
+         "functions": {},
+         "types": {}
+      },
+      "function_write": {
+         "title": "write",
+         "type": "function",
+         "parent": "script",
+         "variables": {
+            "text": {
+               "type": "string",
+               "parameter": true,
+               "index": 0
+            }
+         },
+         "functions": {},
+         "types": {}
+      },
+      "for_17": {
+         "type": "statements",
+         "parent": "script",
+         "variables": {
+            "i": {
+               "type": "real",
+               "parameter": false,
+               "line": 17
+            }
+         },
+         "functions": {},
+         "types": {}
+      },
+      "if_16": {
+         "type": "statements",
+         "parent": "for_17",
+         "variables": {},
+         "functions": {},
+         "types": {}
+      },
+      "if_23": {
+         "type": "statements",
+         "parent": "script",
+         "variables": {},
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "attr",
+               "to": {
+                  "id": "identifier",
+                  "title": "v",
+                  "symbol_table": "script",
+                  "line": 3,
+                  "type": "int"
+               },
+               "from": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 768687,
+                  "line": 3,
+                  "symbol_table": "script"
+               },
+               "line": 3,
+               "type": "none"
+            },
+            {
+               "id": "attr",
+               "to": {
+                  "id": "identifier",
+                  "title": "n",
+                  "symbol_table": "script",
+                  "line": 9,
+                  "type": "int"
+               },
+               "from": {
+                  "id": "function_call",
+                  "title": "read",
+                  "parameters": [],
+                  "line": 9,
+                  "symbol_table": "script",
+                  "type": "int"
+               },
+               "line": 9,
+               "type": "none"
+            },
+            {
+               "id": "attr",
+               "to": {
+                  "id": "identifier",
+                  "title": "p",
+                  "symbol_table": "script",
+                  "line": 11,
+                  "type": "bool"
+               },
+               "from": {
+                  "id": "value",
+                  "type": "bool",
+                  "value": true,
+                  "line": 11,
+                  "symbol_table": "script"
+               },
+               "line": 11,
+               "type": "none"
+            },
+            {
+               "id": "for",
+               "variable": "i",
+               "from": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 2,
+                  "line": 13,
+                  "symbol_table": "script"
+               },
+               "to": {
+                  "id": "function_call",
+                  "title": "sqrt",
+                  "parameters": {
+                     "number": {
+                        "id": "identifier",
+                        "title": "n",
+                        "line": 13,
+                        "symbol_table": "script",
+                        "type": "int"
+                     }
+                  },
+                  "line": 13,
+                  "symbol_table": "script",
+                  "type": "real"
+               },
+               "statements": [
+                  {
+                     "id": "if_then",
+                     "exp": {
+                        "id": "expr",
+                        "op": "==",
+                        "left": {
+                           "id": "expr",
+                           "op": "mod",
+                           "left": {
+                              "id": "identifier",
+                              "title": "n",
+                              "line": 14,
+                              "symbol_table": "for_17"
+                           },
+                           "right": {
+                              "id": "identifier",
+                              "title": "i",
+                              "line": 14,
+                              "symbol_table": "for_17"
+                           },
+                           "line": 14,
+                           "symbol_table": "for_17"
+                        },
+                        "right": {
+                           "id": "value",
+                           "type": "int",
+                           "value": 0,
+                           "line": 14,
+                           "symbol_table": "for_17"
+                        },
+                        "line": 14,
+                        "symbol_table": "for_17"
+                     },
+                     "then": [
+                        {
+                           "id": "attr",
+                           "to": {
+                              "id": "identifier",
+                              "title": "p",
+                              "line": 15,
+                              "symbol_table": "if_16"
+                           },
+                           "from": {
+                              "id": "value",
+                              "type": "bool",
+                              "value": false,
+                              "line": 15,
+                              "symbol_table": "if_16"
+                           },
+                           "line": 15,
+                           "symbol_table": "if_16"
+                        }
+                     ],
+                     "line": 16,
+                     "symbol_table": "for_17",
+                     "else": []
+                  }
+               ],
+               "line": 17,
+               "symbol_table": "for_17",
+               "type": "none"
+            },
+            {
+               "id": "if_then",
+               "exp": {
+                  "id": "identifier",
+                  "title": "p",
+                  "line": 19,
+                  "symbol_table": "script",
+                  "type": "bool"
+               },
+               "then": [
+                  {
+                     "id": "function_call",
+                     "title": "write",
+                     "parameters": {
+                        "text": {
+                           "id": "expr",
+                           "op": "+",
+                           "left": {
+                              "id": "identifier",
+                              "title": "n",
+                              "line": 20,
+                              "symbol_table": "if_23",
+                              "type": "int"
+                           },
+                           "right": {
+                              "id": "value",
+                              "type": "string",
+                              "value": " is prime",
+                              "line": 20,
+                              "symbol_table": "if_23"
+                           },
+                           "line": 20,
+                           "symbol_table": "if_23",
+                           "type": "string"
+                        }
+                     },
+                     "line": 20,
+                     "symbol_table": "if_23",
+                     "type": "none"
+                  }
+               ],
+               "else": [
+                  {
+                     "id": "function_call",
+                     "title": "write",
+                     "parameters": {
+                        "text": {
+                           "id": "expr",
+                           "op": "+",
+                           "left": {
+                              "id": "identifier",
+                              "title": "n",
+                              "line": 22,
+                              "symbol_table": "if_23",
+                              "type": "int"
+                           },
+                           "right": {
+                              "id": "value",
+                              "type": "string",
+                              "value": " is not prime",
+                              "line": 22,
+                              "symbol_table": "if_23"
+                           },
+                           "line": 22,
+                           "symbol_table": "if_23",
+                           "type": "string"
+                        }
+                     },
+                     "line": 22,
+                     "symbol_table": "if_23",
+                     "type": "none"
+                  }
+               ],
+               "line": 23,
+               "symbol_table": "script",
+               "type": "none"
+            }
+         ]
+      }
+   },
+   "errors": []
+}

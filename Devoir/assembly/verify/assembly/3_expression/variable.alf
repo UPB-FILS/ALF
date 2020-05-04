@@ -1,0 +1,7 @@
+#Expression with variable#
+
+use io funtion writeint(nr:int):none;
+
+@var n:int;
+n <- 3;
+writeint (nr:n+4);

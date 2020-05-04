@@ -1,5 +1,0 @@
-#Not a class#
-
-@var v:string;
-
-v.t <- "some text";

@@ -1,0 +1,9 @@
+#Numbers down#
+
+@var i:int;
+
+use io function writeint (nr:int):none;
+
+for i from 1 to 6 go
+	writeint (nr: i);
+end;

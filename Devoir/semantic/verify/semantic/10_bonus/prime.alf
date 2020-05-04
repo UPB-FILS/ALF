@@ -1,0 +1,23 @@
+#Prime number#
+
+@var v <- 768687;
+
+use io function sqrt (number:real):real;
+use io function read:int;
+use io function write (text:string):none;
+
+@var n <- read();
+
+@var p <- true;
+
+for i from 2 to sqrt(number: n) go
+	if n % i == 0 then
+		p <- false;
+	end;
+end;
+
+if p then
+	write (text : n+" is prime");
+else
+	write (text : n+" is not prime");
+end;

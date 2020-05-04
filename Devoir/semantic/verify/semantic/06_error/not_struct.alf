@@ -1,0 +1,5 @@
+#Not a struct#
+
+@var v:string;
+
+v.t <- "some text";

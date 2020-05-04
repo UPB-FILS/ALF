@@ -1,0 +1,5 @@
+#For variable redefinition#
+
+for i from 1 to 2 go
+    @var i <-10;
+end;

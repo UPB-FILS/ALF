@@ -1,0 +1,8 @@
+#Variable value Attribution#
+@var n:int;
+
+use io function writeint (nr:int):none;
+
+n <- 6;
+
+writeint(nr: n);

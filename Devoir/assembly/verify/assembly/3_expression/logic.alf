@@ -1,0 +1,5 @@
+#Logic expression#
+
+use io function writeint(nr:int):none;
+
+writeint (nr:2+3 == 4+5);

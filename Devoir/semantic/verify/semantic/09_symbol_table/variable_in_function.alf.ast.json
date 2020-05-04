@@ -1,0 +1,41 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "var",
+         "elements": [
+            {
+               "type": "auto",
+               "title": "s",
+               "value": {
+                  "id": "value",
+                  "type": "string",
+                  "value": "variable",
+                  "line": 3
+               },
+               "line": 3
+            }
+         ],
+         "line": 3
+      },
+      {
+         "id": "function_def",
+         "title": "f",
+         "parameters": [],
+         "type": "string",
+         "statements": [
+            {
+               "id": "return",
+               "value": {
+                  "id": "identifier",
+                  "title": "s",
+                  "line": 5
+               },
+               "line": 5
+            }
+         ],
+         "line": 5
+      }
+   ],
+   "line": 5
+}

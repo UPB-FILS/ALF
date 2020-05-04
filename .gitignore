@@ -148,3 +148,6 @@ types.js
 
 output
 errors.out
+
+frontend.js
+backend.js

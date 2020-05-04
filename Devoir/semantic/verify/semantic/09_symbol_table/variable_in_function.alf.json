@@ -1,0 +1,75 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {
+            "s": {
+               "type": "string",
+               "line": 3,
+               "parameter": false
+            }
+         },
+         "functions": {
+            "f": {
+               "type": "string",
+               "parameters": [],
+               "line": 5
+            }
+         },
+         "types": {}
+      },
+      "function_f": {
+         "title": "f",
+         "type": "function",
+         "parent": "script",
+         "variables": {},
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "attr",
+               "to": {
+                  "id": "identifier",
+                  "title": "s",
+                  "symbol_table": "script",
+                  "line": 3,
+                  "type": "string"
+               },
+               "from": {
+                  "id": "value",
+                  "type": "string",
+                  "value": "variable",
+                  "line": 3,
+                  "symbol_table": "script"
+               },
+               "line": 3,
+               "type": "none"
+            }
+         ]
+      },
+      "f": {
+         "parameters": [],
+         "type": "string",
+         "statements": [
+            {
+               "id": "return",
+               "value": {
+                  "id": "identifier",
+                  "title": "s",
+                  "line": 5,
+                  "symbol_table": "function_f",
+                  "type": "string"
+               },
+               "line": 5,
+               "symbol_table": "function_f",
+               "type": "string"
+            }
+         ]
+      }
+   },
+   "errors": []
+}

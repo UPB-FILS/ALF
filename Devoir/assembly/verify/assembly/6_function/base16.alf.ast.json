@@ -1,0 +1,5 @@
+{
+    "error": "lexical",
+    "line": 1,
+    "text": "Lexical error on line 1: Unrecognized text.\n\n  Erroneous area:\n1: {Base 16}\n^..^\n2: \n3: message writeint:int nr:int"
+}

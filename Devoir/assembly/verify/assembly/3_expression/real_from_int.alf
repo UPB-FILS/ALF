@@ -1,0 +1,13 @@
+#Real from int#
+
+use io function writeint(nr:int):none;
+
+use io function readint:int;
+
+
+@var s:real;
+@var n:int;
+
+n <- readint ();
+s <- n;
+writeint (nr:s);

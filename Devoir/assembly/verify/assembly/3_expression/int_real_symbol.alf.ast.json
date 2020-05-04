@@ -1,0 +1,66 @@
+{
+    "id": "script",
+    "statements": [
+        {
+            "id": "function_def",
+            "use": "io",
+            "title": "writeint",
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "nr",
+                    "line": 3
+                }
+            ],
+            "type": "none",
+            "line": 3,
+            "symbol_table": "function_writeint"
+        },
+        {
+            "id": "function_call",
+            "title": "writeint",
+            "parameters": {
+                "nr": {
+                    "id": "expr",
+                    "op": "+",
+                    "left": {
+                        "id": "expr",
+                        "op": "+",
+                        "left": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 2,
+                            "line": 5,
+                            "symbol_table": "script"
+                        },
+                        "right": {
+                            "id": "value",
+                            "type": "real",
+                            "value": 3.5,
+                            "line": 5,
+                            "symbol_table": "script"
+                        },
+                        "line": 5,
+                        "symbol_table": "script",
+                        "type": "real"
+                    },
+                    "right": {
+                        "id": "value",
+                        "type": "character",
+                        "value": "e",
+                        "line": 5,
+                        "symbol_table": "script"
+                    },
+                    "line": 5,
+                    "symbol_table": "script",
+                    "type": "real"
+                }
+            },
+            "line": 5,
+            "symbol_table": "script",
+            "type": "none"
+        }
+    ],
+    "line": 5,
+    "symbol_table": "script"
+}

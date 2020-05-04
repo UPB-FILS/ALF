@@ -1,0 +1,5 @@
+{
+    "error": "lexical",
+    "line": 1,
+    "text": "Lexical error on line 1: Unrecognized text.\n\n  Erroneous area:\n1: {Fibonacci}\n^..^\n2: define item:int\n3: define stack:int"
+}

@@ -1,0 +1,8 @@
+#Local variable#
+@var a <- 10;
+
+loop
+    @var a <- "text";
+when false;
+
+a <- 20;

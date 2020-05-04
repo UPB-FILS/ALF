@@ -1,0 +1,67 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "var",
+         "elements": [
+            {
+               "type": "auto",
+               "title": "a",
+               "value": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 10,
+                  "line": 2
+               },
+               "line": 2
+            }
+         ],
+         "line": 2
+      },
+      {
+         "id": "loop_when",
+         "exp": {
+            "id": "value",
+            "type": "bool",
+            "value": false,
+            "line": 6
+         },
+         "statements": [
+            {
+               "id": "var",
+               "elements": [
+                  {
+                     "type": "auto",
+                     "title": "a",
+                     "value": {
+                        "id": "value",
+                        "type": "string",
+                        "value": "text",
+                        "line": 5
+                     },
+                     "line": 5
+                  }
+               ],
+               "line": 5
+            }
+         ],
+         "line": 6
+      },
+      {
+         "id": "attr",
+         "to": {
+            "id": "identifier",
+            "title": "a",
+            "line": 8
+         },
+         "from": {
+            "id": "value",
+            "type": "int",
+            "value": 20,
+            "line": 8
+         },
+         "line": 8
+      }
+   ],
+   "line": 8
+}

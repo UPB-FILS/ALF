@@ -1,0 +1,42 @@
+{
+   "id": "script",
+   "statements": [
+      {
+         "id": "for",
+         "variable": "i",
+         "from": {
+            "id": "value",
+            "type": "int",
+            "value": 1,
+            "line": 3
+         },
+         "to": {
+            "id": "value",
+            "type": "int",
+            "value": 2,
+            "line": 3
+         },
+         "statements": [
+            {
+               "id": "var",
+               "elements": [
+                  {
+                     "type": "auto",
+                     "title": "i",
+                     "value": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 10,
+                        "line": 4
+                     },
+                     "line": 4
+                  }
+               ],
+               "line": 4
+            }
+         ],
+         "line": 5
+      }
+   ],
+   "line": 5
+}

@@ -1,0 +1,15 @@
+#Even numbers#
+@var nr:int;
+@var i:int;
+
+use io function readint:int;
+use io function writeint (nr:int):none;
+
+nr<-readint();
+
+for i from 2 to nr go
+	if i % 2 == 0 then
+		writeint (nr:i);
+	end;
+end;
+

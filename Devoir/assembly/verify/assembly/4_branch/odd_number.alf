@@ -1,0 +1,19 @@
+#Odd number#
+@var a:int;
+@var e:character;
+
+use io function writechar (char:character):none;
+
+use io function readint:int;
+
+a <- readint();
+
+e <- "e";
+
+if a % 2 == 1 then
+	e <- "o";
+end;
+
+
+writechar (char:e);
+

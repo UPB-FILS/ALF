@@ -1,0 +1,19 @@
+{
+    "id": "script",
+    "statements": [
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "int",
+                    "title": "variable",
+                    "line": 2
+                }
+            ],
+            "line": 2,
+            "symbol_table": "script"
+        }
+    ],
+    "line": 2,
+    "symbol_table": "script"
+}

@@ -1,0 +1,26 @@
+#Prime numbers#
+@var p:int;
+@var isPrime:bool;
+@var i:int;
+
+@var s:bool <- false;
+
+use io function writeint(nr:int):none;
+use io function readint:int;
+
+
+loop not s go
+	p<-readint();
+	isPrime <- true;
+	for i from 2 to p / 2 go
+		if p % i == 0 then
+			isPrime <- false;
+		end;
+	end;
+
+	if not isPrime then
+		writeint (nr:p);
+	end;
+
+	s <- isPrime;
+end;

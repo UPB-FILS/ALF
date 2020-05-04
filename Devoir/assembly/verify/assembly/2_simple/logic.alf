@@ -1,0 +1,7 @@
+#Logic#
+
+use io function writeint(nr:int):none;
+
+@var a:bool <- false;
+
+writeint (nr:a);

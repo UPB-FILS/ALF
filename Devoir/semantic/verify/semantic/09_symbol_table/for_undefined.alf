@@ -1,0 +1,7 @@
+#For undefined variable#
+
+for i from 3 to 6 go
+    if i > 5 then
+        @var i<-"e";
+    end;
+end;
