@@ -8,16 +8,6 @@ var parser = require ('./alf.js').parser;
  
 var str = fs.readFileSync (process.argv[2], 'UTF-8');
  
-var variable_id = 0;
-
- 
-// get a new temporary variable
-function nextVar ()
-{
-    return 'var' + variable_id++;
-}
- 
- 
 function writeThreeAddressCode (node)
 {
     if (node.type === 'module')
@@ -32,7 +22,7 @@ function writeThreeAddressCode (node)
     {
         /** TODO 7: 
          * Print on the screen label start
-         * Print the three address code for each parameter 
+         * Write the three address code for each parameter 
          * Print on the screen the function call
          * Print stop
         */

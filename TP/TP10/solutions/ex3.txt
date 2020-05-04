@@ -1,0 +1,20 @@
+function double (nr)
+{
+    return nr*2;
+}
+ 
+double (7/2);
+
+goto start
+label double
+push nr
+push 2
+mul
+return
+
+label start
+push 7
+push 2
+div
+call double, 1
+stop
