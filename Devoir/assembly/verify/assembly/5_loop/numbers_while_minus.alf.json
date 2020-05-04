@@ -39,6 +39,7 @@
         "function_readint": {
             "title": "readint",
             "type": "function",
+            "use": "io",
             "return_type": "int",
             "parent": "script",
             "variables": {},
@@ -48,6 +49,7 @@
         "function_writefloat": {
             "title": "writefloat",
             "type": "function",
+            "use": "io",
             "return_type": "none",
             "parent": "script",
             "variables": {
@@ -160,14 +162,5 @@
             ]
         }
     },
-    "errors": [
-        {
-            "type": "TYPE_EXPRESSION",
-            "elements": {
-                "op": "typecast",
-                "to": "bool",
-                "line": 14
-            }
-        }
-    ]
+    "errors": []
 }

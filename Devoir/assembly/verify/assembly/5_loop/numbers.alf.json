@@ -49,6 +49,7 @@
         "function_writeint": {
             "title": "writeint",
             "type": "function",
+            "use": "io",
             "return_type": "none",
             "parent": "script",
             "variables": {
@@ -64,6 +65,7 @@
         "function_readint": {
             "title": "readint",
             "type": "function",
+            "use": "io",
             "return_type": "int",
             "parent": "script",
             "variables": {},
@@ -220,11 +222,13 @@
                                             "id": "identifier",
                                             "title": "i",
                                             "line": 17,
-                                            "symbol_table": "for_18"
+                                            "symbol_table": "for_18",
+                                            "type": "int"
                                         }
                                     },
                                     "line": 17,
-                                    "symbol_table": "for_18"
+                                    "symbol_table": "for_18",
+                                    "type": "none"
                                 }
                             ],
                             "line": 18,
@@ -259,11 +263,13 @@
                                             "id": "identifier",
                                             "title": "i",
                                             "line": 21,
-                                            "symbol_table": "for_22"
+                                            "symbol_table": "for_22",
+                                            "type": "int"
                                         }
                                     },
                                     "line": 21,
-                                    "symbol_table": "for_22"
+                                    "symbol_table": "for_22",
+                                    "type": "none"
                                 }
                             ],
                             "line": 22,

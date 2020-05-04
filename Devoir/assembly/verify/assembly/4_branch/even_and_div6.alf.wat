@@ -11,24 +11,24 @@
     (memory 1)
     ;; stack pointer
     (global $stack_pointer (mut i32) (i32.const 0))
-    ;; base pointer
-    (global $base_pointer (mut i32) (i32.const 0))
     
+    ;; global variables
+    (global $a (mut i32) (i32.const 0))
+    (global $e (mut i32) (i32.const 0))
     
-    ;; function script
-    (func $script
-        (local $a i32)
-        (local $e i32)
+    ;; function entry
+    (func $entry
+        (local $base_pointer i32)
         ;; attribution
         ;; variable a
         ;; call $readint
         call $readint
-        local.set $a
+        global.set $a
         ;; if
             ;; expression ==
                 ;; expression mod
                     ;; variable a
-                    local.get $a
+                    global.get $a
                     ;; value int 2
                     i32.const 2
                 i32.rem_s
@@ -40,7 +40,7 @@
                 ;; expression ==
                     ;; expression mod
                         ;; variable a
-                        local.get $a
+                        global.get $a
                         ;; value int 6
                         i32.const 6
                     i32.rem_s
@@ -52,29 +52,30 @@
                 ;; variable e
                 ;; value character y
                 i32.const 121
-                local.set $e
+                global.set $e
             else
                 ;; attribution
                 ;; variable e
                 ;; value character n
                 i32.const 110
-                local.set $e
+                global.set $e
             end
         else
             ;; attribution
             ;; variable e
             ;; value character o
             i32.const 111
-            local.set $e
+            global.set $e
         end
         ;; call $writechar
         ;; parameter char
         ;; variable e
-        local.get $e
+        global.get $e
         call $writechar
     )
     
     ;; set the entry
-    (start $script)
-    ;; constants
+    (start $entry)
+    ;; strings
+    (global $strings_start i32 (i32.const 0))
 )

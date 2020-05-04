@@ -1,0 +1,27 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "variable": {
+                    "type": "int",
+                    "line": 2,
+                    "parameter": false,
+                    "size": 4,
+                    "allocation": "global"
+                }
+            },
+            "functions": {},
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": []
+        }
+    },
+    "errors": [],
+    "strings": {}
+}

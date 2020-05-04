@@ -39,6 +39,7 @@
         "function_readint": {
             "title": "readint",
             "type": "function",
+            "use": "io",
             "return_type": "int",
             "parent": "script",
             "variables": {},
@@ -48,6 +49,7 @@
         "function_writeint": {
             "title": "writeint",
             "type": "function",
+            "use": "io",
             "return_type": "none",
             "parent": "script",
             "variables": {
@@ -135,7 +137,8 @@
                                         "id": "identifier",
                                         "title": "i",
                                         "line": 11,
-                                        "symbol_table": "for_14"
+                                        "symbol_table": "for_14",
+                                        "type": "int"
                                     },
                                     "right": {
                                         "id": "value",
@@ -145,7 +148,8 @@
                                         "symbol_table": "for_14"
                                     },
                                     "line": 11,
-                                    "symbol_table": "for_14"
+                                    "symbol_table": "for_14",
+                                    "type": "int"
                                 },
                                 "right": {
                                     "id": "value",
@@ -155,7 +159,8 @@
                                     "symbol_table": "for_14"
                                 },
                                 "line": 11,
-                                "symbol_table": "for_14"
+                                "symbol_table": "for_14",
+                                "type": "bool"
                             },
                             "then": [
                                 {
@@ -166,16 +171,19 @@
                                             "id": "identifier",
                                             "title": "i",
                                             "line": 12,
-                                            "symbol_table": "if_13"
+                                            "symbol_table": "if_13",
+                                            "type": "int"
                                         }
                                     },
                                     "line": 12,
-                                    "symbol_table": "if_13"
+                                    "symbol_table": "if_13",
+                                    "type": "none"
                                 }
                             ],
                             "line": 13,
                             "symbol_table": "for_14",
-                            "else": []
+                            "else": [],
+                            "type": "none"
                         }
                     ],
                     "line": 14,

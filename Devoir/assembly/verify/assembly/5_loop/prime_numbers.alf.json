@@ -49,6 +49,7 @@
         "function_writeint": {
             "title": "writeint",
             "type": "function",
+            "use": "io",
             "return_type": "none",
             "parent": "script",
             "variables": {
@@ -64,6 +65,7 @@
         "function_readint": {
             "title": "readint",
             "type": "function",
+            "use": "io",
             "return_type": "int",
             "parent": "script",
             "variables": {},
@@ -229,16 +231,19 @@
                                                 "id": "identifier",
                                                 "title": "p",
                                                 "line": 16,
-                                                "symbol_table": "for_19"
+                                                "symbol_table": "for_19",
+                                                "type": "int"
                                             },
                                             "right": {
                                                 "id": "identifier",
                                                 "title": "i",
                                                 "line": 16,
-                                                "symbol_table": "for_19"
+                                                "symbol_table": "for_19",
+                                                "type": "int"
                                             },
                                             "line": 16,
-                                            "symbol_table": "for_19"
+                                            "symbol_table": "for_19",
+                                            "type": "int"
                                         },
                                         "right": {
                                             "id": "value",
@@ -248,7 +253,8 @@
                                             "symbol_table": "for_19"
                                         },
                                         "line": 16,
-                                        "symbol_table": "for_19"
+                                        "symbol_table": "for_19",
+                                        "type": "bool"
                                     },
                                     "then": [
                                         {
@@ -257,7 +263,8 @@
                                                 "id": "identifier",
                                                 "title": "isPrime",
                                                 "line": 17,
-                                                "symbol_table": "if_18"
+                                                "symbol_table": "if_18",
+                                                "type": "bool"
                                             },
                                             "from": {
                                                 "id": "value",
@@ -267,12 +274,14 @@
                                                 "symbol_table": "if_18"
                                             },
                                             "line": 17,
-                                            "symbol_table": "if_18"
+                                            "symbol_table": "if_18",
+                                            "type": "none"
                                         }
                                     ],
                                     "line": 18,
                                     "symbol_table": "for_19",
-                                    "else": []
+                                    "else": [],
+                                    "type": "none"
                                 }
                             ],
                             "line": 19,

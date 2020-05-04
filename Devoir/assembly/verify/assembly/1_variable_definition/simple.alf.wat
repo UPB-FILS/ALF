@@ -5,16 +5,17 @@
     (memory 1)
     ;; stack pointer
     (global $stack_pointer (mut i32) (i32.const 0))
-    ;; base pointer
-    (global $base_pointer (mut i32) (i32.const 0))
     
+    ;; global variables
+    (global $variable (mut i32) (i32.const 0))
     
-    ;; function script
-    (func $script
-        (local $variable i32)
+    ;; function entry
+    (func $entry
+        (local $base_pointer i32)
     )
     
     ;; set the entry
-    (start $script)
-    ;; constants
+    (start $entry)
+    ;; strings
+    (global $strings_start i32 (i32.const 0))
 )

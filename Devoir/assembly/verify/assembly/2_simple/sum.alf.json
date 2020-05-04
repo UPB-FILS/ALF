@@ -44,6 +44,7 @@
         "function_writeint": {
             "title": "writeint",
             "type": "function",
+            "use": "io",
             "return_type": "none",
             "parent": "script",
             "variables": {
@@ -59,6 +60,7 @@
         "function_readint": {
             "title": "readint",
             "type": "function",
+            "use": "io",
             "return_type": "int",
             "parent": "script",
             "variables": {},

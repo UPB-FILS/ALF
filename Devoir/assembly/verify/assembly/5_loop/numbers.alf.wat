@@ -11,39 +11,39 @@
     (memory 1)
     ;; stack pointer
     (global $stack_pointer (mut i32) (i32.const 0))
-    ;; base pointer
-    (global $base_pointer (mut i32) (i32.const 0))
     
+    ;; global variables
+    (global $x (mut i32) (i32.const 0))
+    (global $y (mut i32) (i32.const 0))
+    (global $w (mut i32) (i32.const 0))
+    (global $i (mut i32) (i32.const 0))
     
-    ;; function script
-    (func $script
-        (local $x i32)
-        (local $y i32)
-        (local $w i32)
-        (local $i i32)
+    ;; function entry
+    (func $entry
         (local $for_18_i i32)
         (local $for_22_i i32)
+        (local $base_pointer i32)
         ;; attribution
         ;; variable x
         ;; call $readint
         call $readint
-        local.set $x
+        global.set $x
         ;; attribution
         ;; variable y
         ;; call $readint
         call $readint
-        local.set $y
+        global.set $y
         ;; attribution
         ;; variable w
         ;; call $readint
         call $readint
-        local.set $w
+        global.set $w
         ;; if
             ;; expression <
                 ;; variable x
-                local.get $x
+                global.get $x
                 ;; variable y
-                local.get $y
+                global.get $y
             i32.lt_s
         if
             ;; for
@@ -51,7 +51,7 @@
                 ;; attribution
                 ;; variable for_18_i
                 ;; variable x
-                local.get $x
+                global.get $x
                 local.set $for_18_i
             block $for_18_end
                 loop $for_18_begin
@@ -59,14 +59,13 @@
                     ;; variable for_18_i
                     local.get $for_18_i
                     ;; variable y
-                    local.get $y
+                    global.get $y
                     i32.gt_s
                     br_if $for_18_end
                         ;; call $writeint
                         ;; parameter nr
                         ;; variable i
                         local.get $for_18_i
-                        ;; typecast int undefined
                         call $writeint
                         ;; attribution
                         ;; variable for_18_i
@@ -87,7 +86,7 @@
                 ;; attribution
                 ;; variable for_22_i
                 ;; variable x
-                local.get $x
+                global.get $x
                 local.set $for_22_i
             block $for_22_end
                 loop $for_22_begin
@@ -95,14 +94,13 @@
                     ;; variable for_22_i
                     local.get $for_22_i
                     ;; variable y
-                    local.get $y
+                    global.get $y
                     i32.lt_s
                     br_if $for_22_end
                         ;; call $writeint
                         ;; parameter nr
                         ;; variable i
                         local.get $for_22_i
-                        ;; typecast int undefined
                         call $writeint
                         ;; attribution
                         ;; variable for_22_i
@@ -121,6 +119,7 @@
     )
     
     ;; set the entry
-    (start $script)
-    ;; constants
+    (start $entry)
+    ;; strings
+    (global $strings_start i32 (i32.const 0))
 )

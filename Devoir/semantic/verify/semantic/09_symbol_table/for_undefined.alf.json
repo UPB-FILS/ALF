@@ -24,7 +24,7 @@
          "parent": "for_7",
          "variables": {
             "i": {
-               "type": "auto",
+               "type": "character",
                "line": 5,
                "parameter": false
             }
@@ -63,7 +63,8 @@
                            "id": "identifier",
                            "title": "i",
                            "line": 4,
-                           "symbol_table": "for_7"
+                           "symbol_table": "for_7",
+                           "type": "int"
                         },
                         "right": {
                            "id": "value",
@@ -73,7 +74,8 @@
                            "symbol_table": "for_7"
                         },
                         "line": 4,
-                        "symbol_table": "for_7"
+                        "symbol_table": "for_7",
+                        "type": "bool"
                      },
                      "then": [
                         {
@@ -82,7 +84,8 @@
                               "id": "identifier",
                               "title": "i",
                               "symbol_table": "if_6",
-                              "line": 5
+                              "line": 5,
+                              "type": "character"
                            },
                            "from": {
                               "id": "value",
@@ -91,12 +94,14 @@
                               "line": 5,
                               "symbol_table": "if_6"
                            },
-                           "line": 5
+                           "line": 5,
+                           "type": "none"
                         }
                      ],
                      "line": 6,
                      "symbol_table": "for_7",
-                     "else": []
+                     "else": [],
+                     "type": "none"
                   }
                ],
                "line": 7,

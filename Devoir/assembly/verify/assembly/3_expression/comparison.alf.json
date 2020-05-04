@@ -22,6 +22,7 @@
         "function_writeint": {
             "title": "writeint",
             "type": "function",
+            "use": "io",
             "return_type": "none",
             "parent": "script",
             "variables": {

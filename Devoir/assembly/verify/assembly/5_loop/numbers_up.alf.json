@@ -28,6 +28,7 @@
         "function_writeint": {
             "title": "writeint",
             "type": "function",
+            "use": "io",
             "return_type": "none",
             "parent": "script",
             "variables": {
@@ -83,11 +84,13 @@
                                     "id": "identifier",
                                     "title": "i",
                                     "line": 8,
-                                    "symbol_table": "for_9"
+                                    "symbol_table": "for_9",
+                                    "type": "int"
                                 }
                             },
                             "line": 8,
-                            "symbol_table": "for_9"
+                            "symbol_table": "for_9",
+                            "type": "none"
                         }
                     ],
                     "line": 9,

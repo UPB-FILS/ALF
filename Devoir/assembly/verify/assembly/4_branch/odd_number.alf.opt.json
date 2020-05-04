@@ -1,0 +1,214 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "a": {
+                    "type": "int",
+                    "line": 2,
+                    "parameter": false,
+                    "size": 4,
+                    "allocation": "global"
+                },
+                "e": {
+                    "type": "character",
+                    "line": 3,
+                    "parameter": false,
+                    "size": 4,
+                    "allocation": "global"
+                }
+            },
+            "functions": {
+                "writechar": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "character",
+                            "title": "char",
+                            "line": 5
+                        }
+                    ],
+                    "use": "io",
+                    "line": 5
+                },
+                "readint": {
+                    "type": "int",
+                    "parameters": [],
+                    "use": "io",
+                    "line": 7
+                }
+            },
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        },
+        "function_writechar": {
+            "title": "writechar",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "char": {
+                    "type": "character",
+                    "parameter": true,
+                    "index": 0,
+                    "size": 4,
+                    "allocation": "param"
+                }
+            },
+            "functions": {},
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        },
+        "function_readint": {
+            "title": "readint",
+            "type": "function",
+            "use": "io",
+            "return_type": "int",
+            "parent": "script",
+            "variables": {},
+            "functions": {},
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        },
+        "if_15": {
+            "type": "statements",
+            "parent": "script",
+            "variables": {},
+            "functions": {},
+            "types": {}
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "identifier",
+                        "title": "a",
+                        "line": 9,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "from": {
+                        "id": "function_call",
+                        "title": "readint",
+                        "parameters": [],
+                        "line": 9,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "line": 9,
+                    "symbol_table": "script",
+                    "type": "none"
+                },
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "identifier",
+                        "title": "e",
+                        "line": 11,
+                        "symbol_table": "script",
+                        "type": "character"
+                    },
+                    "from": {
+                        "id": "value",
+                        "type": "character",
+                        "value": "e",
+                        "line": 11,
+                        "symbol_table": "script"
+                    },
+                    "line": 11,
+                    "symbol_table": "script",
+                    "type": "none"
+                },
+                {
+                    "id": "if_then",
+                    "exp": {
+                        "id": "expr",
+                        "op": "==",
+                        "left": {
+                            "id": "expr",
+                            "op": "mod",
+                            "left": {
+                                "id": "identifier",
+                                "title": "a",
+                                "line": 13,
+                                "symbol_table": "script",
+                                "type": "int"
+                            },
+                            "right": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 2,
+                                "line": 13,
+                                "symbol_table": "script"
+                            },
+                            "line": 13,
+                            "symbol_table": "script",
+                            "type": "int"
+                        },
+                        "right": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 1,
+                            "line": 13,
+                            "symbol_table": "script"
+                        },
+                        "line": 13,
+                        "symbol_table": "script",
+                        "type": "bool"
+                    },
+                    "then": [
+                        {
+                            "id": "attr",
+                            "to": {
+                                "id": "identifier",
+                                "title": "e",
+                                "line": 14,
+                                "symbol_table": "if_15",
+                                "type": "character"
+                            },
+                            "from": {
+                                "id": "value",
+                                "type": "character",
+                                "value": "o",
+                                "line": 14,
+                                "symbol_table": "if_15"
+                            },
+                            "line": 14,
+                            "symbol_table": "if_15",
+                            "type": "none"
+                        }
+                    ],
+                    "line": 15,
+                    "symbol_table": "script",
+                    "else": [],
+                    "type": "none"
+                },
+                {
+                    "id": "function_call",
+                    "title": "writechar",
+                    "parameters": {
+                        "char": {
+                            "id": "identifier",
+                            "title": "e",
+                            "line": 18,
+                            "symbol_table": "script",
+                            "type": "character"
+                        }
+                    },
+                    "line": 18,
+                    "symbol_table": "script",
+                    "type": "none"
+                }
+            ]
+        }
+    },
+    "errors": [],
+    "strings": {}
+}

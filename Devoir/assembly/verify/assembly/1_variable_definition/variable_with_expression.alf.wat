@@ -5,13 +5,13 @@
     (memory 1)
     ;; stack pointer
     (global $stack_pointer (mut i32) (i32.const 0))
-    ;; base pointer
-    (global $base_pointer (mut i32) (i32.const 0))
     
+    ;; global variables
+    (global $e (mut i32) (i32.const 0))
     
-    ;; function script
-    (func $script
-        (local $e i32)
+    ;; function entry
+    (func $entry
+        (local $base_pointer i32)
         ;; attribution
         ;; variable e
         ;; expression +
@@ -24,10 +24,11 @@
                 i32.const 5
             i32.mul
         i32.add
-        local.set $e
+        global.set $e
     )
     
     ;; set the entry
-    (start $script)
-    ;; constants
+    (start $entry)
+    ;; strings
+    (global $strings_start i32 (i32.const 0))
 )

@@ -39,6 +39,7 @@
       "function_writechar": {
          "title": "writechar",
          "type": "function",
+         "use": "io",
          "parent": "script",
          "variables": {
             "char": {
@@ -53,6 +54,7 @@
       "function_readint": {
          "title": "readint",
          "type": "function",
+         "use": "io",
          "parent": "script",
          "variables": {},
          "functions": {},

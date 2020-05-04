@@ -8,26 +8,27 @@
     (memory 1)
     ;; stack pointer
     (global $stack_pointer (mut i32) (i32.const 0))
-    ;; base pointer
-    (global $base_pointer (mut i32) (i32.const 0))
     
+    ;; global variables
+    (global $n (mut i32) (i32.const 0))
     
-    ;; function script
-    (func $script
-        (local $n i32)
+    ;; function entry
+    (func $entry
+        (local $base_pointer i32)
         ;; attribution
         ;; variable n
         ;; value int 6
         i32.const 6
-        local.set $n
+        global.set $n
         ;; call $writeint
         ;; parameter nr
         ;; variable n
-        local.get $n
+        global.get $n
         call $writeint
     )
     
     ;; set the entry
-    (start $script)
-    ;; constants
+    (start $entry)
+    ;; strings
+    (global $strings_start i32 (i32.const 0))
 )

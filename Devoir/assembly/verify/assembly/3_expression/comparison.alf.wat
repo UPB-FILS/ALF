@@ -8,12 +8,12 @@
     (memory 1)
     ;; stack pointer
     (global $stack_pointer (mut i32) (i32.const 0))
-    ;; base pointer
-    (global $base_pointer (mut i32) (i32.const 0))
     
+    ;; global variables
     
-    ;; function script
-    (func $script
+    ;; function entry
+    (func $entry
+        (local $base_pointer i32)
         ;; call $writeint
         ;; parameter nr
         ;; expression and
@@ -51,6 +51,7 @@
     )
     
     ;; set the entry
-    (start $script)
-    ;; constants
+    (start $entry)
+    ;; strings
+    (global $strings_start i32 (i32.const 0))
 )

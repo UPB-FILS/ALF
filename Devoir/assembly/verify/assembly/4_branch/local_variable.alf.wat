@@ -11,23 +11,23 @@
     (memory 1)
     ;; stack pointer
     (global $stack_pointer (mut i32) (i32.const 0))
-    ;; base pointer
-    (global $base_pointer (mut i32) (i32.const 0))
     
+    ;; global variables
+    (global $a (mut i32) (i32.const 0))
     
-    ;; function script
-    (func $script
-        (local $a i32)
+    ;; function entry
+    (func $entry
         (local $if_13_a f32)
+        (local $base_pointer i32)
         ;; attribution
         ;; variable a
         ;; call $readint
         call $readint
-        local.set $a
+        global.set $a
         ;; if
             ;; expression <
                 ;; variable a
-                local.get $a
+                global.get $a
                 ;; value int 120
                 i32.const 120
             i32.lt_s
@@ -46,6 +46,7 @@
     )
     
     ;; set the entry
-    (start $script)
-    ;; constants
+    (start $entry)
+    ;; strings
+    (global $strings_start i32 (i32.const 0))
 )

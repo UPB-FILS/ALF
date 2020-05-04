@@ -56,6 +56,7 @@
       "function_sqrt": {
          "title": "sqrt",
          "type": "function",
+         "use": "io",
          "parent": "script",
          "variables": {
             "number": {
@@ -70,6 +71,7 @@
       "function_read": {
          "title": "read",
          "type": "function",
+         "use": "io",
          "parent": "script",
          "variables": {},
          "functions": {},
@@ -78,6 +80,7 @@
       "function_write": {
          "title": "write",
          "type": "function",
+         "use": "io",
          "parent": "script",
          "variables": {
             "text": {
@@ -217,16 +220,19 @@
                               "id": "identifier",
                               "title": "n",
                               "line": 14,
-                              "symbol_table": "for_17"
+                              "symbol_table": "for_17",
+                              "type": "int"
                            },
                            "right": {
                               "id": "identifier",
                               "title": "i",
                               "line": 14,
-                              "symbol_table": "for_17"
+                              "symbol_table": "for_17",
+                              "type": "real"
                            },
                            "line": 14,
-                           "symbol_table": "for_17"
+                           "symbol_table": "for_17",
+                           "type": "real"
                         },
                         "right": {
                            "id": "value",
@@ -236,7 +242,8 @@
                            "symbol_table": "for_17"
                         },
                         "line": 14,
-                        "symbol_table": "for_17"
+                        "symbol_table": "for_17",
+                        "type": "bool"
                      },
                      "then": [
                         {
@@ -245,7 +252,8 @@
                               "id": "identifier",
                               "title": "p",
                               "line": 15,
-                              "symbol_table": "if_16"
+                              "symbol_table": "if_16",
+                              "type": "bool"
                            },
                            "from": {
                               "id": "value",
@@ -255,12 +263,14 @@
                               "symbol_table": "if_16"
                            },
                            "line": 15,
-                           "symbol_table": "if_16"
+                           "symbol_table": "if_16",
+                           "type": "none"
                         }
                      ],
                      "line": 16,
                      "symbol_table": "for_17",
-                     "else": []
+                     "else": [],
+                     "type": "none"
                   }
                ],
                "line": 17,

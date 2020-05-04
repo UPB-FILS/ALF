@@ -1,6 +1,6 @@
 #Expression with variable#
 
-use io funtion writeint(nr:int):none;
+use io function writeint(nr:int):none;
 
 @var n:int;
 n <- 3;

@@ -47,7 +47,8 @@
                         "id": "identifier",
                         "title": "i",
                         "symbol_table": "for_5",
-                        "line": 4
+                        "line": 4,
+                        "type": "int"
                      },
                      "from": {
                         "id": "value",
@@ -56,7 +57,8 @@
                         "line": 4,
                         "symbol_table": "for_5"
                      },
-                     "line": 4
+                     "line": 4,
+                     "type": "none"
                   }
                ],
                "line": 5,

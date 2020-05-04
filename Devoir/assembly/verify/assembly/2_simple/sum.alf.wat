@@ -11,42 +11,43 @@
     (memory 1)
     ;; stack pointer
     (global $stack_pointer (mut i32) (i32.const 0))
-    ;; base pointer
-    (global $base_pointer (mut i32) (i32.const 0))
     
+    ;; global variables
+    (global $x (mut i32) (i32.const 0))
+    (global $y (mut i32) (i32.const 0))
+    (global $s (mut i32) (i32.const 0))
     
-    ;; function script
-    (func $script
-        (local $x i32)
-        (local $y i32)
-        (local $s i32)
+    ;; function entry
+    (func $entry
+        (local $base_pointer i32)
         ;; attribution
         ;; variable x
         ;; call $readint
         call $readint
-        local.set $x
+        global.set $x
         ;; attribution
         ;; variable y
         ;; call $readint
         call $readint
-        local.set $y
+        global.set $y
         ;; attribution
         ;; variable s
         ;; expression +
             ;; variable x
-            local.get $x
+            global.get $x
             ;; variable y
-            local.get $y
+            global.get $y
         i32.add
-        local.set $s
+        global.set $s
         ;; call $writeint
         ;; parameter nr
         ;; variable s
-        local.get $s
+        global.get $s
         call $writeint
     )
     
     ;; set the entry
-    (start $script)
-    ;; constants
+    (start $entry)
+    ;; strings
+    (global $strings_start i32 (i32.const 0))
 )

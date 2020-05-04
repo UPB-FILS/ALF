@@ -1,36 +1,27 @@
-{Base 16}
+#Base 16#
 
-message writeint:int nr:int
-begin
-	none
-end
+use io function writeint(nr:int):none;
 
-message writechar:charcter char:character
-begin
-	none
-end
+use io function writechar(char:character):none;
 
-message readint:int
-begin
-	none
-end
+use io function readint:int;
 
-define number:int
+@var number:int;
 
-message base16:none number:int
-begin
-	define a:int
-	if number > 0
-		[module base16 number:number / 16]
-		a := number mod 16
-		if a >= 10
-			[io writechar char:"a"+a-10]
+function base16(number:int):none
+start
+	@var a:int;
+	if number > 0 then
+		base16 (number:number / 16);
+		a <- number % 16;
+		if a >= 10 then
+			writechar (char:"a"+a-10);
 		else
-			[io writechar char:"0"+a]
-		end
-	end
-end
+			writechar (char:"0"+a);
+		end;
+	end;
+end;
 
-number:=[io readint]
+number<-readint();
 
-[module base16 number : number]
+base16 (number : number);

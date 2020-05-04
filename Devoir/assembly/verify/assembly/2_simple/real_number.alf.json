@@ -28,6 +28,7 @@
         "function_writefloat": {
             "title": "writefloat",
             "type": "function",
+            "use": "io",
             "return_type": "none",
             "parent": "script",
             "variables": {

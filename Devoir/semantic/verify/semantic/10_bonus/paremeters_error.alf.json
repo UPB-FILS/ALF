@@ -147,7 +147,8 @@
                         "id": "identifier",
                         "title": "p",
                         "line": 7,
-                        "symbol_table": "for_8"
+                        "symbol_table": "for_8",
+                        "type": "int"
                      },
                      "from": {
                         "id": "expr",
@@ -156,19 +157,23 @@
                            "id": "identifier",
                            "title": "p",
                            "line": 7,
-                           "symbol_table": "for_8"
+                           "symbol_table": "for_8",
+                           "type": "int"
                         },
                         "right": {
                            "id": "identifier",
                            "title": "a",
                            "line": 7,
-                           "symbol_table": "for_8"
+                           "symbol_table": "for_8",
+                           "type": "real"
                         },
                         "line": 7,
-                        "symbol_table": "for_8"
+                        "symbol_table": "for_8",
+                        "type": "real"
                      },
                      "line": 7,
-                     "symbol_table": "for_8"
+                     "symbol_table": "for_8",
+                     "type": "none"
                   }
                ],
                "line": 8,

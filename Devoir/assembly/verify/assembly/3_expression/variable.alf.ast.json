@@ -1,9 +1,84 @@
 {
-    "error": "syntax",
-    "line": 3,
-    "text": "funtion",
-    "token": "\"IDENTIFIER\"",
-    "expected": [
-        "\"FUNCTION\""
-    ]
+    "id": "script",
+    "statements": [
+        {
+            "id": "function_def",
+            "use": "io",
+            "title": "writeint",
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "nr",
+                    "line": 3
+                }
+            ],
+            "type": "none",
+            "line": 3,
+            "symbol_table": "function_writeint"
+        },
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "int",
+                    "title": "n",
+                    "line": 5
+                }
+            ],
+            "line": 5,
+            "symbol_table": "script"
+        },
+        {
+            "id": "attr",
+            "to": {
+                "id": "identifier",
+                "title": "n",
+                "line": 6,
+                "symbol_table": "script",
+                "type": "int"
+            },
+            "from": {
+                "id": "value",
+                "type": "int",
+                "value": 3,
+                "line": 6,
+                "symbol_table": "script"
+            },
+            "line": 6,
+            "symbol_table": "script",
+            "type": "none"
+        },
+        {
+            "id": "function_call",
+            "title": "writeint",
+            "parameters": {
+                "nr": {
+                    "id": "expr",
+                    "op": "+",
+                    "left": {
+                        "id": "identifier",
+                        "title": "n",
+                        "line": 7,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "right": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 4,
+                        "line": 7,
+                        "symbol_table": "script"
+                    },
+                    "line": 7,
+                    "symbol_table": "script",
+                    "type": "int"
+                }
+            },
+            "line": 7,
+            "symbol_table": "script",
+            "type": "none"
+        }
+    ],
+    "line": 7,
+    "symbol_table": "script"
 }

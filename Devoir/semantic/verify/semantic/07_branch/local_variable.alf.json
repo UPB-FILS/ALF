@@ -34,6 +34,7 @@
       "function_writefloat": {
          "title": "writefloat",
          "type": "function",
+         "use": "io",
          "parent": "script",
          "variables": {
             "nr": {
@@ -48,6 +49,7 @@
       "function_readint": {
          "title": "readint",
          "type": "function",
+         "use": "io",
          "parent": "script",
          "variables": {},
          "functions": {},
