@@ -1,14 +1,11 @@
-{Message definition without local variables}
+#Function definition without local variables#
 
 
-message writeint:int nr:int
-begin
-	none
-end
+use io function writeint(nr:int):none;
 
-message sum:int n1:int, n2:int 
-begin
-	return n1 + n2
-end
+function sum(n1:int, n2:int):int
+start
+	return n1 + n2;
+end;
 
-[io writeint nr:[module sum n1 : 3, n2 : 7]]
+writeint (nr: sum (n1 : 3, n2 : 7));

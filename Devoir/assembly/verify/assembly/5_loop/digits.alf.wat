@@ -26,7 +26,7 @@
         global.set $digits
         ;; attribution
         ;; variable number
-        ;; call $readint
+        ;; readint (...)
         call $readint
         global.set $number
         ;; if
@@ -75,7 +75,7 @@
                 br $script_begin
             end $script_begin
         end $script_end
-        ;; call $writeint
+        ;; writeint (...)
         ;; parameter nr
         ;; variable digits
         global.get $digits

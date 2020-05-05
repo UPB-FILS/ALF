@@ -21,7 +21,7 @@
         (local $base_pointer i32)
         ;; attribution
         ;; variable n
-        ;; call $readint
+        ;; readint (...)
         call $readint
         global.set $n
         ;; attribution
@@ -31,7 +31,7 @@
         ;; typecast real int
         f32.convert_s/i32
         global.set $s
-        ;; call $writeint
+        ;; writeint (...)
         ;; parameter nr
         ;; variable s
         global.get $s

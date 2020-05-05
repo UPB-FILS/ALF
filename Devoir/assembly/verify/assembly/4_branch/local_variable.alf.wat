@@ -21,7 +21,7 @@
         (local $base_pointer i32)
         ;; attribution
         ;; variable a
-        ;; call $readint
+        ;; readint (...)
         call $readint
         global.set $a
         ;; if
@@ -37,7 +37,7 @@
             ;; value real 1.2
             f32.const 1.2
             local.set $if_13_a
-            ;; call $writefloat
+            ;; writefloat (...)
             ;; parameter nr
             ;; variable a
             local.get $if_13_a

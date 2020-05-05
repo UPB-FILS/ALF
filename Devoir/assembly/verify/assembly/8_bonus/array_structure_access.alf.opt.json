@@ -1,0 +1,106 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "list_of_schools": {
+                    "type": "list",
+                    "line": 10,
+                    "parameter": false,
+                    "size": 2112,
+                    "allocation": "data",
+                    "address": 0
+                }
+            },
+            "functions": {},
+            "types": {
+                "school": {
+                    "type": "struct",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "title": "name",
+                            "line": 3,
+                            "size": 256,
+                            "offset": 0
+                        },
+                        {
+                            "type": "bool",
+                            "title": "private",
+                            "line": 4,
+                            "size": 4,
+                            "offset": 256
+                        },
+                        {
+                            "type": "int",
+                            "title": "type",
+                            "line": 5,
+                            "size": 4,
+                            "offset": 260
+                        }
+                    ],
+                    "line": 6,
+                    "size": 264
+                },
+                "list": {
+                    "type": "array",
+                    "element_type": "school",
+                    "length": 8,
+                    "first": 1,
+                    "line": 8,
+                    "size": 2112
+                }
+            },
+            "variable_data_space": 2112,
+            "variable_stack_space": 0
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "property",
+                        "object": {
+                            "id": "element_of_vector",
+                            "array": {
+                                "id": "identifier",
+                                "title": "list_of_schools",
+                                "line": 12,
+                                "symbol_table": "script",
+                                "type": "list"
+                            },
+                            "index": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 1,
+                                "line": 12,
+                                "symbol_table": "script"
+                            },
+                            "line": 12,
+                            "symbol_table": "script",
+                            "type": "school"
+                        },
+                        "title": "private",
+                        "line": 12,
+                        "symbol_table": "script",
+                        "type": "bool"
+                    },
+                    "from": {
+                        "id": "value",
+                        "type": "bool",
+                        "value": false,
+                        "line": 12,
+                        "symbol_table": "script"
+                    },
+                    "line": 12,
+                    "symbol_table": "script",
+                    "type": "none"
+                }
+            ]
+        }
+    },
+    "errors": [],
+    "strings": {}
+}

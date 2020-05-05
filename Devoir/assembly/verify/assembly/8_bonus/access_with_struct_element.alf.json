@@ -1,0 +1,169 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "v": {
+                    "type": "list",
+                    "line": 4,
+                    "parameter": false
+                },
+                "s": {
+                    "type": "structure",
+                    "line": 10,
+                    "parameter": false
+                }
+            },
+            "functions": {
+                "readint": {
+                    "type": "int",
+                    "parameters": [],
+                    "use": "io",
+                    "line": 12
+                },
+                "writeint": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "title": "nr",
+                            "line": 13
+                        }
+                    ],
+                    "use": "io",
+                    "line": 13
+                }
+            },
+            "types": {
+                "list": {
+                    "type": "array",
+                    "element_type": "int",
+                    "length": 8,
+                    "first": 1,
+                    "line": 2
+                },
+                "structure": {
+                    "type": "struct",
+                    "properties": [
+                        {
+                            "type": "int",
+                            "title": "position",
+                            "line": 7
+                        }
+                    ],
+                    "line": 8
+                }
+            }
+        },
+        "function_readint": {
+            "title": "readint",
+            "type": "function",
+            "use": "io",
+            "return_type": "int",
+            "parent": "script",
+            "variables": {},
+            "functions": {},
+            "types": {}
+        },
+        "function_writeint": {
+            "title": "writeint",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "nr": {
+                    "type": "int",
+                    "parameter": true,
+                    "index": 0
+                }
+            },
+            "functions": {},
+            "types": {}
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "element_of_vector",
+                        "array": {
+                            "id": "identifier",
+                            "title": "v",
+                            "line": 15,
+                            "symbol_table": "script",
+                            "type": "list"
+                        },
+                        "index": {
+                            "id": "property",
+                            "object": {
+                                "id": "identifier",
+                                "title": "s",
+                                "line": 15,
+                                "symbol_table": "script",
+                                "type": "structure"
+                            },
+                            "title": "position",
+                            "line": 15,
+                            "symbol_table": "script",
+                            "type": "int"
+                        },
+                        "line": 15,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "from": {
+                        "id": "function_call",
+                        "title": "readint",
+                        "parameters": [],
+                        "line": 15,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "line": 15,
+                    "symbol_table": "script",
+                    "type": "none"
+                },
+                {
+                    "id": "function_call",
+                    "title": "writeint",
+                    "parameters": {
+                        "nr": {
+                            "id": "element_of_vector",
+                            "array": {
+                                "id": "identifier",
+                                "title": "v",
+                                "line": 17,
+                                "symbol_table": "script",
+                                "type": "list"
+                            },
+                            "index": {
+                                "id": "property",
+                                "object": {
+                                    "id": "identifier",
+                                    "title": "s",
+                                    "line": 17,
+                                    "symbol_table": "script",
+                                    "type": "structure"
+                                },
+                                "title": "position",
+                                "line": 17,
+                                "symbol_table": "script",
+                                "type": "int"
+                            },
+                            "line": 17,
+                            "symbol_table": "script",
+                            "type": "int"
+                        }
+                    },
+                    "line": 17,
+                    "symbol_table": "script",
+                    "type": "none"
+                }
+            ]
+        }
+    },
+    "errors": []
+}

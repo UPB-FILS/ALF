@@ -43,8 +43,8 @@
     )
     
     (func $memcpy
-        (param $from i32)
         (param $to i32)
+        (param $from i32)
         (param $len i32)
         block $memcpy_end
             loop $memcpy_begin
@@ -55,13 +55,13 @@
                 i32.const 0
                 i32.lt_s
                 br_if $memcpy_end
+                local.get $to
+                local.get $len
+                i32.add
                 local.get $from
                 local.get $len
                 i32.add
                 i32.load
-                local.get $to
-                local.get $len
-                i32.add
                 i32.store
                 br $memcpy_begin
             end $memcpy_begin

@@ -23,10 +23,10 @@
         (local $base_pointer i32)
         ;; attribution
         ;; variable number
-        ;; call $readint
+        ;; readint (...)
         call $readint
         global.set $number
-        ;; call $base16
+        ;; base16 (...)
         ;; parameter number
         ;; variable number
         global.get $number
@@ -46,7 +46,7 @@
                 i32.const 0
             i32.gt_s
         if
-            ;; call $base16
+            ;; base16 (...)
             ;; parameter number
             ;; expression /
                 ;; variable number
@@ -72,7 +72,7 @@
                     i32.const 10
                 i32.ge_s
             if
-                ;; call $writechar
+                ;; writechar (...)
                 ;; parameter char
                 ;; expression -
                     ;; expression +
@@ -90,7 +90,7 @@
                 i32.and
                 call $writechar
             else
-                ;; call $writechar
+                ;; writechar (...)
                 ;; parameter char
                 ;; expression +
                     ;; value character 0

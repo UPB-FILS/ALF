@@ -1,14 +1,11 @@
-{Message definition with variables}
+#Function definition with variables#
 
-message writeint:int nr:int
-begin
-	none
-end
+use io function writeint(nr:int):none;
 
-message sum:int n1:int, n2:int 
-begin
-	define s:int := n1 + n2
-	return s
-end
+function sum(n1:int, n2:int):int
+start
+	@var s:int <- n1 + n2;
+	return s;
+end;
 
-[io writeint nr:[module sum n1 : 3, n2 : 7]]
+writeint (nr:sum (n2 : 7, n1 : 3));

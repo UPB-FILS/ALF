@@ -32,11 +32,11 @@
                     "type": "bool",
                     "title": "l",
                     "value": {
-                        "id": "value",
-                        "type": "bool",
-                        "value": false,
+                        "id": "identifier",
+                        "title": "false",
                         "line": 2,
-                        "symbol_table": "script"
+                        "symbol_table": "script",
+                        "type": "error"
                     },
                     "line": 2
                 },

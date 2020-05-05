@@ -39,7 +39,7 @@
                 br_if $script_end
                     ;; attribution
                     ;; variable p
-                    ;; call $readint
+                    ;; readint (...)
                     call $readint
                     global.set $p
                     ;; attribution
@@ -105,7 +105,7 @@
                         i32.const 0
                         i32.eq
                     if
-                        ;; call $writeint
+                        ;; writeint (...)
                         ;; parameter nr
                         ;; variable p
                         global.get $p

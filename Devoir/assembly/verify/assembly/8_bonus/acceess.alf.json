@@ -1,0 +1,129 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "s": {
+                    "type": "school",
+                    "line": 10,
+                    "parameter": false
+                },
+                "s3": {
+                    "type": "school",
+                    "line": 11,
+                    "parameter": false
+                }
+            },
+            "functions": {
+                "writeint": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "title": "nr",
+                            "line": 8
+                        }
+                    ],
+                    "use": "io",
+                    "line": 8
+                }
+            },
+            "types": {
+                "school": {
+                    "type": "struct",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "title": "name",
+                            "line": 3
+                        },
+                        {
+                            "type": "bool",
+                            "title": "private",
+                            "line": 4
+                        },
+                        {
+                            "type": "int",
+                            "title": "type",
+                            "line": 5
+                        }
+                    ],
+                    "line": 6
+                }
+            }
+        },
+        "function_writeint": {
+            "title": "writeint",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "nr": {
+                    "type": "int",
+                    "parameter": true,
+                    "index": 0
+                }
+            },
+            "functions": {},
+            "types": {}
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "property",
+                        "object": {
+                            "id": "identifier",
+                            "title": "s",
+                            "line": 13,
+                            "symbol_table": "script",
+                            "type": "school"
+                        },
+                        "title": "private",
+                        "line": 13,
+                        "symbol_table": "script",
+                        "type": "bool"
+                    },
+                    "from": {
+                        "id": "value",
+                        "type": "bool",
+                        "value": true,
+                        "line": 13,
+                        "symbol_table": "script"
+                    },
+                    "line": 13,
+                    "symbol_table": "script",
+                    "type": "none"
+                },
+                {
+                    "id": "function_call",
+                    "title": "writeint",
+                    "parameters": {
+                        "nr": {
+                            "id": "property",
+                            "object": {
+                                "id": "identifier",
+                                "title": "s",
+                                "line": 15,
+                                "symbol_table": "script",
+                                "type": "school"
+                            },
+                            "title": "private",
+                            "line": 15,
+                            "symbol_table": "script",
+                            "type": "bool"
+                        }
+                    },
+                    "line": 15,
+                    "symbol_table": "script",
+                    "type": "none"
+                }
+            ]
+        }
+    },
+    "errors": []
+}

@@ -25,17 +25,17 @@
         (local $base_pointer i32)
         ;; attribution
         ;; variable x
-        ;; call $readint
+        ;; readint (...)
         call $readint
         global.set $x
         ;; attribution
         ;; variable y
-        ;; call $readint
+        ;; readint (...)
         call $readint
         global.set $y
         ;; attribution
         ;; variable w
-        ;; call $readint
+        ;; readint (...)
         call $readint
         global.set $w
         ;; if
@@ -62,7 +62,7 @@
                     global.get $y
                     i32.gt_s
                     br_if $for_18_end
-                        ;; call $writeint
+                        ;; writeint (...)
                         ;; parameter nr
                         ;; variable i
                         local.get $for_18_i
@@ -97,7 +97,7 @@
                     global.get $y
                     i32.lt_s
                     br_if $for_22_end
-                        ;; call $writeint
+                        ;; writeint (...)
                         ;; parameter nr
                         ;; variable i
                         local.get $for_22_i

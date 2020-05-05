@@ -33,7 +33,7 @@
         i32.const 0x000000ff
         i32.and
         global.set $c
-        ;; call $writechar
+        ;; writechar (...)
         ;; parameter char
         ;; variable c
         global.get $c

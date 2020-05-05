@@ -20,7 +20,7 @@
         ;; value real 3.7
         f32.const 3.7
         global.set $a
-        ;; call $writefloat
+        ;; writefloat (...)
         ;; parameter nr
         ;; variable a
         global.get $a

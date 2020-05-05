@@ -20,7 +20,7 @@
         ;; value int 6
         i32.const 6
         global.set $n
-        ;; call $writeint
+        ;; writeint (...)
         ;; parameter nr
         ;; variable n
         global.get $n

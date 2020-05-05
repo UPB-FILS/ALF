@@ -1,0 +1,154 @@
+{
+    "id": "script",
+    "statements": [
+        {
+            "id": "vector",
+            "title": "list",
+            "element_type": "int",
+            "from": 1,
+            "to": 9,
+            "line": 2,
+            "symbol_table": "script"
+        },
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "list",
+                    "title": "v",
+                    "line": 4
+                }
+            ],
+            "line": 4,
+            "symbol_table": "script"
+        },
+        {
+            "id": "struct_def",
+            "title": "structure",
+            "properties": [
+                {
+                    "type": "int",
+                    "title": "position",
+                    "line": 7
+                }
+            ],
+            "line": 8,
+            "symbol_table": "script"
+        },
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "structure",
+                    "title": "s",
+                    "line": 10
+                }
+            ],
+            "line": 10,
+            "symbol_table": "script"
+        },
+        {
+            "id": "function_def",
+            "use": "io",
+            "title": "readint",
+            "parameters": [],
+            "type": "int",
+            "line": 12,
+            "symbol_table": "function_readint"
+        },
+        {
+            "id": "function_def",
+            "use": "io",
+            "title": "writeint",
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "nr",
+                    "line": 13
+                }
+            ],
+            "type": "none",
+            "line": 13,
+            "symbol_table": "function_writeint"
+        },
+        {
+            "id": "attr",
+            "to": {
+                "id": "element_of_vector",
+                "array": {
+                    "id": "identifier",
+                    "title": "v",
+                    "line": 15,
+                    "symbol_table": "script",
+                    "type": "list"
+                },
+                "index": {
+                    "id": "property",
+                    "object": {
+                        "id": "identifier",
+                        "title": "s",
+                        "line": 15,
+                        "symbol_table": "script",
+                        "type": "structure"
+                    },
+                    "title": "position",
+                    "line": 15,
+                    "symbol_table": "script",
+                    "type": "int"
+                },
+                "line": 15,
+                "symbol_table": "script",
+                "type": "int"
+            },
+            "from": {
+                "id": "function_call",
+                "title": "readint",
+                "parameters": [],
+                "line": 15,
+                "symbol_table": "script",
+                "type": "int"
+            },
+            "line": 15,
+            "symbol_table": "script",
+            "type": "none"
+        },
+        {
+            "id": "function_call",
+            "title": "writeint",
+            "parameters": {
+                "nr": {
+                    "id": "element_of_vector",
+                    "array": {
+                        "id": "identifier",
+                        "title": "v",
+                        "line": 17,
+                        "symbol_table": "script",
+                        "type": "list"
+                    },
+                    "index": {
+                        "id": "property",
+                        "object": {
+                            "id": "identifier",
+                            "title": "s",
+                            "line": 17,
+                            "symbol_table": "script",
+                            "type": "structure"
+                        },
+                        "title": "position",
+                        "line": 17,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "line": 17,
+                    "symbol_table": "script",
+                    "type": "int"
+                }
+            },
+            "line": 17,
+            "symbol_table": "script",
+            "type": "none"
+        }
+    ],
+    "line": 17,
+    "symbol_table": "script"
+}

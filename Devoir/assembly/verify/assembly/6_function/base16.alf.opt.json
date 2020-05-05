@@ -7,6 +7,7 @@
                     "type": "int",
                     "line": 9,
                     "parameter": false,
+                    "ref": 1,
                     "size": 4,
                     "allocation": "global"
                 }
@@ -22,7 +23,8 @@
                         }
                     ],
                     "use": "io",
-                    "line": 3
+                    "line": 3,
+                    "ref": 0
                 },
                 "writechar": {
                     "type": "none",
@@ -34,13 +36,15 @@
                         }
                     ],
                     "use": "io",
-                    "line": 5
+                    "line": 5,
+                    "ref": 2
                 },
                 "readint": {
                     "type": "int",
                     "parameters": [],
                     "use": "io",
-                    "line": 7
+                    "line": 7,
+                    "ref": 1
                 },
                 "base16": {
                     "type": "none",
@@ -51,7 +55,8 @@
                             "line": 11
                         }
                     ],
-                    "line": 23
+                    "line": 23,
+                    "ref": 2
                 }
             },
             "types": {},
@@ -120,6 +125,7 @@
                     "type": "int",
                     "parameter": true,
                     "index": 0,
+                    "ref": 2,
                     "size": 4,
                     "allocation": "param"
                 },
@@ -127,6 +133,7 @@
                     "type": "int",
                     "line": 13,
                     "parameter": false,
+                    "ref": 2,
                     "size": 4,
                     "allocation": "local"
                 }

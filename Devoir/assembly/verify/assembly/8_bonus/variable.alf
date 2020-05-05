@@ -1,0 +1,9 @@
+#Variable declaration of type struct#
+struct school
+	property name :string;
+	property private :logic;
+	property type :int;
+end;
+
+@var s :school;
+

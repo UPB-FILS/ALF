@@ -14,7 +14,7 @@
     ;; function entry
     (func $entry
         (local $base_pointer i32)
-        ;; call $writeint
+        ;; writeint (...)
         ;; parameter nr
         ;; expression ==
             ;; expression +

@@ -32,7 +32,7 @@
                 i32.const 6
                 i32.gt_s
                 br_if $for_9_end
-                    ;; call $writeint
+                    ;; writeint (...)
                     ;; parameter nr
                     ;; variable i
                     local.get $for_9_i

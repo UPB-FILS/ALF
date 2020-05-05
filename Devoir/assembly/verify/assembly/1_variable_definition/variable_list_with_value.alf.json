@@ -79,11 +79,11 @@
                         "type": "bool"
                     },
                     "from": {
-                        "id": "value",
-                        "type": "bool",
-                        "value": false,
+                        "id": "identifier",
+                        "title": "false",
                         "line": 2,
-                        "symbol_table": "script"
+                        "symbol_table": "script",
+                        "type": "error"
                     },
                     "line": 2,
                     "type": "none"
@@ -91,5 +91,13 @@
             ]
         }
     },
-    "errors": []
+    "errors": [
+        {
+            "type": "UNDEFINED_VARIABLE",
+            "elements": {
+                "title": "false",
+                "line": 2
+            }
+        }
+    ]
 }

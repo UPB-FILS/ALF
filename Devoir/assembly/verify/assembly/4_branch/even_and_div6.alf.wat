@@ -21,7 +21,7 @@
         (local $base_pointer i32)
         ;; attribution
         ;; variable a
-        ;; call $readint
+        ;; readint (...)
         call $readint
         global.set $a
         ;; if
@@ -67,7 +67,7 @@
             i32.const 111
             global.set $e
         end
-        ;; call $writechar
+        ;; writechar (...)
         ;; parameter char
         ;; variable e
         global.get $e

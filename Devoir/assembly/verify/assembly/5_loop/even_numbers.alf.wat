@@ -22,7 +22,7 @@
         (local $base_pointer i32)
         ;; attribution
         ;; variable nr
-        ;; call $readint
+        ;; readint (...)
         call $readint
         global.set $nr
         ;; for
@@ -53,7 +53,7 @@
                             i32.const 0
                         i32.eq
                     if
-                        ;; call $writeint
+                        ;; writeint (...)
                         ;; parameter nr
                         ;; variable i
                         local.get $for_14_i

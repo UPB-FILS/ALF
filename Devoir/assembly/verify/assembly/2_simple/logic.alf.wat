@@ -20,7 +20,7 @@
         ;; value bool false
         i32.const 0
         global.set $a
-        ;; call $writeint
+        ;; writeint (...)
         ;; parameter nr
         ;; variable a
         global.get $a

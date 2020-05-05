@@ -22,12 +22,12 @@
         (local $base_pointer i32)
         ;; attribution
         ;; variable x
-        ;; call $readint
+        ;; readint (...)
         call $readint
         global.set $x
         ;; attribution
         ;; variable y
-        ;; call $readint
+        ;; readint (...)
         call $readint
         global.set $y
         ;; attribution
@@ -39,7 +39,7 @@
             global.get $y
         i32.add
         global.set $s
-        ;; call $writeint
+        ;; writeint (...)
         ;; parameter nr
         ;; variable s
         global.get $s

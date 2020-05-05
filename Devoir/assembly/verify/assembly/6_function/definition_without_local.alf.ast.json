@@ -1,5 +1,102 @@
 {
-    "error": "lexical",
-    "line": 1,
-    "text": "Lexical error on line 1: Unrecognized text.\n\n  Erroneous area:\n1: {Message definition without local variables}\n^..^\n2: \n3: "
+    "id": "script",
+    "statements": [
+        {
+            "id": "function_def",
+            "use": "io",
+            "title": "writeint",
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "nr",
+                    "line": 4
+                }
+            ],
+            "type": "none",
+            "line": 4,
+            "symbol_table": "function_writeint"
+        },
+        {
+            "id": "function_def",
+            "title": "sum",
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "n1",
+                    "line": 6
+                },
+                {
+                    "type": "int",
+                    "title": "n2",
+                    "line": 6
+                }
+            ],
+            "type": "int",
+            "statements": [
+                {
+                    "id": "return",
+                    "value": {
+                        "id": "expr",
+                        "op": "+",
+                        "left": {
+                            "id": "identifier",
+                            "title": "n1",
+                            "line": 8,
+                            "symbol_table": "function_sum",
+                            "type": "int"
+                        },
+                        "right": {
+                            "id": "identifier",
+                            "title": "n2",
+                            "line": 8,
+                            "symbol_table": "function_sum",
+                            "type": "int"
+                        },
+                        "line": 8,
+                        "symbol_table": "function_sum",
+                        "type": "int"
+                    },
+                    "line": 8,
+                    "symbol_table": "function_sum",
+                    "type": "int"
+                }
+            ],
+            "line": 9,
+            "symbol_table": "function_sum"
+        },
+        {
+            "id": "function_call",
+            "title": "writeint",
+            "parameters": {
+                "nr": {
+                    "id": "function_call",
+                    "title": "sum",
+                    "parameters": {
+                        "n1": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 3,
+                            "line": 11,
+                            "symbol_table": "script"
+                        },
+                        "n2": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 7,
+                            "line": 11,
+                            "symbol_table": "script"
+                        }
+                    },
+                    "line": 11,
+                    "symbol_table": "script",
+                    "type": "int"
+                }
+            },
+            "line": 11,
+            "symbol_table": "script",
+            "type": "none"
+        }
+    ],
+    "line": 11,
+    "symbol_table": "script"
 }

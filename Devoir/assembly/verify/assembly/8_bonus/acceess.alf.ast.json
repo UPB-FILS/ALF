@@ -1,0 +1,119 @@
+{
+    "id": "script",
+    "statements": [
+        {
+            "id": "struct_def",
+            "title": "school",
+            "properties": [
+                {
+                    "type": "string",
+                    "title": "name",
+                    "line": 3
+                },
+                {
+                    "type": "bool",
+                    "title": "private",
+                    "line": 4
+                },
+                {
+                    "type": "int",
+                    "title": "type",
+                    "line": 5
+                }
+            ],
+            "line": 6,
+            "symbol_table": "script"
+        },
+        {
+            "id": "function_def",
+            "use": "io",
+            "title": "writeint",
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "nr",
+                    "line": 8
+                }
+            ],
+            "type": "none",
+            "line": 8,
+            "symbol_table": "function_writeint"
+        },
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "school",
+                    "title": "s",
+                    "line": 10
+                }
+            ],
+            "line": 10,
+            "symbol_table": "script"
+        },
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "school",
+                    "title": "s3",
+                    "line": 11
+                }
+            ],
+            "line": 11,
+            "symbol_table": "script"
+        },
+        {
+            "id": "attr",
+            "to": {
+                "id": "property",
+                "object": {
+                    "id": "identifier",
+                    "title": "s",
+                    "line": 13,
+                    "symbol_table": "script",
+                    "type": "school"
+                },
+                "title": "private",
+                "line": 13,
+                "symbol_table": "script",
+                "type": "bool"
+            },
+            "from": {
+                "id": "value",
+                "type": "bool",
+                "value": true,
+                "line": 13,
+                "symbol_table": "script"
+            },
+            "line": 13,
+            "symbol_table": "script",
+            "type": "none"
+        },
+        {
+            "id": "function_call",
+            "title": "writeint",
+            "parameters": {
+                "nr": {
+                    "id": "property",
+                    "object": {
+                        "id": "identifier",
+                        "title": "s",
+                        "line": 15,
+                        "symbol_table": "script",
+                        "type": "school"
+                    },
+                    "title": "private",
+                    "line": 15,
+                    "symbol_table": "script",
+                    "type": "bool"
+                }
+            },
+            "line": 15,
+            "symbol_table": "script",
+            "type": "none"
+        }
+    ],
+    "line": 15,
+    "symbol_table": "script"
+}
