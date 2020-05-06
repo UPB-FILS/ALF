@@ -44,5 +44,5 @@
     ;; set the entry
     (start $entry)
     ;; strings
-    (global $strings_start i32 (i32.const 32))
+    (global $strings_start i32 (i32.const 36))
 )

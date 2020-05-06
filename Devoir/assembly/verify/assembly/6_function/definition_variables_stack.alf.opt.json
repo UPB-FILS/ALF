@@ -37,10 +37,10 @@
                 "array": {
                     "type": "array",
                     "element_type": "int",
-                    "length": 4,
+                    "length": 5,
                     "first": 1,
                     "line": 4,
-                    "size": 16
+                    "size": 20
                 }
             },
             "variable_data_space": 0,
@@ -90,7 +90,7 @@
                     "type": "array",
                     "line": 8,
                     "parameter": false,
-                    "size": 16,
+                    "size": 20,
                     "allocation": "stack",
                     "address": 0
                 }
@@ -98,7 +98,7 @@
             "functions": {},
             "types": {},
             "variable_data_space": 0,
-            "variable_stack_space": 16
+            "variable_stack_space": 20
         }
     },
     "ast": {

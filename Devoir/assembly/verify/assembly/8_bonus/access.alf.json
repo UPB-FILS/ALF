@@ -27,7 +27,7 @@
                 "list": {
                     "type": "array",
                     "element_type": "int",
-                    "length": 8,
+                    "length": 9,
                     "first": 1,
                     "line": 2
                 }

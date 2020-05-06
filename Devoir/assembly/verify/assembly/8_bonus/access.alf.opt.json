@@ -7,7 +7,7 @@
                     "type": "list",
                     "line": 4,
                     "parameter": false,
-                    "size": 32,
+                    "size": 36,
                     "allocation": "data",
                     "address": 0
                 }
@@ -30,13 +30,13 @@
                 "list": {
                     "type": "array",
                     "element_type": "int",
-                    "length": 8,
+                    "length": 9,
                     "first": 1,
                     "line": 2,
-                    "size": 32
+                    "size": 36
                 }
             },
-            "variable_data_space": 32,
+            "variable_data_space": 36,
             "variable_stack_space": 0
         },
         "function_writeint": {

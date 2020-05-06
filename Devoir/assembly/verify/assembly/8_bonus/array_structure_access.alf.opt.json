@@ -7,7 +7,7 @@
                     "type": "list",
                     "line": 10,
                     "parameter": false,
-                    "size": 2112,
+                    "size": 2376,
                     "allocation": "data",
                     "address": 0
                 }
@@ -45,13 +45,13 @@
                 "list": {
                     "type": "array",
                     "element_type": "school",
-                    "length": 8,
+                    "length": 9,
                     "first": 1,
                     "line": 8,
-                    "size": 2112
+                    "size": 2376
                 }
             },
-            "variable_data_space": 2112,
+            "variable_data_space": 2376,
             "variable_stack_space": 0
         }
     },

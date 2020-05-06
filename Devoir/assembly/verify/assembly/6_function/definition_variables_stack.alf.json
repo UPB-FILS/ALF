@@ -37,7 +37,7 @@
                 "array": {
                     "type": "array",
                     "element_type": "int",
-                    "length": 4,
+                    "length": 5,
                     "first": 1,
                     "line": 4
                 }

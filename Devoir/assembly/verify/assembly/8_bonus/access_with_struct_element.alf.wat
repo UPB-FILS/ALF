@@ -24,7 +24,7 @@
             ;; index
             ;; struct
             ;; variable s
-            i32.const 32
+            i32.const 36
                 ;; property position offset 0
                 i32.const 0
                 i32.add
@@ -42,7 +42,7 @@
             ;; index
             ;; struct
             ;; variable s
-            i32.const 32
+            i32.const 36
                 ;; property position offset 0
                 i32.const 0
                 i32.add
@@ -55,5 +55,5 @@
     ;; set the entry
     (start $entry)
     ;; strings
-    (global $strings_start i32 (i32.const 36))
+    (global $strings_start i32 (i32.const 40))
 )

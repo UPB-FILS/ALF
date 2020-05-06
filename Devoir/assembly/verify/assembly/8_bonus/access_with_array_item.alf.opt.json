@@ -7,7 +7,7 @@
                     "type": "list",
                     "line": 4,
                     "parameter": false,
-                    "size": 32,
+                    "size": 36,
                     "allocation": "data",
                     "address": 0
                 },
@@ -15,9 +15,9 @@
                     "type": "list",
                     "line": 4,
                     "parameter": false,
-                    "size": 32,
+                    "size": 36,
                     "allocation": "data",
-                    "address": 32
+                    "address": 36
                 }
             },
             "functions": {
@@ -38,13 +38,13 @@
                 "list": {
                     "type": "array",
                     "element_type": "int",
-                    "length": 8,
+                    "length": 9,
                     "first": 1,
                     "line": 2,
-                    "size": 32
+                    "size": 36
                 }
             },
-            "variable_data_space": 64,
+            "variable_data_space": 72,
             "variable_stack_space": 0
         },
         "function_writeint": {

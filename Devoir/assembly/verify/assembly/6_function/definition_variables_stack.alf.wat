@@ -38,7 +38,7 @@
         local.set $base_pointer
         ;; local stack variables
         global.get $stack_pointer
-        i32.const 16
+        i32.const 20
         i32.sub
         global.set $stack_pointer
         ;; attribution

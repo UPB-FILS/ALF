@@ -35,7 +35,7 @@
                 "list": {
                     "type": "array",
                     "element_type": "school",
-                    "length": 8,
+                    "length": 9,
                     "first": 1,
                     "line": 8
                 }

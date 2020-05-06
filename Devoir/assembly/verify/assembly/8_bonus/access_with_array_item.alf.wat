@@ -17,7 +17,7 @@
         ;; attribution
         ;; array
         ;; variable p
-        i32.const 32
+        i32.const 36
             ;; index
             ;; value int 5
             i32.const 5
@@ -34,7 +34,7 @@
             ;; index
             ;; array
             ;; variable p
-            i32.const 32
+            i32.const 36
                 ;; index
                 ;; value int 5
                 i32.const 5
@@ -55,7 +55,7 @@
             ;; index
             ;; array
             ;; variable p
-            i32.const 32
+            i32.const 36
                 ;; index
                 ;; value int 5
                 i32.const 5
@@ -71,5 +71,5 @@
     ;; set the entry
     (start $entry)
     ;; strings
-    (global $strings_start i32 (i32.const 64))
+    (global $strings_start i32 (i32.const 72))
 )
