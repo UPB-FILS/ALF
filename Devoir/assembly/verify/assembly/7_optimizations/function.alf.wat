@@ -16,8 +16,12 @@
         (local $base_pointer i32)
         ;; writeint (...)
         ;; parameter nr
-        ;; value int 8
-        i32.const 8
+        ;; expression +
+            ;; value int 2
+            i32.const 2
+            ;; value int 6
+            i32.const 6
+        i32.add
         call $writeint
     )
     
@@ -26,8 +30,12 @@
         (result i32)
         (local $base_pointer i32)
         ;; return
-        ;; value int 5
-        i32.const 5
+        ;; expression +
+            ;; value int 2
+            i32.const 2
+            ;; value int 3
+            i32.const 3
+        i32.add
         return
         ;; drop unused value (int)
         drop

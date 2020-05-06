@@ -7,7 +7,6 @@
                     "type": "int",
                     "line": 1,
                     "parameter": false,
-                    "ref": 7,
                     "size": 4,
                     "allocation": "global"
                 },
@@ -15,7 +14,6 @@
                     "type": "int",
                     "parameter": false,
                     "line": 13,
-                    "ref": 1,
                     "size": 4,
                     "allocation": "local"
                 }
@@ -47,7 +45,6 @@
                     "type": "int",
                     "parameter": false,
                     "line": 13,
-                    "ref": 1,
                     "size": 4,
                     "allocation": "relocated",
                     "title": "for_13_i"
@@ -70,11 +67,25 @@
                         "type": "int"
                     },
                     "from": {
-                        "id": "value",
+                        "id": "expr",
+                        "op": "*",
+                        "left": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 1024,
+                            "line": 1,
+                            "symbol_table": "script"
+                        },
+                        "right": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 100,
+                            "line": 1,
+                            "symbol_table": "script"
+                        },
                         "line": 1,
                         "symbol_table": "script",
-                        "type": "int",
-                        "value": 102400
+                        "type": "int"
                     },
                     "line": 1,
                     "type": "none"
@@ -92,11 +103,25 @@
                             "type": "int"
                         },
                         "right": {
-                            "id": "value",
+                            "id": "expr",
+                            "op": "*",
+                            "left": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 2,
+                                "line": 3,
+                                "symbol_table": "script"
+                            },
+                            "right": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 5,
+                                "line": 3,
+                                "symbol_table": "script"
+                            },
                             "line": 3,
                             "symbol_table": "script",
-                            "type": "int",
-                            "value": 10
+                            "type": "int"
                         },
                         "line": 3,
                         "symbol_table": "script",
@@ -123,11 +148,25 @@
                                     "type": "int"
                                 },
                                 "right": {
-                                    "id": "value",
+                                    "id": "expr",
+                                    "op": "*",
+                                    "left": {
+                                        "id": "value",
+                                        "type": "int",
+                                        "value": 10,
+                                        "line": 4,
+                                        "symbol_table": "while_5"
+                                    },
+                                    "right": {
+                                        "id": "value",
+                                        "type": "int",
+                                        "value": 10,
+                                        "line": 4,
+                                        "symbol_table": "while_5"
+                                    },
                                     "line": 4,
                                     "symbol_table": "while_5",
-                                    "type": "int",
-                                    "value": 100
+                                    "type": "int"
                                 },
                                 "line": 4,
                                 "symbol_table": "while_5",
@@ -155,11 +194,25 @@
                             "type": "int"
                         },
                         "right": {
-                            "id": "value",
+                            "id": "expr",
+                            "op": "*",
+                            "left": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 2,
+                                "line": 9,
+                                "symbol_table": "do_while_9"
+                            },
+                            "right": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 5,
+                                "line": 9,
+                                "symbol_table": "do_while_9"
+                            },
                             "line": 9,
                             "symbol_table": "do_while_9",
-                            "type": "int",
-                            "value": 10
+                            "type": "int"
                         },
                         "line": 9,
                         "symbol_table": "do_while_9",
@@ -186,11 +239,25 @@
                                     "type": "int"
                                 },
                                 "right": {
-                                    "id": "value",
+                                    "id": "expr",
+                                    "op": "*",
+                                    "left": {
+                                        "id": "value",
+                                        "type": "int",
+                                        "value": 10,
+                                        "line": 8,
+                                        "symbol_table": "do_while_9"
+                                    },
+                                    "right": {
+                                        "id": "value",
+                                        "type": "int",
+                                        "value": 12,
+                                        "line": 8,
+                                        "symbol_table": "do_while_9"
+                                    },
                                     "line": 8,
                                     "symbol_table": "do_while_9",
-                                    "type": "int",
-                                    "value": 120
+                                    "type": "int"
                                 },
                                 "line": 8,
                                 "symbol_table": "do_while_9",
@@ -209,18 +276,46 @@
                     "id": "for",
                     "variable": "i",
                     "from": {
-                        "id": "value",
+                        "id": "expr",
+                        "op": "+",
+                        "left": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 1,
+                            "line": 11,
+                            "symbol_table": "script"
+                        },
+                        "right": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 1,
+                            "line": 11,
+                            "symbol_table": "script"
+                        },
                         "line": 11,
                         "symbol_table": "script",
-                        "type": "int",
-                        "value": 2
+                        "type": "int"
                     },
                     "to": {
-                        "id": "value",
+                        "id": "expr",
+                        "op": "*",
+                        "left": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 10,
+                            "line": 11,
+                            "symbol_table": "script"
+                        },
+                        "right": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 100,
+                            "line": 11,
+                            "symbol_table": "script"
+                        },
                         "line": 11,
                         "symbol_table": "script",
-                        "type": "int",
-                        "value": 1000
+                        "type": "int"
                     },
                     "statements": [
                         {
@@ -233,11 +328,25 @@
                                 "type": "int"
                             },
                             "from": {
-                                "id": "value",
+                                "id": "expr",
+                                "op": "*",
+                                "left": {
+                                    "id": "value",
+                                    "type": "int",
+                                    "value": 50,
+                                    "line": 12,
+                                    "symbol_table": "for_13"
+                                },
+                                "right": {
+                                    "id": "value",
+                                    "type": "int",
+                                    "value": 20,
+                                    "line": 12,
+                                    "symbol_table": "for_13"
+                                },
                                 "line": 12,
                                 "symbol_table": "for_13",
-                                "type": "int",
-                                "value": 1000
+                                "type": "int"
                             },
                             "line": 12,
                             "symbol_table": "for_13",
