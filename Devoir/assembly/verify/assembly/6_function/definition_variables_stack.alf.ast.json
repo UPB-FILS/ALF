@@ -1,0 +1,157 @@
+{
+    "id": "script",
+    "statements": [
+        {
+            "id": "function_def",
+            "use": "io",
+            "title": "writeint",
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "nr",
+                    "line": 3
+                }
+            ],
+            "type": "none",
+            "line": 3,
+            "symbol_table": "function_writeint"
+        },
+        {
+            "id": "vector",
+            "title": "array",
+            "element_type": "int",
+            "from": 1,
+            "to": 5,
+            "line": 4,
+            "symbol_table": "script"
+        },
+        {
+            "id": "function_def",
+            "title": "sum",
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "n1",
+                    "line": 6
+                },
+                {
+                    "type": "int",
+                    "title": "n2",
+                    "line": 6
+                }
+            ],
+            "type": "int",
+            "statements": [
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "element_of_vector",
+                        "array": {
+                            "id": "identifier",
+                            "title": "s",
+                            "line": 9,
+                            "symbol_table": "function_sum",
+                            "type": "array"
+                        },
+                        "index": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 0,
+                            "line": 9,
+                            "symbol_table": "function_sum"
+                        },
+                        "line": 9,
+                        "symbol_table": "function_sum",
+                        "type": "int"
+                    },
+                    "from": {
+                        "id": "expr",
+                        "op": "+",
+                        "left": {
+                            "id": "identifier",
+                            "title": "n1",
+                            "line": 9,
+                            "symbol_table": "function_sum",
+                            "type": "int"
+                        },
+                        "right": {
+                            "id": "identifier",
+                            "title": "n2",
+                            "line": 9,
+                            "symbol_table": "function_sum",
+                            "type": "int"
+                        },
+                        "line": 9,
+                        "symbol_table": "function_sum",
+                        "type": "int"
+                    },
+                    "line": 9,
+                    "symbol_table": "function_sum",
+                    "type": "none"
+                },
+                {
+                    "id": "return",
+                    "value": {
+                        "id": "element_of_vector",
+                        "array": {
+                            "id": "identifier",
+                            "title": "s",
+                            "line": 10,
+                            "symbol_table": "function_sum",
+                            "type": "array"
+                        },
+                        "index": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 0,
+                            "line": 10,
+                            "symbol_table": "function_sum"
+                        },
+                        "line": 10,
+                        "symbol_table": "function_sum",
+                        "type": "int"
+                    },
+                    "line": 10,
+                    "symbol_table": "function_sum",
+                    "type": "int"
+                }
+            ],
+            "line": 11,
+            "symbol_table": "function_sum"
+        },
+        {
+            "id": "function_call",
+            "title": "writeint",
+            "parameters": {
+                "nr": {
+                    "id": "function_call",
+                    "title": "sum",
+                    "parameters": {
+                        "n2": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 7,
+                            "line": 13,
+                            "symbol_table": "script"
+                        },
+                        "n1": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 3,
+                            "line": 13,
+                            "symbol_table": "script"
+                        }
+                    },
+                    "line": 13,
+                    "symbol_table": "script",
+                    "type": "int"
+                }
+            },
+            "line": 13,
+            "symbol_table": "script",
+            "type": "none"
+        }
+    ],
+    "line": 13,
+    "symbol_table": "script"
+}

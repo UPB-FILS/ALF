@@ -1,0 +1,234 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {},
+            "functions": {
+                "writeint": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "title": "nr",
+                            "line": 3
+                        }
+                    ],
+                    "use": "io",
+                    "line": 3
+                },
+                "sum": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "title": "n1",
+                            "line": 6
+                        },
+                        {
+                            "type": "int",
+                            "title": "n2",
+                            "line": 6
+                        }
+                    ],
+                    "line": 11
+                }
+            },
+            "types": {
+                "array": {
+                    "type": "array",
+                    "element_type": "int",
+                    "length": 4,
+                    "first": 1,
+                    "line": 4,
+                    "size": 16
+                }
+            },
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        },
+        "function_writeint": {
+            "title": "writeint",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "nr": {
+                    "type": "int",
+                    "parameter": true,
+                    "index": 0,
+                    "size": 4,
+                    "allocation": "param"
+                }
+            },
+            "functions": {},
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        },
+        "function_sum": {
+            "title": "sum",
+            "type": "function",
+            "return_type": "int",
+            "parent": "script",
+            "variables": {
+                "n1": {
+                    "type": "int",
+                    "parameter": true,
+                    "index": 0,
+                    "size": 4,
+                    "allocation": "param"
+                },
+                "n2": {
+                    "type": "int",
+                    "parameter": true,
+                    "index": 1,
+                    "size": 4,
+                    "allocation": "param"
+                },
+                "s": {
+                    "type": "array",
+                    "line": 8,
+                    "parameter": false,
+                    "size": 16,
+                    "allocation": "stack",
+                    "address": 0
+                }
+            },
+            "functions": {},
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 16
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "function_call",
+                    "title": "writeint",
+                    "parameters": {
+                        "nr": {
+                            "id": "function_call",
+                            "title": "sum",
+                            "parameters": {
+                                "n2": {
+                                    "id": "value",
+                                    "type": "int",
+                                    "value": 7,
+                                    "line": 13,
+                                    "symbol_table": "script"
+                                },
+                                "n1": {
+                                    "id": "value",
+                                    "type": "int",
+                                    "value": 3,
+                                    "line": 13,
+                                    "symbol_table": "script"
+                                }
+                            },
+                            "line": 13,
+                            "symbol_table": "script",
+                            "type": "int"
+                        }
+                    },
+                    "line": 13,
+                    "symbol_table": "script",
+                    "type": "none"
+                }
+            ]
+        },
+        "sum": {
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "n1",
+                    "line": 6
+                },
+                {
+                    "type": "int",
+                    "title": "n2",
+                    "line": 6
+                }
+            ],
+            "type": "int",
+            "statements": [
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "element_of_vector",
+                        "array": {
+                            "id": "identifier",
+                            "title": "s",
+                            "line": 9,
+                            "symbol_table": "function_sum",
+                            "type": "array"
+                        },
+                        "index": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 0,
+                            "line": 9,
+                            "symbol_table": "function_sum"
+                        },
+                        "line": 9,
+                        "symbol_table": "function_sum",
+                        "type": "int"
+                    },
+                    "from": {
+                        "id": "expr",
+                        "op": "+",
+                        "left": {
+                            "id": "identifier",
+                            "title": "n1",
+                            "line": 9,
+                            "symbol_table": "function_sum",
+                            "type": "int"
+                        },
+                        "right": {
+                            "id": "identifier",
+                            "title": "n2",
+                            "line": 9,
+                            "symbol_table": "function_sum",
+                            "type": "int"
+                        },
+                        "line": 9,
+                        "symbol_table": "function_sum",
+                        "type": "int"
+                    },
+                    "line": 9,
+                    "symbol_table": "function_sum",
+                    "type": "none"
+                },
+                {
+                    "id": "return",
+                    "value": {
+                        "id": "element_of_vector",
+                        "array": {
+                            "id": "identifier",
+                            "title": "s",
+                            "line": 10,
+                            "symbol_table": "function_sum",
+                            "type": "array"
+                        },
+                        "index": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 0,
+                            "line": 10,
+                            "symbol_table": "function_sum"
+                        },
+                        "line": 10,
+                        "symbol_table": "function_sum",
+                        "type": "int"
+                    },
+                    "line": 10,
+                    "symbol_table": "function_sum",
+                    "type": "int"
+                }
+            ]
+        }
+    },
+    "errors": [],
+    "strings": {}
+}
