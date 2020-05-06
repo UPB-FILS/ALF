@@ -2,21 +2,9 @@
     "id": "script",
     "statements": [
         {
-            "id": "var",
-            "elements": [
-                {
-                    "type": "auto",
-                    "title": "str",
-                    "value": {
-                        "id": "value",
-                        "type": "string",
-                        "value": "string1",
-                        "line": 3,
-                        "symbol_table": "script"
-                    },
-                    "line": 3
-                }
-            ],
+            "id": "value",
+            "type": "string",
+            "value": "string1",
             "line": 3,
             "symbol_table": "script"
         },

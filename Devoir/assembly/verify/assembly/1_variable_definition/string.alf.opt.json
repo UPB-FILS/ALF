@@ -2,19 +2,10 @@
     "symbol_table": {
         "script": {
             "type": "script",
-            "variables": {
-                "str": {
-                    "type": "string",
-                    "line": 3,
-                    "parameter": false,
-                    "size": 256,
-                    "allocation": "data",
-                    "address": 0
-                }
-            },
+            "variables": {},
             "functions": {},
             "types": {},
-            "variable_data_space": 256,
+            "variable_data_space": 0,
             "variable_stack_space": 0
         }
     },
@@ -22,23 +13,11 @@
         "script": {
             "statements": [
                 {
-                    "id": "attr",
-                    "to": {
-                        "id": "identifier",
-                        "title": "str",
-                        "symbol_table": "script",
-                        "line": 3,
-                        "type": "string"
-                    },
-                    "from": {
-                        "id": "value",
-                        "type": "string",
-                        "value": "string1",
-                        "line": 3,
-                        "symbol_table": "script"
-                    },
+                    "id": "value",
+                    "type": "string",
+                    "value": "string1",
                     "line": 3,
-                    "type": "none"
+                    "symbol_table": "script"
                 },
                 {
                     "id": "value",
