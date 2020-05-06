@@ -6,26 +6,37 @@
                 "n": {
                     "type": "int",
                     "line": 2,
-                    "parameter": false
+                    "parameter": false,
+                    "size": 4,
+                    "allocation": "global"
                 },
                 "r": {
                     "type": "real",
                     "line": 2,
-                    "parameter": false
+                    "parameter": false,
+                    "size": 4,
+                    "allocation": "global"
                 },
                 "l": {
                     "type": "bool",
                     "line": 2,
-                    "parameter": false
+                    "parameter": false,
+                    "size": 4,
+                    "allocation": "global"
                 },
                 "s": {
                     "type": "string",
                     "line": 2,
-                    "parameter": false
+                    "parameter": false,
+                    "size": 256,
+                    "allocation": "data",
+                    "address": 0
                 }
             },
             "functions": {},
-            "types": {}
+            "types": {},
+            "variable_data_space": 256,
+            "variable_stack_space": 0
         }
     },
     "ast": {
@@ -91,5 +102,6 @@
             ]
         }
     },
-    "errors": []
+    "errors": [],
+    "strings": {}
 }

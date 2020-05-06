@@ -23,6 +23,7 @@
         ;; variable item
         ;; readint (...)
         call $readint
+        ;; alternative i32.const undefined
         global.set $item
         ;; writeint (...)
         ;; parameter nr

@@ -10,6 +10,7 @@
     (global $n (mut i32) (i32.const 0))
     (global $r (mut f32) (f32.const 0))
     (global $l (mut i32) (i32.const 0))
+    (global $s i32 (i32.const 0))
     
     ;; function entry
     (func $entry

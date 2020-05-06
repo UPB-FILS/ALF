@@ -26,6 +26,7 @@
         ;; variable s
         ;; value bool false
         i32.const 0
+        ;; alternative i32.const undefined
         global.set $s
         ;; while
         block $script_end
@@ -41,11 +42,13 @@
                     ;; variable p
                     ;; readint (...)
                     call $readint
+                    ;; alternative i32.const undefined
                     global.set $p
                     ;; attribution
                     ;; variable isPrime
                     ;; value bool true
                     i32.const 1
+                    ;; alternative i32.const undefined
                     global.set $isPrime
                     ;; for
                     ;; from
@@ -83,6 +86,7 @@
                                     ;; variable isPrime
                                     ;; value bool false
                                     i32.const 0
+                                    ;; alternative i32.const undefined
                                     global.set $isPrime
                                 end
                                 ;; attribution
@@ -115,6 +119,7 @@
                     ;; variable s
                     ;; variable isPrime
                     global.get $isPrime
+                    ;; alternative i32.const undefined
                     global.set $s
                 br $script_begin
             end $script_begin

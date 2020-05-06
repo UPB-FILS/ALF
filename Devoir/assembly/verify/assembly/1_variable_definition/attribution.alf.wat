@@ -19,6 +19,7 @@
         ;; variable n
         ;; value int 6
         i32.const 6
+        ;; alternative i32.const undefined
         global.set $n
         ;; writeint (...)
         ;; parameter nr

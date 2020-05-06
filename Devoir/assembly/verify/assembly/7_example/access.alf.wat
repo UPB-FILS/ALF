@@ -10,6 +10,7 @@
     (global $stack_pointer (mut i32) (i32.const 0))
     
     ;; global variables
+    (global $v i32 (i32.const 0))
     
     ;; function entry
     (func $entry
@@ -17,7 +18,8 @@
         ;; attribution
         ;; array
         ;; variable v
-        i32.const 0
+        ;; alternative i32.const 0
+        global.get $v
             ;; index
             ;; value int 5
             i32.const 5
@@ -31,7 +33,8 @@
         ;; parameter nr
         ;; array
         ;; variable v
-        i32.const 0
+        ;; alternative i32.const 0
+        global.get $v
             ;; index
             ;; value int 5
             i32.const 5

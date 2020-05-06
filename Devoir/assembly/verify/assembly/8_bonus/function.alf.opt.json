@@ -14,12 +14,14 @@
                         }
                     ],
                     "use": "io",
-                    "line": 3
+                    "line": 3,
+                    "ref": 1
                 },
                 "sum": {
                     "type": "int",
                     "parameters": [],
-                    "line": 7
+                    "line": 7,
+                    "ref": 0
                 }
             },
             "types": {},
@@ -66,25 +68,11 @@
                     "title": "writeint",
                     "parameters": {
                         "nr": {
-                            "id": "expr",
-                            "op": "+",
-                            "left": {
-                                "id": "value",
-                                "type": "int",
-                                "value": 2,
-                                "line": 5,
-                                "symbol_table": "script"
-                            },
-                            "right": {
-                                "id": "value",
-                                "type": "int",
-                                "value": 6,
-                                "line": 5,
-                                "symbol_table": "script"
-                            },
+                            "id": "value",
                             "line": 5,
                             "symbol_table": "script",
-                            "type": "int"
+                            "type": "int",
+                            "value": 8
                         }
                     },
                     "line": 5,
@@ -100,25 +88,11 @@
                 {
                     "id": "return",
                     "value": {
-                        "id": "expr",
-                        "op": "+",
-                        "left": {
-                            "id": "value",
-                            "type": "int",
-                            "value": 2,
-                            "line": 7,
-                            "symbol_table": "function_sum"
-                        },
-                        "right": {
-                            "id": "value",
-                            "type": "int",
-                            "value": 3,
-                            "line": 7,
-                            "symbol_table": "function_sum"
-                        },
+                        "id": "value",
                         "line": 7,
                         "symbol_table": "function_sum",
-                        "type": "int"
+                        "type": "int",
+                        "value": 5
                     },
                     "line": 7,
                     "symbol_table": "function_sum",

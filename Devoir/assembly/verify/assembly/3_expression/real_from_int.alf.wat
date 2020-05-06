@@ -23,6 +23,7 @@
         ;; variable n
         ;; readint (...)
         call $readint
+        ;; alternative i32.const undefined
         global.set $n
         ;; attribution
         ;; variable s
@@ -30,6 +31,7 @@
         global.get $n
         ;; typecast real int
         f32.convert_s/i32
+        ;; alternative i32.const undefined
         global.set $s
         ;; writeint (...)
         ;; parameter nr

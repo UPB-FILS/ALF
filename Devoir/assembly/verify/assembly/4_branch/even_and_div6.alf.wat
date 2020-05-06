@@ -23,6 +23,7 @@
         ;; variable a
         ;; readint (...)
         call $readint
+        ;; alternative i32.const undefined
         global.set $a
         ;; if
             ;; expression ==
@@ -52,12 +53,14 @@
                 ;; variable e
                 ;; value character y
                 i32.const 121
+                ;; alternative i32.const undefined
                 global.set $e
             else
                 ;; attribution
                 ;; variable e
                 ;; value character n
                 i32.const 110
+                ;; alternative i32.const undefined
                 global.set $e
             end
         else
@@ -65,6 +68,7 @@
             ;; variable e
             ;; value character o
             i32.const 111
+            ;; alternative i32.const undefined
             global.set $e
         end
         ;; writechar (...)

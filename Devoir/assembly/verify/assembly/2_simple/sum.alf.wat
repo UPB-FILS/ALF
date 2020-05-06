@@ -24,11 +24,13 @@
         ;; variable x
         ;; readint (...)
         call $readint
+        ;; alternative i32.const undefined
         global.set $x
         ;; attribution
         ;; variable y
         ;; readint (...)
         call $readint
+        ;; alternative i32.const undefined
         global.set $y
         ;; attribution
         ;; variable s
@@ -38,6 +40,7 @@
             ;; variable y
             global.get $y
         i32.add
+        ;; alternative i32.const undefined
         global.set $s
         ;; writeint (...)
         ;; parameter nr

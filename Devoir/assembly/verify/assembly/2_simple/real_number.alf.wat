@@ -19,6 +19,7 @@
         ;; variable a
         ;; value real 3.7
         f32.const 3.7
+        ;; alternative i32.const undefined
         global.set $a
         ;; writefloat (...)
         ;; parameter nr

@@ -27,16 +27,19 @@
         ;; variable x
         ;; readint (...)
         call $readint
+        ;; alternative i32.const undefined
         global.set $x
         ;; attribution
         ;; variable y
         ;; readint (...)
         call $readint
+        ;; alternative i32.const undefined
         global.set $y
         ;; attribution
         ;; variable w
         ;; readint (...)
         call $readint
+        ;; alternative i32.const undefined
         global.set $w
         ;; if
             ;; expression <

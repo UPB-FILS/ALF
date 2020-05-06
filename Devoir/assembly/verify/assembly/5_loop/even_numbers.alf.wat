@@ -24,6 +24,7 @@
         ;; variable nr
         ;; readint (...)
         call $readint
+        ;; alternative i32.const undefined
         global.set $nr
         ;; for
         ;; from

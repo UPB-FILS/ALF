@@ -44,6 +44,7 @@
         ;; attribution
         ;; array
         ;; variable s
+        ;; address $base_pointer-0
         local.get $base_pointer
         i32.const 0
         i32.sub
@@ -63,6 +64,7 @@
         ;; return
         ;; array
         ;; variable s
+        ;; address $base_pointer-0
         local.get $base_pointer
         i32.const 0
         i32.sub

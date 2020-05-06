@@ -23,6 +23,7 @@
         ;; variable a
         ;; readint (...)
         call $readint
+        ;; alternative i32.const undefined
         global.set $a
         ;; if
             ;; expression <

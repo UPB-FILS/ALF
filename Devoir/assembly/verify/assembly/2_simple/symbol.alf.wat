@@ -19,6 +19,7 @@
         ;; variable c
         ;; value character s
         i32.const 115
+        ;; alternative i32.const undefined
         global.set $c
         ;; attribution
         ;; variable c
@@ -32,6 +33,7 @@
         ;; typecast character int
         i32.const 0x000000ff
         i32.and
+        ;; alternative i32.const undefined
         global.set $c
         ;; writechar (...)
         ;; parameter char

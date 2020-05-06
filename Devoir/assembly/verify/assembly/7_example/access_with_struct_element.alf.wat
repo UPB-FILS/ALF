@@ -13,6 +13,8 @@
     (global $stack_pointer (mut i32) (i32.const 0))
     
     ;; global variables
+    (global $v i32 (i32.const 0))
+    (global $s i32 (i32.const 36))
     
     ;; function entry
     (func $entry
@@ -20,11 +22,13 @@
         ;; attribution
         ;; array
         ;; variable v
-        i32.const 0
+        ;; alternative i32.const 0
+        global.get $v
             ;; index
             ;; struct
             ;; variable s
-            i32.const 36
+            ;; alternative i32.const 36
+            global.get $s
                 ;; property position offset 0
                 i32.const 0
                 i32.add
@@ -38,11 +42,13 @@
         ;; parameter nr
         ;; array
         ;; variable v
-        i32.const 0
+        ;; alternative i32.const 0
+        global.get $v
             ;; index
             ;; struct
             ;; variable s
-            i32.const 36
+            ;; alternative i32.const 36
+            global.get $s
                 ;; property position offset 0
                 i32.const 0
                 i32.add

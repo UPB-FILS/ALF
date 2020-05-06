@@ -6,7 +6,10 @@
                 "s": {
                     "type": "school",
                     "line": 8,
-                    "parameter": false
+                    "parameter": false,
+                    "size": 264,
+                    "allocation": "data",
+                    "address": 0
                 }
             },
             "functions": {},
@@ -17,22 +20,31 @@
                         {
                             "type": "string",
                             "title": "name",
-                            "line": 3
+                            "line": 3,
+                            "size": 256,
+                            "offset": 0
                         },
                         {
-                            "type": "logic",
+                            "type": "bool",
                             "title": "private",
-                            "line": 4
+                            "line": 4,
+                            "size": 4,
+                            "offset": 256
                         },
                         {
                             "type": "int",
                             "title": "type",
-                            "line": 5
+                            "line": 5,
+                            "size": 4,
+                            "offset": 260
                         }
                     ],
-                    "line": 6
+                    "line": 6,
+                    "size": 264
                 }
-            }
+            },
+            "variable_data_space": 264,
+            "variable_stack_space": 0
         }
     },
     "ast": {
@@ -40,13 +52,6 @@
             "statements": []
         }
     },
-    "errors": [
-        {
-            "type": "UNDEFINED_TYPE",
-            "elements": {
-                "type": "logic",
-                "line": 4
-            }
-        }
-    ]
+    "errors": [],
+    "strings": {}
 }

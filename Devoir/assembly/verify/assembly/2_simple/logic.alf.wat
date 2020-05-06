@@ -19,6 +19,7 @@
         ;; variable a
         ;; value bool false
         i32.const 0
+        ;; alternative i32.const undefined
         global.set $a
         ;; writeint (...)
         ;; parameter nr

@@ -7,13 +7,16 @@
     (global $stack_pointer (mut i32) (i32.const 0))
     
     ;; global variables
+    (global $n i32 (i32.const 0))
+    (global $e i32 (i32.const 256))
     
     ;; function entry
     (func $entry
         (local $base_pointer i32)
         ;; attribution
         ;; variable n
-        i32.const 0
+        ;; alternative i32.const 0
+        global.get $n
         ;; value string str
         global.get $strings_start
         i32.const 0
@@ -25,9 +28,11 @@
         call $memcpy
         ;; attribution
         ;; variable e
-        i32.const 256
+        ;; alternative i32.const 256
+        global.get $e
         ;; variable n
-        i32.const 0
+        ;; alternative i32.const 0
+        global.get $n
         ;; attribute string to string
         ;; set the number of words 64 (memory is aligned at 4 bytes)
         i32.const 64

@@ -24,6 +24,7 @@
                 i32.const 5
             i32.mul
         i32.add
+        ;; alternative i32.const undefined
         global.set $e
     )
     

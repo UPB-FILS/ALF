@@ -25,6 +25,7 @@
         ;; variable number
         ;; readint (...)
         call $readint
+        ;; alternative i32.const undefined
         global.set $number
         ;; base16 (...)
         ;; parameter number

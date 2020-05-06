@@ -23,11 +23,13 @@
         ;; variable digits
         ;; value int 0
         i32.const 0
+        ;; alternative i32.const undefined
         global.set $digits
         ;; attribution
         ;; variable number
         ;; readint (...)
         call $readint
+        ;; alternative i32.const undefined
         global.set $number
         ;; if
             ;; expression ==
@@ -41,6 +43,7 @@
             ;; variable digits
             ;; value int 1
             i32.const 1
+            ;; alternative i32.const undefined
             global.set $digits
         end
         ;; while
@@ -62,6 +65,7 @@
                         ;; value int 10
                         i32.const 10
                     i32.div_s
+                    ;; alternative i32.const undefined
                     global.set $number
                     ;; attribution
                     ;; variable digits
@@ -71,6 +75,7 @@
                         ;; value int 1
                         i32.const 1
                     i32.add
+                    ;; alternative i32.const undefined
                     global.set $digits
                 br $script_begin
             end $script_begin

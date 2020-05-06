@@ -25,6 +25,7 @@
             ;; variable i
             ;; readint (...)
             call $readint
+            ;; alternative i32.const undefined
             global.set $i
             ;; attribution
             ;; variable h
@@ -32,6 +33,7 @@
             global.get $i
             ;; typecast real int
             f32.convert_s/i32
+            ;; alternative i32.const undefined
             global.set $h
             ;; writefloat (...)
             ;; parameter nr

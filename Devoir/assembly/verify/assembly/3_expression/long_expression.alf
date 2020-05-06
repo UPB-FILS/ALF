@@ -1,6 +1,6 @@
 #Long expression#
 
-use io funtion writeint(nr:int):none;
+use io function writeint(nr:int):none;
 
 @var n:int;
 
