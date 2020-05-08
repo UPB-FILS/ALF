@@ -1,0 +1,12 @@
+	; R = D - I * C
+	JMP start
+
+start:
+	MOV A, 50    ; Point to var (D)
+	MOV B, 11	; Point to output (I)
+	MOV D, A
+	DIV B
+	MUL B
+	SUB D, A
+	MOV A, D
+	HLT

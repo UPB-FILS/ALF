@@ -1,0 +1,52 @@
+   jmp start
+
+
+seq:
+    mov d, [sp+2]
+    cmp d, 0
+    je seq_zero
+    cmp d, 1
+    je seq_one
+
+
+    ; save d
+    push d
+    ; seq (n-1)
+    mov b, d
+    sub b, 1
+    push b
+    call seq
+    add sp, 1
+    ; a is seq(n-1)
+    ; reload d
+    pop d
+    push a
+
+
+    ; seq (n-2)
+    mov b, d
+    sub b, 2
+    push b
+    call seq
+    add sp, 1
+    ; a is seq(n-2)
+    ; get seq(n-1) from stack
+    pop b
+    ; a = a * b
+    mul b
+    jmp seq_end
+seq_zero:
+    mov a, 1
+    jmp seq_end
+seq_one:
+    mov a, 2
+    jmp seq_end
+seq_end:
+    ret
+
+
+start:
+    push 3
+    call seq
+    add sp, 1
+    hlt

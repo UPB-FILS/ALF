@@ -1,0 +1,15 @@
+; D = I * C + R => R = D - I * C    
+jmp start
+mod:
+    mov d, a
+    div b
+    mul b
+    sub d, a
+    mov a, d
+    ret
+   
+start:
+    mov a, 5
+    mov b, 2
+    call mod ;(a, b params, return a)
+    hlt

@@ -1,0 +1,7 @@
+	JMP start
+
+start:
+	MOV A, 1
+	MOV B, 3
+	MOV C, 5
+	MOV D, 7

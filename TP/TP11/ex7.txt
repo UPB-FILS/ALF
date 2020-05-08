@@ -1,0 +1,23 @@
+	JMP start
+hello: DB "ALF" ; Variable
+       DB 0    ; String terminator
+
+start:
+    mov [sp], hello   ;push hello
+    sub sp, 1
+    call print  
+    HLT             ; Stop execution
+
+
+print:            
+    mov c, [sp+2]
+    MOV B, 0
+    MOV D, 0
+.loop:
+    MOV A, [C]    ; Get char from var
+    INC C
+    INC D
+    CMP B, [C]    ; Check if end
+    JNZ .loop    ; jump if not
+    mov a, d
+    RET
