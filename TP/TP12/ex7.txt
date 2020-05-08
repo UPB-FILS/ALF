@@ -1,0 +1,50 @@
+(module
+  (import "io" "print" (func $print (param $s f32)))
+  (func $sq (param $a f32) (param $b f32) (local $i f32) (local $res f32)
+    	get_local $a
+        set_local $i
+    	f32.const 0
+    	set_local $res
+        block $endfor
+          loop $for
+            get_local $i
+            get_local $b
+            f32.gt
+            br_if $endfor
+            get_local $i
+    		f32.sqrt
+    		get_local $res
+    		f32.add
+    		set_local $res
+            get_local $i
+            f32.const 1
+            f32.add
+            set_local $i
+            br $for
+          end $for
+        end $endfor
+   	get_local $res
+    call $print
+    )
+  (func $start
+    	f32.const 1
+    	f32.const 4
+    	call $sq
+    )
+  (export "start" (func $start))
+)
+
+
+fetch('../out/main.wasm').then(response =>
+  response.arrayBuffer()
+).then(bytes => WebAssembly.instantiate(bytes, {
+  io: {
+    print: console.log
+  }
+})).then(results => {
+  let instance = results.instance;
+  // instance is your webassembly module
+  let asm = instance.exports;
+  // asm is an object with all the items that you exported
+  console.log (asm.start());
+}).catch(console.error);

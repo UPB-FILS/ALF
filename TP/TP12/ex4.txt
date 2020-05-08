@@ -1,0 +1,33 @@
+(module
+  (import "io" "print" (func $print (param f32)))
+    (func $divide (param $c f32) (param $d f32) (result f32)
+      get_local $c
+      get_local $d
+      f32.div
+    )
+
+    (func $start 
+      f32.const 5
+      f32.const 3
+      call $divide
+      call $print
+    )
+
+    (export "start" (func $start))
+ )
+
+
+
+fetch('../out/main.wasm').then(response =>
+  response.arrayBuffer()
+).then(bytes => WebAssembly.instantiate(bytes, {
+  io: {
+    print: console.log
+  }
+})).then(results => {
+  let instance = results.instance;
+  // instance is your webassembly module
+  let asm = instance.exports;
+  // asm is an object with all the items that you exported
+  console.log (asm.start());
+}).catch(console.error);
