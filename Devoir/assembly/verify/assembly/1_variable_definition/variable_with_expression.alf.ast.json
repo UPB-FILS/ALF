@@ -1,0 +1,54 @@
+{
+    "id": "script",
+    "statements": [
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "int",
+                    "title": "e",
+                    "value": {
+                        "id": "expr",
+                        "op": "+",
+                        "left": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 20,
+                            "line": 2,
+                            "symbol_table": "script"
+                        },
+                        "right": {
+                            "id": "expr",
+                            "op": "*",
+                            "left": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 3,
+                                "line": 2,
+                                "symbol_table": "script"
+                            },
+                            "right": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 5,
+                                "line": 2,
+                                "symbol_table": "script"
+                            },
+                            "line": 2,
+                            "symbol_table": "script",
+                            "type": "int"
+                        },
+                        "line": 2,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "line": 2
+                }
+            ],
+            "line": 2,
+            "symbol_table": "script"
+        }
+    ],
+    "line": 2,
+    "symbol_table": "script"
+}

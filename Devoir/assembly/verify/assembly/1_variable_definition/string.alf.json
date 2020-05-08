@@ -1,0 +1,38 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {},
+            "functions": {},
+            "types": {}
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "value",
+                    "type": "string",
+                    "value": "string1",
+                    "line": 3,
+                    "symbol_table": "script"
+                },
+                {
+                    "id": "value",
+                    "type": "string",
+                    "value": "string2",
+                    "line": 4,
+                    "symbol_table": "script"
+                },
+                {
+                    "id": "value",
+                    "type": "string",
+                    "value": "string3",
+                    "line": 5,
+                    "symbol_table": "script"
+                }
+            ]
+        }
+    },
+    "errors": []
+}

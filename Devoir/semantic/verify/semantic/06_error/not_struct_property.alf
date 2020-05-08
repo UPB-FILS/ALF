@@ -1,0 +1,9 @@
+#Not a struct property#
+
+struct s 
+	property title:string;
+end;
+
+@var v: s;
+
+v.t <- "some text";

@@ -1,0 +1,57 @@
+{
+    "id": "script",
+    "statements": [
+        {
+            "id": "function_def",
+            "use": "io",
+            "title": "writeint",
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "nr",
+                    "line": 3
+                }
+            ],
+            "type": "none",
+            "line": 3,
+            "symbol_table": "function_writeint"
+        },
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "bool",
+                    "title": "a",
+                    "value": {
+                        "id": "value",
+                        "type": "bool",
+                        "value": false,
+                        "line": 5,
+                        "symbol_table": "script"
+                    },
+                    "line": 5
+                }
+            ],
+            "line": 5,
+            "symbol_table": "script"
+        },
+        {
+            "id": "function_call",
+            "title": "writeint",
+            "parameters": {
+                "nr": {
+                    "id": "identifier",
+                    "title": "a",
+                    "line": 7,
+                    "symbol_table": "script",
+                    "type": "bool"
+                }
+            },
+            "line": 7,
+            "symbol_table": "script",
+            "type": "none"
+        }
+    ],
+    "line": 7,
+    "symbol_table": "script"
+}

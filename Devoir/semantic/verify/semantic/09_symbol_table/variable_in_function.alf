@@ -1,0 +1,5 @@
+#Variable in function#
+
+@var s <- "variable";
+
+function f:string -> s;

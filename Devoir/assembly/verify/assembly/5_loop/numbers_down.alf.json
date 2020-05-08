@@ -1,0 +1,104 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "i": {
+                    "type": "int",
+                    "line": 3,
+                    "parameter": false
+                }
+            },
+            "functions": {
+                "writeint": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "title": "nr",
+                            "line": 5
+                        }
+                    ],
+                    "use": "io",
+                    "line": 5
+                }
+            },
+            "types": {}
+        },
+        "function_writeint": {
+            "title": "writeint",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "nr": {
+                    "type": "int",
+                    "parameter": true,
+                    "index": 0
+                }
+            },
+            "functions": {},
+            "types": {}
+        },
+        "for_9": {
+            "type": "statements",
+            "parent": "script",
+            "variables": {
+                "i": {
+                    "type": "int",
+                    "parameter": false,
+                    "line": 9
+                }
+            },
+            "functions": {},
+            "types": {}
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "for",
+                    "variable": "i",
+                    "from": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 6,
+                        "line": 7,
+                        "symbol_table": "script"
+                    },
+                    "downto": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 1,
+                        "line": 7,
+                        "symbol_table": "script"
+                    },
+                    "statements": [
+                        {
+                            "id": "function_call",
+                            "title": "writeint",
+                            "parameters": {
+                                "nr": {
+                                    "id": "identifier",
+                                    "title": "i",
+                                    "line": 8,
+                                    "symbol_table": "for_9",
+                                    "type": "int"
+                                }
+                            },
+                            "line": 8,
+                            "symbol_table": "for_9",
+                            "type": "none"
+                        }
+                    ],
+                    "line": 9,
+                    "symbol_table": "for_9",
+                    "type": "none"
+                }
+            ]
+        }
+    },
+    "errors": []
+}

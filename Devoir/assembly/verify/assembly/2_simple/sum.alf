@@ -1,0 +1,14 @@
+#Sum#
+
+@var x:int, y:int, s:int;
+
+use io function writeint (nr:int):none;
+
+use io function readint:int;
+
+x <- readint();
+y <- readint();
+
+s <- x+y;
+
+writeint (nr:s);

@@ -1,0 +1,57 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "s": {
+                    "type": "school",
+                    "line": 8,
+                    "parameter": false,
+                    "size": 264,
+                    "allocation": "data",
+                    "address": 0
+                }
+            },
+            "functions": {},
+            "types": {
+                "school": {
+                    "type": "struct",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "title": "name",
+                            "line": 3,
+                            "size": 256,
+                            "offset": 0
+                        },
+                        {
+                            "type": "bool",
+                            "title": "private",
+                            "line": 4,
+                            "size": 4,
+                            "offset": 256
+                        },
+                        {
+                            "type": "int",
+                            "title": "type",
+                            "line": 5,
+                            "size": 4,
+                            "offset": 260
+                        }
+                    ],
+                    "line": 6,
+                    "size": 264
+                }
+            },
+            "variable_data_space": 264,
+            "variable_stack_space": 0
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": []
+        }
+    },
+    "errors": [],
+    "strings": {}
+}

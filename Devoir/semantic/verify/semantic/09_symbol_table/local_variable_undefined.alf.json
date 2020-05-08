@@ -1,0 +1,92 @@
+{
+   "symbol_table": {
+      "script": {
+         "type": "script",
+         "variables": {},
+         "functions": {},
+         "types": {}
+      },
+      "while_5": {
+         "type": "statements",
+         "parent": "script",
+         "variables": {
+            "n": {
+               "type": "int",
+               "line": 4,
+               "parameter": false
+            }
+         },
+         "functions": {},
+         "types": {}
+      }
+   },
+   "ast": {
+      "script": {
+         "statements": [
+            {
+               "id": "loop_go",
+               "exp": {
+                  "id": "value",
+                  "type": "bool",
+                  "value": false,
+                  "line": 3,
+                  "symbol_table": "script"
+               },
+               "statements": [
+                  {
+                     "id": "attr",
+                     "to": {
+                        "id": "identifier",
+                        "title": "n",
+                        "symbol_table": "while_5",
+                        "line": 4,
+                        "type": "int"
+                     },
+                     "from": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 1,
+                        "line": 4,
+                        "symbol_table": "while_5"
+                     },
+                     "line": 4,
+                     "type": "none"
+                  }
+               ],
+               "line": 5,
+               "symbol_table": "script",
+               "type": "none"
+            },
+            {
+               "id": "attr",
+               "to": {
+                  "id": "identifier",
+                  "title": "n",
+                  "line": 7,
+                  "symbol_table": "script",
+                  "type": "error"
+               },
+               "from": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 2,
+                  "line": 7,
+                  "symbol_table": "script"
+               },
+               "line": 7,
+               "symbol_table": "script",
+               "type": "none"
+            }
+         ]
+      }
+   },
+   "errors": [
+      {
+         "type": "UNDEFINED_VARIABLE",
+         "elements": {
+            "title": "n",
+            "line": 7
+         }
+      }
+   ]
+}

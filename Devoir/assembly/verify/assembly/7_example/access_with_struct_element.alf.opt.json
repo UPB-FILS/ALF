@@ -1,0 +1,188 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "v": {
+                    "type": "list",
+                    "line": 4,
+                    "parameter": false,
+                    "size": 36,
+                    "allocation": "data",
+                    "address": 0
+                },
+                "s": {
+                    "type": "structure",
+                    "line": 10,
+                    "parameter": false,
+                    "size": 4,
+                    "allocation": "data",
+                    "address": 36
+                }
+            },
+            "functions": {
+                "readint": {
+                    "type": "int",
+                    "parameters": [],
+                    "use": "io",
+                    "line": 12
+                },
+                "writeint": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "title": "nr",
+                            "line": 13
+                        }
+                    ],
+                    "use": "io",
+                    "line": 13
+                }
+            },
+            "types": {
+                "list": {
+                    "type": "array",
+                    "element_type": "int",
+                    "length": 9,
+                    "first": 1,
+                    "line": 2,
+                    "size": 36
+                },
+                "structure": {
+                    "type": "struct",
+                    "properties": [
+                        {
+                            "type": "int",
+                            "title": "position",
+                            "line": 7,
+                            "size": 4,
+                            "offset": 0
+                        }
+                    ],
+                    "line": 8,
+                    "size": 4
+                }
+            },
+            "variable_data_space": 40,
+            "variable_stack_space": 0
+        },
+        "function_readint": {
+            "title": "readint",
+            "type": "function",
+            "use": "io",
+            "return_type": "int",
+            "parent": "script",
+            "variables": {},
+            "functions": {},
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        },
+        "function_writeint": {
+            "title": "writeint",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "nr": {
+                    "type": "int",
+                    "parameter": true,
+                    "index": 0,
+                    "size": 4,
+                    "allocation": "param"
+                }
+            },
+            "functions": {},
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "element_of_vector",
+                        "array": {
+                            "id": "identifier",
+                            "title": "v",
+                            "line": 15,
+                            "symbol_table": "script",
+                            "type": "list"
+                        },
+                        "index": {
+                            "id": "property",
+                            "object": {
+                                "id": "identifier",
+                                "title": "s",
+                                "line": 15,
+                                "symbol_table": "script",
+                                "type": "structure"
+                            },
+                            "title": "position",
+                            "line": 15,
+                            "symbol_table": "script",
+                            "type": "int"
+                        },
+                        "line": 15,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "from": {
+                        "id": "function_call",
+                        "title": "readint",
+                        "parameters": [],
+                        "line": 15,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "line": 15,
+                    "symbol_table": "script",
+                    "type": "none"
+                },
+                {
+                    "id": "function_call",
+                    "title": "writeint",
+                    "parameters": {
+                        "nr": {
+                            "id": "element_of_vector",
+                            "array": {
+                                "id": "identifier",
+                                "title": "v",
+                                "line": 17,
+                                "symbol_table": "script",
+                                "type": "list"
+                            },
+                            "index": {
+                                "id": "property",
+                                "object": {
+                                    "id": "identifier",
+                                    "title": "s",
+                                    "line": 17,
+                                    "symbol_table": "script",
+                                    "type": "structure"
+                                },
+                                "title": "position",
+                                "line": 17,
+                                "symbol_table": "script",
+                                "type": "int"
+                            },
+                            "line": 17,
+                            "symbol_table": "script",
+                            "type": "int"
+                        }
+                    },
+                    "line": 17,
+                    "symbol_table": "script",
+                    "type": "none"
+                }
+            ]
+        }
+    },
+    "errors": [],
+    "strings": {}
+}

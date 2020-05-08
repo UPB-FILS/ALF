@@ -1,0 +1,5 @@
+#Expression with int, real, symbol#
+
+use io function writeint (nr:int):none;
+
+writeint (nr:2+3.5+"e");

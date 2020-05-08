@@ -1,0 +1,22 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "variable": {
+                    "type": "int",
+                    "line": 2,
+                    "parameter": false
+                }
+            },
+            "functions": {},
+            "types": {}
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": []
+        }
+    },
+    "errors": []
+}

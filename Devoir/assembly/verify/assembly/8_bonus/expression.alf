@@ -1,0 +1,5 @@
+#Constant folding expression#
+
+2*5+3;
+120+"0";
+"hello "+"world";

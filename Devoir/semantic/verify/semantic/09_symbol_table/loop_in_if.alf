@@ -1,0 +1,10 @@
+#Loop in if#
+
+@var i<-0;
+
+if i < 0 then
+    @var e<-0;
+    loop e > 0 go
+        @var e<-1.4;
+    end;
+end;

@@ -1,0 +1,106 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {},
+            "functions": {
+                "writeint": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "title": "nr",
+                            "line": 3
+                        }
+                    ],
+                    "use": "io",
+                    "line": 3,
+                    "ref": 1
+                },
+                "sum": {
+                    "type": "int",
+                    "parameters": [],
+                    "line": 7,
+                    "ref": 0
+                }
+            },
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        },
+        "function_writeint": {
+            "title": "writeint",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "nr": {
+                    "type": "int",
+                    "parameter": true,
+                    "index": 0,
+                    "size": 4,
+                    "allocation": "param"
+                }
+            },
+            "functions": {},
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        },
+        "function_sum": {
+            "title": "sum",
+            "type": "function",
+            "return_type": "int",
+            "parent": "script",
+            "variables": {},
+            "functions": {},
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "function_call",
+                    "title": "writeint",
+                    "parameters": {
+                        "nr": {
+                            "id": "value",
+                            "line": 5,
+                            "symbol_table": "script",
+                            "type": "int",
+                            "value": 8
+                        }
+                    },
+                    "line": 5,
+                    "symbol_table": "script",
+                    "type": "none"
+                }
+            ]
+        },
+        "sum": {
+            "parameters": [],
+            "type": "int",
+            "statements": [
+                {
+                    "id": "return",
+                    "value": {
+                        "id": "value",
+                        "line": 7,
+                        "symbol_table": "function_sum",
+                        "type": "int",
+                        "value": 5
+                    },
+                    "line": 7,
+                    "symbol_table": "function_sum",
+                    "type": "int"
+                }
+            ]
+        }
+    },
+    "errors": [],
+    "strings": {}
+}

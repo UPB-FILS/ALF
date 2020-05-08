@@ -1,0 +1,169 @@
+{
+    "id": "script",
+    "statements": [
+        {
+            "id": "vector",
+            "title": "list",
+            "element_type": "int",
+            "from": 1,
+            "to": 9,
+            "line": 2,
+            "symbol_table": "script"
+        },
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "list",
+                    "title": "v",
+                    "line": 4
+                },
+                {
+                    "type": "list",
+                    "title": "p",
+                    "line": 4
+                }
+            ],
+            "line": 4,
+            "symbol_table": "script"
+        },
+        {
+            "id": "function_def",
+            "use": "io",
+            "title": "writeint",
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "nr",
+                    "line": 6
+                }
+            ],
+            "type": "none",
+            "line": 6,
+            "symbol_table": "function_writeint"
+        },
+        {
+            "id": "attr",
+            "to": {
+                "id": "element_of_vector",
+                "array": {
+                    "id": "identifier",
+                    "title": "p",
+                    "line": 8,
+                    "symbol_table": "script",
+                    "type": "list"
+                },
+                "index": {
+                    "id": "value",
+                    "type": "int",
+                    "value": 5,
+                    "line": 8,
+                    "symbol_table": "script"
+                },
+                "line": 8,
+                "symbol_table": "script",
+                "type": "int"
+            },
+            "from": {
+                "id": "value",
+                "type": "int",
+                "value": 5,
+                "line": 8,
+                "symbol_table": "script"
+            },
+            "line": 8,
+            "symbol_table": "script",
+            "type": "none"
+        },
+        {
+            "id": "attr",
+            "to": {
+                "id": "element_of_vector",
+                "array": {
+                    "id": "identifier",
+                    "title": "v",
+                    "line": 9,
+                    "symbol_table": "script",
+                    "type": "list"
+                },
+                "index": {
+                    "id": "element_of_vector",
+                    "array": {
+                        "id": "identifier",
+                        "title": "p",
+                        "line": 9,
+                        "symbol_table": "script",
+                        "type": "list"
+                    },
+                    "index": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 5,
+                        "line": 9,
+                        "symbol_table": "script"
+                    },
+                    "line": 9,
+                    "symbol_table": "script",
+                    "type": "int"
+                },
+                "line": 9,
+                "symbol_table": "script",
+                "type": "int"
+            },
+            "from": {
+                "id": "value",
+                "type": "int",
+                "value": 7,
+                "line": 9,
+                "symbol_table": "script"
+            },
+            "line": 9,
+            "symbol_table": "script",
+            "type": "none"
+        },
+        {
+            "id": "function_call",
+            "title": "writeint",
+            "parameters": {
+                "nr": {
+                    "id": "element_of_vector",
+                    "array": {
+                        "id": "identifier",
+                        "title": "v",
+                        "line": 10,
+                        "symbol_table": "script",
+                        "type": "list"
+                    },
+                    "index": {
+                        "id": "element_of_vector",
+                        "array": {
+                            "id": "identifier",
+                            "title": "p",
+                            "line": 10,
+                            "symbol_table": "script",
+                            "type": "list"
+                        },
+                        "index": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 5,
+                            "line": 10,
+                            "symbol_table": "script"
+                        },
+                        "line": 10,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "line": 10,
+                    "symbol_table": "script",
+                    "type": "int"
+                }
+            },
+            "line": 10,
+            "symbol_table": "script",
+            "type": "none"
+        }
+    ],
+    "line": 10,
+    "symbol_table": "script"
+}

@@ -1,0 +1,237 @@
+{
+    "id": "script",
+    "statements": [
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "int",
+                    "title": "x",
+                    "line": 3
+                },
+                {
+                    "type": "int",
+                    "title": "y",
+                    "line": 3
+                },
+                {
+                    "type": "int",
+                    "title": "w",
+                    "line": 3
+                }
+            ],
+            "line": 3,
+            "symbol_table": "script"
+        },
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "int",
+                    "title": "i",
+                    "line": 5
+                }
+            ],
+            "line": 5,
+            "symbol_table": "script"
+        },
+        {
+            "id": "function_def",
+            "use": "io",
+            "title": "writeint",
+            "parameters": [
+                {
+                    "type": "int",
+                    "title": "nr",
+                    "line": 7
+                }
+            ],
+            "type": "none",
+            "line": 7,
+            "symbol_table": "function_writeint"
+        },
+        {
+            "id": "function_def",
+            "use": "io",
+            "title": "readint",
+            "parameters": [],
+            "type": "int",
+            "line": 9,
+            "symbol_table": "function_readint"
+        },
+        {
+            "id": "attr",
+            "to": {
+                "id": "identifier",
+                "title": "x",
+                "line": 11,
+                "symbol_table": "script",
+                "type": "int"
+            },
+            "from": {
+                "id": "function_call",
+                "title": "readint",
+                "parameters": [],
+                "line": 11,
+                "symbol_table": "script",
+                "type": "int"
+            },
+            "line": 11,
+            "symbol_table": "script",
+            "type": "none"
+        },
+        {
+            "id": "attr",
+            "to": {
+                "id": "identifier",
+                "title": "y",
+                "line": 12,
+                "symbol_table": "script",
+                "type": "int"
+            },
+            "from": {
+                "id": "function_call",
+                "title": "readint",
+                "parameters": [],
+                "line": 12,
+                "symbol_table": "script",
+                "type": "int"
+            },
+            "line": 12,
+            "symbol_table": "script",
+            "type": "none"
+        },
+        {
+            "id": "attr",
+            "to": {
+                "id": "identifier",
+                "title": "w",
+                "line": 13,
+                "symbol_table": "script",
+                "type": "int"
+            },
+            "from": {
+                "id": "function_call",
+                "title": "readint",
+                "parameters": [],
+                "line": 13,
+                "symbol_table": "script",
+                "type": "int"
+            },
+            "line": 13,
+            "symbol_table": "script",
+            "type": "none"
+        },
+        {
+            "id": "if_then",
+            "exp": {
+                "id": "expr",
+                "op": "<",
+                "left": {
+                    "id": "identifier",
+                    "title": "x",
+                    "line": 15,
+                    "symbol_table": "script",
+                    "type": "int"
+                },
+                "right": {
+                    "id": "identifier",
+                    "title": "y",
+                    "line": 15,
+                    "symbol_table": "script",
+                    "type": "int"
+                },
+                "line": 15,
+                "symbol_table": "script",
+                "type": "bool"
+            },
+            "then": [
+                {
+                    "id": "for",
+                    "variable": "i",
+                    "from": {
+                        "id": "identifier",
+                        "title": "x",
+                        "line": 16,
+                        "symbol_table": "if_23",
+                        "type": "int"
+                    },
+                    "to": {
+                        "id": "identifier",
+                        "title": "y",
+                        "line": 16,
+                        "symbol_table": "if_23",
+                        "type": "int"
+                    },
+                    "statements": [
+                        {
+                            "id": "function_call",
+                            "title": "writeint",
+                            "parameters": {
+                                "nr": {
+                                    "id": "identifier",
+                                    "title": "i",
+                                    "line": 17,
+                                    "symbol_table": "for_18",
+                                    "type": "int"
+                                }
+                            },
+                            "line": 17,
+                            "symbol_table": "for_18",
+                            "type": "none"
+                        }
+                    ],
+                    "line": 18,
+                    "symbol_table": "for_18",
+                    "type": "none"
+                }
+            ],
+            "else": [
+                {
+                    "id": "for",
+                    "variable": "i",
+                    "from": {
+                        "id": "identifier",
+                        "title": "x",
+                        "line": 20,
+                        "symbol_table": "if_23",
+                        "type": "int"
+                    },
+                    "downto": {
+                        "id": "identifier",
+                        "title": "y",
+                        "line": 20,
+                        "symbol_table": "if_23",
+                        "type": "int"
+                    },
+                    "statements": [
+                        {
+                            "id": "function_call",
+                            "title": "writeint",
+                            "parameters": {
+                                "nr": {
+                                    "id": "identifier",
+                                    "title": "i",
+                                    "line": 21,
+                                    "symbol_table": "for_22",
+                                    "type": "int"
+                                }
+                            },
+                            "line": 21,
+                            "symbol_table": "for_22",
+                            "type": "none"
+                        }
+                    ],
+                    "line": 22,
+                    "symbol_table": "for_22",
+                    "type": "none"
+                }
+            ],
+            "line": 23,
+            "symbol_table": "script",
+            "type": "none"
+        }
+    ],
+    "line": 23,
+    "symbol_table": "script"
+}

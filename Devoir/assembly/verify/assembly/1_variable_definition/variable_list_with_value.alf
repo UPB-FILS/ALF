@@ -1,0 +1,2 @@
+#Variable definition list with value#
+@var n:int <- 3, r:real <- 3.7, l:bool <- false, s:string;

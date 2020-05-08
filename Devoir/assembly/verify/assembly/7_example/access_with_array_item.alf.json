@@ -1,0 +1,186 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "v": {
+                    "type": "list",
+                    "line": 4,
+                    "parameter": false
+                },
+                "p": {
+                    "type": "list",
+                    "line": 4,
+                    "parameter": false
+                }
+            },
+            "functions": {
+                "writeint": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "title": "nr",
+                            "line": 6
+                        }
+                    ],
+                    "use": "io",
+                    "line": 6
+                }
+            },
+            "types": {
+                "list": {
+                    "type": "array",
+                    "element_type": "int",
+                    "length": 9,
+                    "first": 1,
+                    "line": 2
+                }
+            }
+        },
+        "function_writeint": {
+            "title": "writeint",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "nr": {
+                    "type": "int",
+                    "parameter": true,
+                    "index": 0
+                }
+            },
+            "functions": {},
+            "types": {}
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "element_of_vector",
+                        "array": {
+                            "id": "identifier",
+                            "title": "p",
+                            "line": 8,
+                            "symbol_table": "script",
+                            "type": "list"
+                        },
+                        "index": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 5,
+                            "line": 8,
+                            "symbol_table": "script"
+                        },
+                        "line": 8,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "from": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 5,
+                        "line": 8,
+                        "symbol_table": "script"
+                    },
+                    "line": 8,
+                    "symbol_table": "script",
+                    "type": "none"
+                },
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "element_of_vector",
+                        "array": {
+                            "id": "identifier",
+                            "title": "v",
+                            "line": 9,
+                            "symbol_table": "script",
+                            "type": "list"
+                        },
+                        "index": {
+                            "id": "element_of_vector",
+                            "array": {
+                                "id": "identifier",
+                                "title": "p",
+                                "line": 9,
+                                "symbol_table": "script",
+                                "type": "list"
+                            },
+                            "index": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 5,
+                                "line": 9,
+                                "symbol_table": "script"
+                            },
+                            "line": 9,
+                            "symbol_table": "script",
+                            "type": "int"
+                        },
+                        "line": 9,
+                        "symbol_table": "script",
+                        "type": "int"
+                    },
+                    "from": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 7,
+                        "line": 9,
+                        "symbol_table": "script"
+                    },
+                    "line": 9,
+                    "symbol_table": "script",
+                    "type": "none"
+                },
+                {
+                    "id": "function_call",
+                    "title": "writeint",
+                    "parameters": {
+                        "nr": {
+                            "id": "element_of_vector",
+                            "array": {
+                                "id": "identifier",
+                                "title": "v",
+                                "line": 10,
+                                "symbol_table": "script",
+                                "type": "list"
+                            },
+                            "index": {
+                                "id": "element_of_vector",
+                                "array": {
+                                    "id": "identifier",
+                                    "title": "p",
+                                    "line": 10,
+                                    "symbol_table": "script",
+                                    "type": "list"
+                                },
+                                "index": {
+                                    "id": "value",
+                                    "type": "int",
+                                    "value": 5,
+                                    "line": 10,
+                                    "symbol_table": "script"
+                                },
+                                "line": 10,
+                                "symbol_table": "script",
+                                "type": "int"
+                            },
+                            "line": 10,
+                            "symbol_table": "script",
+                            "type": "int"
+                        }
+                    },
+                    "line": 10,
+                    "symbol_table": "script",
+                    "type": "none"
+                }
+            ]
+        }
+    },
+    "errors": []
+}

@@ -1,0 +1,42 @@
+{
+    "id": "script",
+    "statements": [
+        {
+            "id": "struct_def",
+            "title": "school",
+            "properties": [
+                {
+                    "type": "string",
+                    "title": "name",
+                    "line": 3
+                },
+                {
+                    "type": "bool",
+                    "title": "private",
+                    "line": 4
+                },
+                {
+                    "type": "int",
+                    "title": "type",
+                    "line": 5
+                }
+            ],
+            "line": 6,
+            "symbol_table": "script"
+        },
+        {
+            "id": "var",
+            "elements": [
+                {
+                    "type": "school",
+                    "title": "s",
+                    "line": 8
+                }
+            ],
+            "line": 8,
+            "symbol_table": "script"
+        }
+    ],
+    "line": 8,
+    "symbol_table": "script"
+}

@@ -1,0 +1,11 @@
+#Function definition without local variables#
+
+
+use io function writeint(nr:int):none;
+
+function sum(n1:int, n2:int):int
+start
+	return n1 + n2;
+end;
+
+writeint (nr: sum (n1 : 3, n2 : 7));

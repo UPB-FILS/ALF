@@ -1,0 +1,23 @@
+#Fibonacci#
+@var item:int;
+@var stack:int;
+
+use io function writeint(nr:int):none;
+
+use io function readint:int;
+
+
+function fibonacci(item:int):int
+start
+	@var value: int;
+	if item == 0 or item == 1 then
+		value<- 1;
+	else
+		value<- fibonacci (item:item - 2) + fibonacci (item : item - 1);
+	end;
+	return value;
+end;
+
+item<-readint();
+writeint (nr:fibonacci (item : item));
+

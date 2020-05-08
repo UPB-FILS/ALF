@@ -1,0 +1,7 @@
+#Simple expression#
+
+@var n <- "str", e: string;
+
+e <- n;
+
+2+3;

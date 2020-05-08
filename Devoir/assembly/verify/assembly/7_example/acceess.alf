@@ -1,0 +1,15 @@
+#Access element of struct#
+struct school
+	property name: string;
+	property private: bool;
+	property type: int;
+end;
+
+use io function writeint(nr:int):none;
+
+@var s:school;
+@var s3:school;
+
+s.private <- true;
+
+writeint (nr: s.private);

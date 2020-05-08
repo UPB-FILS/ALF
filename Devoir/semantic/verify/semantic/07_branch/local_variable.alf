@@ -1,0 +1,13 @@
+#Local variable#
+@var a:int;
+
+use io function writefloat (nr:real):none;
+use io function readint:int;
+
+a <- readint();
+
+if a < 120 then
+    @var a:real;
+    a <- 1.2;
+    writefloat (nr:a);
+end;

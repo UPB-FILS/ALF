@@ -1,0 +1,359 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "p": {
+                    "type": "int",
+                    "line": 2,
+                    "parameter": false
+                },
+                "isPrime": {
+                    "type": "bool",
+                    "line": 3,
+                    "parameter": false
+                },
+                "i": {
+                    "type": "int",
+                    "line": 4,
+                    "parameter": false
+                },
+                "s": {
+                    "type": "bool",
+                    "line": 6,
+                    "parameter": false
+                }
+            },
+            "functions": {
+                "writeint": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "title": "nr",
+                            "line": 8
+                        }
+                    ],
+                    "use": "io",
+                    "line": 8
+                },
+                "readint": {
+                    "type": "int",
+                    "parameters": [],
+                    "use": "io",
+                    "line": 9
+                }
+            },
+            "types": {}
+        },
+        "function_writeint": {
+            "title": "writeint",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "nr": {
+                    "type": "int",
+                    "parameter": true,
+                    "index": 0
+                }
+            },
+            "functions": {},
+            "types": {}
+        },
+        "function_readint": {
+            "title": "readint",
+            "type": "function",
+            "use": "io",
+            "return_type": "int",
+            "parent": "script",
+            "variables": {},
+            "functions": {},
+            "types": {}
+        },
+        "while_26": {
+            "type": "statements",
+            "parent": "script",
+            "variables": {},
+            "functions": {},
+            "types": {}
+        },
+        "for_19": {
+            "type": "statements",
+            "parent": "while_26",
+            "variables": {
+                "i": {
+                    "type": "int",
+                    "parameter": false,
+                    "line": 19
+                }
+            },
+            "functions": {},
+            "types": {}
+        },
+        "if_18": {
+            "type": "statements",
+            "parent": "for_19",
+            "variables": {},
+            "functions": {},
+            "types": {}
+        },
+        "if_23": {
+            "type": "statements",
+            "parent": "while_26",
+            "variables": {},
+            "functions": {},
+            "types": {}
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "identifier",
+                        "title": "s",
+                        "symbol_table": "script",
+                        "line": 6,
+                        "type": "bool"
+                    },
+                    "from": {
+                        "id": "value",
+                        "type": "bool",
+                        "value": false,
+                        "line": 6,
+                        "symbol_table": "script"
+                    },
+                    "line": 6,
+                    "type": "none"
+                },
+                {
+                    "id": "loop_go",
+                    "exp": {
+                        "id": "expr",
+                        "op": "not",
+                        "value": {
+                            "id": "identifier",
+                            "title": "s",
+                            "line": 12,
+                            "symbol_table": "script",
+                            "type": "bool"
+                        },
+                        "line": 12,
+                        "symbol_table": "script",
+                        "type": "bool"
+                    },
+                    "statements": [
+                        {
+                            "id": "attr",
+                            "to": {
+                                "id": "identifier",
+                                "title": "p",
+                                "line": 13,
+                                "symbol_table": "while_26",
+                                "type": "int"
+                            },
+                            "from": {
+                                "id": "function_call",
+                                "title": "readint",
+                                "parameters": [],
+                                "line": 13,
+                                "symbol_table": "while_26",
+                                "type": "int"
+                            },
+                            "line": 13,
+                            "symbol_table": "while_26",
+                            "type": "none"
+                        },
+                        {
+                            "id": "attr",
+                            "to": {
+                                "id": "identifier",
+                                "title": "isPrime",
+                                "line": 14,
+                                "symbol_table": "while_26",
+                                "type": "bool"
+                            },
+                            "from": {
+                                "id": "value",
+                                "type": "bool",
+                                "value": true,
+                                "line": 14,
+                                "symbol_table": "while_26"
+                            },
+                            "line": 14,
+                            "symbol_table": "while_26",
+                            "type": "none"
+                        },
+                        {
+                            "id": "for",
+                            "variable": "i",
+                            "from": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 2,
+                                "line": 15,
+                                "symbol_table": "while_26"
+                            },
+                            "to": {
+                                "id": "expr",
+                                "op": "/",
+                                "left": {
+                                    "id": "identifier",
+                                    "title": "p",
+                                    "line": 15,
+                                    "symbol_table": "while_26",
+                                    "type": "int"
+                                },
+                                "right": {
+                                    "id": "value",
+                                    "type": "int",
+                                    "value": 2,
+                                    "line": 15,
+                                    "symbol_table": "while_26"
+                                },
+                                "line": 15,
+                                "symbol_table": "while_26",
+                                "type": "int"
+                            },
+                            "statements": [
+                                {
+                                    "id": "if_then",
+                                    "exp": {
+                                        "id": "expr",
+                                        "op": "==",
+                                        "left": {
+                                            "id": "expr",
+                                            "op": "mod",
+                                            "left": {
+                                                "id": "identifier",
+                                                "title": "p",
+                                                "line": 16,
+                                                "symbol_table": "for_19",
+                                                "type": "int"
+                                            },
+                                            "right": {
+                                                "id": "identifier",
+                                                "title": "i",
+                                                "line": 16,
+                                                "symbol_table": "for_19",
+                                                "type": "int"
+                                            },
+                                            "line": 16,
+                                            "symbol_table": "for_19",
+                                            "type": "int"
+                                        },
+                                        "right": {
+                                            "id": "value",
+                                            "type": "int",
+                                            "value": 0,
+                                            "line": 16,
+                                            "symbol_table": "for_19"
+                                        },
+                                        "line": 16,
+                                        "symbol_table": "for_19",
+                                        "type": "bool"
+                                    },
+                                    "then": [
+                                        {
+                                            "id": "attr",
+                                            "to": {
+                                                "id": "identifier",
+                                                "title": "isPrime",
+                                                "line": 17,
+                                                "symbol_table": "if_18",
+                                                "type": "bool"
+                                            },
+                                            "from": {
+                                                "id": "value",
+                                                "type": "bool",
+                                                "value": false,
+                                                "line": 17,
+                                                "symbol_table": "if_18"
+                                            },
+                                            "line": 17,
+                                            "symbol_table": "if_18",
+                                            "type": "none"
+                                        }
+                                    ],
+                                    "line": 18,
+                                    "symbol_table": "for_19",
+                                    "else": [],
+                                    "type": "none"
+                                }
+                            ],
+                            "line": 19,
+                            "symbol_table": "for_19",
+                            "type": "none"
+                        },
+                        {
+                            "id": "if_then",
+                            "exp": {
+                                "id": "expr",
+                                "op": "not",
+                                "value": {
+                                    "id": "identifier",
+                                    "title": "isPrime",
+                                    "line": 21,
+                                    "symbol_table": "while_26",
+                                    "type": "bool"
+                                },
+                                "line": 21,
+                                "symbol_table": "while_26",
+                                "type": "bool"
+                            },
+                            "then": [
+                                {
+                                    "id": "function_call",
+                                    "title": "writeint",
+                                    "parameters": {
+                                        "nr": {
+                                            "id": "identifier",
+                                            "title": "p",
+                                            "line": 22,
+                                            "symbol_table": "if_23",
+                                            "type": "int"
+                                        }
+                                    },
+                                    "line": 22,
+                                    "symbol_table": "if_23",
+                                    "type": "none"
+                                }
+                            ],
+                            "line": 23,
+                            "symbol_table": "while_26",
+                            "else": [],
+                            "type": "none"
+                        },
+                        {
+                            "id": "attr",
+                            "to": {
+                                "id": "identifier",
+                                "title": "s",
+                                "line": 25,
+                                "symbol_table": "while_26",
+                                "type": "bool"
+                            },
+                            "from": {
+                                "id": "identifier",
+                                "title": "isPrime",
+                                "line": 25,
+                                "symbol_table": "while_26",
+                                "type": "bool"
+                            },
+                            "line": 25,
+                            "symbol_table": "while_26",
+                            "type": "none"
+                        }
+                    ],
+                    "line": 26,
+                    "symbol_table": "script",
+                    "type": "none"
+                }
+            ]
+        }
+    },
+    "errors": []
+}

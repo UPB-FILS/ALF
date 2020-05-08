@@ -1,0 +1,23 @@
+#Numbers#
+
+@var x:int, y:int, w:int;
+
+@var i:int;
+
+use io function writeint(nr:int):none;
+
+use io function readint:int;
+
+x<-readint();
+y<-readint();
+w<-readint();
+
+if x < y then
+	for i from x to y go
+		writeint (nr:i);
+	end;
+else
+	for i from x downto y go
+		writeint (nr:i);
+	end;
+end;

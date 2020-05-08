@@ -1,0 +1,7 @@
+#Function constant folding#
+
+use io function writeint(nr:int):none;
+
+writeint(nr: 2+6);
+
+function sum:int -> 2+3;

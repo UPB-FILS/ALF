@@ -1,0 +1,19 @@
+#Even number#
+@var a:int;
+@var e:character;
+
+use io function writechar (char:character):none;
+
+use io function readint:int;
+
+a <- readint();
+
+if a % 2 == 0 then
+	e <- "e";
+else
+	e <- "o";
+end;
+
+
+writechar (char:e);
+

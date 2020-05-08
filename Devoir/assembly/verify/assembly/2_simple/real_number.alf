@@ -1,0 +1,7 @@
+#Real number#
+
+use io function writefloat(nr:real):none;
+
+@var a:real <- 3.7;
+
+writefloat (nr:a);

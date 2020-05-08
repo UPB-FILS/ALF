@@ -1,0 +1,27 @@
+#Base 16#
+
+use io function writeint(nr:int):none;
+
+use io function writechar(char:character):none;
+
+use io function readint:int;
+
+@var number:int;
+
+function base16(number:int):none
+start
+	@var a:int;
+	if number > 0 then
+		base16 (number:number / 16);
+		a <- number % 16;
+		if a >= 10 then
+			writechar (char:"a"+a-10);
+		else
+			writechar (char:"0"+a);
+		end;
+	end;
+end;
+
+number<-readint();
+
+base16 (number : number);

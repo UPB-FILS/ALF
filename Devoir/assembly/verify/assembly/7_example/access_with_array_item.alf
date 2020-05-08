@@ -1,0 +1,10 @@
+#Access element with array item#
+list:int [1 -- 9];
+
+@var v:list, p:list;
+
+use io function writeint(nr:int):none;
+
+p[5] <- 5;
+v[p[5]] <- 7;
+writeint (nr:v[p[5]]);

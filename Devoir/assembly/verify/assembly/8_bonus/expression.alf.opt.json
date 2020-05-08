@@ -1,0 +1,43 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {},
+            "functions": {},
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "value",
+                    "line": 3,
+                    "symbol_table": "script",
+                    "type": "int",
+                    "value": 13
+                },
+                {
+                    "id": "value",
+                    "line": 4,
+                    "symbol_table": "script",
+                    "type": "int",
+                    "value": 168
+                },
+                {
+                    "id": "value",
+                    "line": 5,
+                    "symbol_table": "script",
+                    "type": "string",
+                    "value": "hello world"
+                }
+            ]
+        }
+    },
+    "errors": [],
+    "strings": {
+        "hello world": 0
+    }
+}

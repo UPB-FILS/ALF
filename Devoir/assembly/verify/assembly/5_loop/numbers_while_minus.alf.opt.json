@@ -1,0 +1,179 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "i": {
+                    "type": "int",
+                    "line": 3,
+                    "parameter": false,
+                    "size": 4,
+                    "allocation": "global"
+                },
+                "h": {
+                    "type": "real",
+                    "line": 4,
+                    "parameter": false,
+                    "size": 4,
+                    "allocation": "global"
+                }
+            },
+            "functions": {
+                "readint": {
+                    "type": "int",
+                    "parameters": [],
+                    "use": "io",
+                    "line": 6
+                },
+                "writefloat": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "real",
+                            "title": "nr",
+                            "line": 8
+                        }
+                    ],
+                    "use": "io",
+                    "line": 8
+                }
+            },
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        },
+        "function_readint": {
+            "title": "readint",
+            "type": "function",
+            "use": "io",
+            "return_type": "int",
+            "parent": "script",
+            "variables": {},
+            "functions": {},
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        },
+        "function_writefloat": {
+            "title": "writefloat",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "nr": {
+                    "type": "real",
+                    "parameter": true,
+                    "index": 0,
+                    "size": 4,
+                    "allocation": "param"
+                }
+            },
+            "functions": {},
+            "types": {},
+            "variable_data_space": 0,
+            "variable_stack_space": 0
+        },
+        "do_while_14": {
+            "type": "statements",
+            "parent": "script",
+            "variables": {},
+            "functions": {},
+            "types": {}
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "loop_when",
+                    "exp": {
+                        "id": "expr",
+                        "op": ">=",
+                        "left": {
+                            "id": "identifier",
+                            "title": "i",
+                            "line": 14,
+                            "symbol_table": "do_while_14",
+                            "type": "int"
+                        },
+                        "right": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 0,
+                            "line": 14,
+                            "symbol_table": "do_while_14"
+                        },
+                        "line": 14,
+                        "symbol_table": "do_while_14",
+                        "type": "bool"
+                    },
+                    "statements": [
+                        {
+                            "id": "attr",
+                            "to": {
+                                "id": "identifier",
+                                "title": "i",
+                                "line": 11,
+                                "symbol_table": "do_while_14",
+                                "type": "int"
+                            },
+                            "from": {
+                                "id": "function_call",
+                                "title": "readint",
+                                "parameters": [],
+                                "line": 11,
+                                "symbol_table": "do_while_14",
+                                "type": "int"
+                            },
+                            "line": 11,
+                            "symbol_table": "do_while_14",
+                            "type": "none"
+                        },
+                        {
+                            "id": "attr",
+                            "to": {
+                                "id": "identifier",
+                                "title": "h",
+                                "line": 12,
+                                "symbol_table": "do_while_14",
+                                "type": "real"
+                            },
+                            "from": {
+                                "id": "identifier",
+                                "title": "i",
+                                "line": 12,
+                                "symbol_table": "do_while_14",
+                                "type": "int"
+                            },
+                            "line": 12,
+                            "symbol_table": "do_while_14",
+                            "type": "none"
+                        },
+                        {
+                            "id": "function_call",
+                            "title": "writefloat",
+                            "parameters": {
+                                "nr": {
+                                    "id": "identifier",
+                                    "title": "h",
+                                    "line": 13,
+                                    "symbol_table": "do_while_14",
+                                    "type": "real"
+                                }
+                            },
+                            "line": 13,
+                            "symbol_table": "do_while_14",
+                            "type": "none"
+                        }
+                    ],
+                    "line": 14,
+                    "symbol_table": "script",
+                    "type": "none"
+                }
+            ]
+        }
+    },
+    "errors": [],
+    "strings": {}
+}

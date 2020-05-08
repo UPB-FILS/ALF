@@ -1,0 +1,10 @@
+#Array with struct definition#
+struct school
+	property name:string;
+	property private:bool;
+	property type:int;
+end;
+
+list:school[1 -- 9];
+
+@var list_of_schools:list;

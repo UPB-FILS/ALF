@@ -1,0 +1,23 @@
+#Even and div6 number#
+
+use io function writechar (char:character):none;
+
+use io function readint:int;
+
+@var a:int;
+@var e:character;
+
+a <- readint();
+
+if a % 2 == 0 then
+	if a % 6 == 0 then
+		e <- "y";
+	else
+		e <- "n";
+	end;
+else
+	e <- "o";
+end;
+
+
+writechar (char:e);
