@@ -4,8 +4,8 @@
     (import "io" "writechar" (func $writechar
             (param $char i32)
     ))
-    ;; define a memory
-    (memory 1)
+    ;; import the memory space from io
+    (import "io" "mem" (memory 1))
     ;; stack pointer
     (global $stack_pointer (mut i32) (i32.const 0))
     

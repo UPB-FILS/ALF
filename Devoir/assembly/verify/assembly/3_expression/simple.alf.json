@@ -5,13 +5,42 @@
             "variables": {
                 "n": {
                     "type": "string",
-                    "line": 3,
+                    "line": 5,
                     "parameter": false
                 },
                 "e": {
                     "type": "string",
-                    "line": 3,
+                    "line": 5,
                     "parameter": false
+                }
+            },
+            "functions": {
+                "writenstr": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "string",
+                            "title": "text",
+                            "line": 3
+                        }
+                    ],
+                    "use": "io",
+                    "line": 3
+                }
+            },
+            "types": {}
+        },
+        "function_writenstr": {
+            "title": "writenstr",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "text": {
+                    "type": "string",
+                    "parameter": true,
+                    "index": 0
                 }
             },
             "functions": {},
@@ -27,17 +56,17 @@
                         "id": "identifier",
                         "title": "n",
                         "symbol_table": "script",
-                        "line": 3,
+                        "line": 5,
                         "type": "string"
                     },
                     "from": {
                         "id": "value",
                         "type": "string",
                         "value": "str",
-                        "line": 3,
+                        "line": 5,
                         "symbol_table": "script"
                     },
-                    "line": 3,
+                    "line": 5,
                     "type": "none"
                 },
                 {
@@ -45,18 +74,18 @@
                     "to": {
                         "id": "identifier",
                         "title": "e",
-                        "line": 5,
+                        "line": 7,
                         "symbol_table": "script",
                         "type": "string"
                     },
                     "from": {
                         "id": "identifier",
                         "title": "n",
-                        "line": 5,
+                        "line": 7,
                         "symbol_table": "script",
                         "type": "string"
                     },
-                    "line": 5,
+                    "line": 7,
                     "symbol_table": "script",
                     "type": "none"
                 },
@@ -67,19 +96,35 @@
                         "id": "value",
                         "type": "int",
                         "value": 2,
-                        "line": 7,
+                        "line": 9,
                         "symbol_table": "script"
                     },
                     "right": {
                         "id": "value",
                         "type": "int",
                         "value": 3,
-                        "line": 7,
+                        "line": 9,
                         "symbol_table": "script"
                     },
-                    "line": 7,
+                    "line": 9,
                     "symbol_table": "script",
                     "type": "int"
+                },
+                {
+                    "id": "function_call",
+                    "title": "writenstr",
+                    "parameters": {
+                        "text": {
+                            "id": "identifier",
+                            "title": "n",
+                            "line": 11,
+                            "symbol_table": "script",
+                            "type": "string"
+                        }
+                    },
+                    "line": 11,
+                    "symbol_table": "script",
+                    "type": "none"
                 }
             ]
         }

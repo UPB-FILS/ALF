@@ -1,8 +1,11 @@
 
 (module
     ;; import functions
-    ;; define a memory
-    (memory 1)
+    (import "io" "writenstr" (func $writenstr
+            (param $text i32)
+    ))
+    ;; import the memory space from io
+    (import "io" "mem" (memory 1))
     ;; stack pointer
     (global $stack_pointer (mut i32) (i32.const 0))
     
@@ -21,7 +24,6 @@
         global.get $strings_start
         i32.const 0
         i32.add
-        i32.load
         ;; attribute string to string
         ;; set the number of words 64 (memory is aligned at 4 bytes)
         i32.const 64
@@ -45,6 +47,12 @@
         i32.add
         ;; drop unused value (int)
         drop
+        ;; writenstr (...)
+        ;; parameter text
+        ;; variable n
+        ;; alternative i32.const 0
+        global.get $n
+        call $writenstr
     )
     
     (func $memcpy

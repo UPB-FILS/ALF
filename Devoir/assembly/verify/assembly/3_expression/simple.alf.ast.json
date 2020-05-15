@@ -2,6 +2,21 @@
     "id": "script",
     "statements": [
         {
+            "id": "function_def",
+            "use": "io",
+            "title": "writenstr",
+            "parameters": [
+                {
+                    "type": "string",
+                    "title": "text",
+                    "line": 3
+                }
+            ],
+            "type": "none",
+            "line": 3,
+            "symbol_table": "function_writenstr"
+        },
+        {
             "id": "var",
             "elements": [
                 {
@@ -11,18 +26,18 @@
                         "id": "value",
                         "type": "string",
                         "value": "str",
-                        "line": 3,
+                        "line": 5,
                         "symbol_table": "script"
                     },
-                    "line": 3
+                    "line": 5
                 },
                 {
                     "type": "string",
                     "title": "e",
-                    "line": 3
+                    "line": 5
                 }
             ],
-            "line": 3,
+            "line": 5,
             "symbol_table": "script"
         },
         {
@@ -30,18 +45,18 @@
             "to": {
                 "id": "identifier",
                 "title": "e",
-                "line": 5,
+                "line": 7,
                 "symbol_table": "script",
                 "type": "string"
             },
             "from": {
                 "id": "identifier",
                 "title": "n",
-                "line": 5,
+                "line": 7,
                 "symbol_table": "script",
                 "type": "string"
             },
-            "line": 5,
+            "line": 7,
             "symbol_table": "script",
             "type": "none"
         },
@@ -52,21 +67,37 @@
                 "id": "value",
                 "type": "int",
                 "value": 2,
-                "line": 7,
+                "line": 9,
                 "symbol_table": "script"
             },
             "right": {
                 "id": "value",
                 "type": "int",
                 "value": 3,
-                "line": 7,
+                "line": 9,
                 "symbol_table": "script"
             },
-            "line": 7,
+            "line": 9,
             "symbol_table": "script",
             "type": "int"
+        },
+        {
+            "id": "function_call",
+            "title": "writenstr",
+            "parameters": {
+                "text": {
+                    "id": "identifier",
+                    "title": "n",
+                    "line": 11,
+                    "symbol_table": "script",
+                    "type": "string"
+                }
+            },
+            "line": 11,
+            "symbol_table": "script",
+            "type": "none"
         }
     ],
-    "line": 7,
+    "line": 11,
     "symbol_table": "script"
 }

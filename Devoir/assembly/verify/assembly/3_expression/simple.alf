@@ -1,7 +1,11 @@
 #Simple expression#
 
+use io function writenstr (text:string):none;
+
 @var n <- "str", e: string;
 
 e <- n;
 
 2+3;
+
+writenstr (text: n);

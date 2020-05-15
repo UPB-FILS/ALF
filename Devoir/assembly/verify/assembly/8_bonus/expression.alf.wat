@@ -1,8 +1,8 @@
 
 (module
     ;; import functions
-    ;; define a memory
-    (memory 1)
+    ;; import the memory space from io
+    (import "io" "mem" (memory 1))
     ;; stack pointer
     (global $stack_pointer (mut i32) (i32.const 0))
     
@@ -23,7 +23,6 @@
         global.get $strings_start
         i32.const 0
         i32.add
-        i32.load
         ;; drop unused value (string)
         drop
     )

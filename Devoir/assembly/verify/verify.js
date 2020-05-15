@@ -1,22 +1,18 @@
 "use strict";
 
-var assert = require ('assert');
-var util = require ('util');
-var _ = require ('lodash');
+let _ = require ('lodash');
 
-var originalFile = process.argv[2];
-var verifyFile = process.argv[3];
-var points = parseInt (process.argv[4]);
-var verify = process.argv[5];
+let originalFile = process.argv[2];
+let verifyFile = process.argv[3];
 
-var originalTree;
-var verifyTree;
+let originalTree;
+let verifyTree;
 
 // console.log (process.argv);
 
 try
 {
-	originalTree = require (originalFile);
+	originalTree = require ('./'+originalFile);
 }
 catch (e)
 {
@@ -33,6 +29,7 @@ catch (e)
 	console.error ('Cannot load tree from '+verifyFile);
 	process.exit (-1);
 }
+
 
 if (_.isEqualWith (originalTree, verifyTree))
 {

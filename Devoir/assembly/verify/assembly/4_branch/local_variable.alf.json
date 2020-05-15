@@ -27,6 +27,18 @@
                     "parameters": [],
                     "use": "io",
                     "line": 5
+                },
+                "writeint": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "title": "nr",
+                            "line": 6
+                        }
+                    ],
+                    "use": "io",
+                    "line": 6
                 }
             },
             "types": {}
@@ -57,13 +69,29 @@
             "functions": {},
             "types": {}
         },
-        "if_13": {
+        "function_writeint": {
+            "title": "writeint",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "nr": {
+                    "type": "int",
+                    "parameter": true,
+                    "index": 0
+                }
+            },
+            "functions": {},
+            "types": {}
+        },
+        "if_14": {
             "type": "statements",
             "parent": "script",
             "variables": {
                 "a": {
                     "type": "real",
-                    "line": 10,
+                    "line": 11,
                     "parameter": false
                 }
             },
@@ -79,7 +107,7 @@
                     "to": {
                         "id": "identifier",
                         "title": "a",
-                        "line": 7,
+                        "line": 8,
                         "symbol_table": "script",
                         "type": "int"
                     },
@@ -87,11 +115,11 @@
                         "id": "function_call",
                         "title": "readint",
                         "parameters": [],
-                        "line": 7,
+                        "line": 8,
                         "symbol_table": "script",
                         "type": "int"
                     },
-                    "line": 7,
+                    "line": 8,
                     "symbol_table": "script",
                     "type": "none"
                 },
@@ -103,7 +131,7 @@
                         "left": {
                             "id": "identifier",
                             "title": "a",
-                            "line": 9,
+                            "line": 10,
                             "symbol_table": "script",
                             "type": "int"
                         },
@@ -111,10 +139,10 @@
                             "id": "value",
                             "type": "int",
                             "value": 120,
-                            "line": 9,
+                            "line": 10,
                             "symbol_table": "script"
                         },
-                        "line": 9,
+                        "line": 10,
                         "symbol_table": "script",
                         "type": "bool"
                     },
@@ -124,19 +152,19 @@
                             "to": {
                                 "id": "identifier",
                                 "title": "a",
-                                "line": 11,
-                                "symbol_table": "if_13",
+                                "line": 12,
+                                "symbol_table": "if_14",
                                 "type": "real"
                             },
                             "from": {
                                 "id": "value",
                                 "type": "real",
                                 "value": 1.2,
-                                "line": 11,
-                                "symbol_table": "if_13"
+                                "line": 12,
+                                "symbol_table": "if_14"
                             },
-                            "line": 11,
-                            "symbol_table": "if_13",
+                            "line": 12,
+                            "symbol_table": "if_14",
                             "type": "none"
                         },
                         {
@@ -146,19 +174,35 @@
                                 "nr": {
                                     "id": "identifier",
                                     "title": "a",
-                                    "line": 12,
-                                    "symbol_table": "if_13",
+                                    "line": 13,
+                                    "symbol_table": "if_14",
                                     "type": "real"
                                 }
                             },
-                            "line": 12,
-                            "symbol_table": "if_13",
+                            "line": 13,
+                            "symbol_table": "if_14",
                             "type": "none"
                         }
                     ],
-                    "line": 13,
+                    "line": 14,
                     "symbol_table": "script",
                     "else": [],
+                    "type": "none"
+                },
+                {
+                    "id": "function_call",
+                    "title": "writeint",
+                    "parameters": {
+                        "nr": {
+                            "id": "identifier",
+                            "title": "a",
+                            "line": 16,
+                            "symbol_table": "script",
+                            "type": "int"
+                        }
+                    },
+                    "line": 16,
+                    "symbol_table": "script",
                     "type": "none"
                 }
             ]
