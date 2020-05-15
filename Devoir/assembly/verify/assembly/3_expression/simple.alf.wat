@@ -3,7 +3,8 @@
     ;; import functions
     (import "io" "writenstr" (func $writenstr
             (param $text i32)
-    ))
+        )
+    )
     ;; import the memory space from io
     (import "io" "mem" (memory 1))
     ;; stack pointer

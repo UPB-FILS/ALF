@@ -3,7 +3,8 @@
     ;; import functions
     (import "io" "writeint" (func $writeint
             (param $nr i32)
-    ))
+        )
+    )
     ;; import the memory space from io
     (import "io" "mem" (memory 1))
     ;; stack pointer

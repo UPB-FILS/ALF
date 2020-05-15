@@ -20,4 +20,6 @@ do
 		node main.js $file $optimizations
 		npx was $file.wat 
 	done
+
+	rm -f $folder/*.wasm
 done

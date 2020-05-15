@@ -3,13 +3,16 @@
     ;; import functions
     (import "io" "writeint" (func $writeint
             (param $nr i32)
-    ))
+        )
+    )
     (import "io" "writechar" (func $writechar
             (param $char i32)
-    ))
+        )
+    )
     (import "io" "readint" (func $readint
             (result i32)
-    ))
+        )
+    )
     ;; import the memory space from io
     (import "io" "mem" (memory 1))
     ;; stack pointer

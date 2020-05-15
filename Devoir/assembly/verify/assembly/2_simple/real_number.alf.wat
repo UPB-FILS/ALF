@@ -3,7 +3,8 @@
     ;; import functions
     (import "io" "writefloat" (func $writefloat
             (param $nr f32)
-    ))
+        )
+    )
     ;; import the memory space from io
     (import "io" "mem" (memory 1))
     ;; stack pointer
