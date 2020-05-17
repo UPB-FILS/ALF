@@ -113,7 +113,7 @@ else
 								echo " checker error"
 								exit 1
 							fi
-							timeout 10 ./run_asm.sh "$wat_outputfile" "$keyboardfile" "$wat_outputfile".out
+							timeout 10 ./run_asm.sh "$wat_outputfile" "$keyboardfile" "$wat_outputfile".out 2>> "$errorsfile"
 							err=$?
 							if [ $err == 124 ]; then
 								e=$e"timeout "
