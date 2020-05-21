@@ -22,7 +22,7 @@
     (func $entry
         (local $base_pointer i32)
         ;; do while
-        loop $script
+        loop $do_while_14
             ;; attribution
             ;; variable i
             ;; readint (...)
@@ -48,8 +48,9 @@
                 ;; value int 0
                 i32.const 0
             i32.ge_s
-            br_if $script
-        end $script
+            ;; if exp is true, go to while
+            br_if $do_while_14
+        end $do_while_14
     )
     
     ;; set the entry

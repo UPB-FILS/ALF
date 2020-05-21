@@ -31,15 +31,16 @@
         ;; alternative i32.const undefined
         global.set $s
         ;; while
-        block $script_end
-            loop $script_begin
+        block $while_26_end
+            loop $while_26_begin
                 ;; expression not
                 ;; variable s
                 global.get $s
                 i32.const 0
                 i32.eq
+                ;; if exp is false, exit while
                 i32.eqz
-                br_if $script_end
+                br_if $while_26_end
                     ;; attribution
                     ;; variable p
                     ;; readint (...)
@@ -123,9 +124,9 @@
                     global.get $isPrime
                     ;; alternative i32.const undefined
                     global.set $s
-                br $script_begin
-            end $script_begin
-        end $script_end
+                br $while_26_begin
+            end $while_26_begin
+        end $while_26_end
     )
     
     ;; set the entry

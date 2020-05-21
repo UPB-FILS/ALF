@@ -20,16 +20,17 @@
         ;; alternative i32.const undefined
         global.set $i
         ;; while
-        block $script_end
-            loop $script_begin
+        block $while_5_end
+            loop $while_5_begin
                 ;; expression >
                     ;; variable i
                     global.get $i
                     ;; value int 10
                     i32.const 10
                 i32.gt_s
+                ;; if exp is false, exit while
                 i32.eqz
-                br_if $script_end
+                br_if $while_5_end
                     ;; attribution
                     ;; variable i
                     ;; expression -
@@ -40,11 +41,11 @@
                     i32.sub
                     ;; alternative i32.const undefined
                     global.set $i
-                br $script_begin
-            end $script_begin
-        end $script_end
+                br $while_5_begin
+            end $while_5_begin
+        end $while_5_end
         ;; do while
-        loop $script
+        loop $do_while_9
             ;; attribution
             ;; variable i
             ;; expression -
@@ -61,8 +62,9 @@
                 ;; value int 10
                 i32.const 10
             i32.gt_s
-            br_if $script
-        end $script
+            ;; if exp is true, go to while
+            br_if $do_while_9
+        end $do_while_9
         ;; for
         ;; from
             ;; attribution

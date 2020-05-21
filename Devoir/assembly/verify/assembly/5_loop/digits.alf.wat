@@ -49,16 +49,17 @@
             global.set $digits
         end
         ;; while
-        block $script_end
-            loop $script_begin
+        block $while_18_end
+            loop $while_18_begin
                 ;; expression !=
                     ;; variable number
                     global.get $number
                     ;; value int 0
                     i32.const 0
                 i32.ne
+                ;; if exp is false, exit while
                 i32.eqz
-                br_if $script_end
+                br_if $while_18_end
                     ;; attribution
                     ;; variable number
                     ;; expression /
@@ -79,9 +80,9 @@
                     i32.add
                     ;; alternative i32.const undefined
                     global.set $digits
-                br $script_begin
-            end $script_begin
-        end $script_end
+                br $while_18_begin
+            end $while_18_begin
+        end $while_18_end
         ;; writeint (...)
         ;; parameter nr
         ;; variable digits
