@@ -79,7 +79,12 @@ else
 						then
 							title=`basename $file`
 						fi
-						node "$1" "$inputfile" "$opt_outputfile" "$wat_outputfile"
+						optimizations=""
+						if (echo $folder | grep bonus &> /dev/null); then
+							optimizations="fold_constants unused"
+						fi
+						# echo $optimizations
+						node "$1" "$inputfile" "$opt_outputfile" "$wat_outputfile" $optimizations
 						strtitle="Verifying $title"
 						printf '%s' "$strtitle"
 						pad=$(printf '%0.1s' "."{1..60})
@@ -163,7 +168,7 @@ else
 
 	echo 'Tests: ' $passed '/' $total
 	echo 'Points: '$POINTS
-	echo 'Mark without penalities: '`echo $(($POINTS*3+10)) | sed 's/..$/.&/'`
+	echo 'Mark without penalities: '`echo $(($POINTS*3)) | sed 's/..$/.&/'`
 
 	if [ "$passed" != "$total" ];
 	then
